@@ -19,7 +19,6 @@
   flex-direction: column;
 }
 
-
 .flex-item-accueil {
   width: 130px;
   height: 60px;
@@ -42,4 +41,84 @@
 
 .btn-accueil {
   width: 225px;
+}
+
+.service-container {
+  display: flex;
+  margin: 15vh 0;
+  align-items: flex-end;
+}
+
+.service-item-left {
+  width:50%;
+}
+
+.service-item-right-ctn {
+  width:50%;
+}
+
+.service-paragraphe {
+  width: 70%;
+}
+
+.service-item-right-ctn {
+  display: flex;
+}
+
+.service-item-right-ctn-left {
+  width: 50%;
+}
+
+.service-item-right-ctn-right {
+  width: 50%;
+}
+
+.service-item-logo {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-item {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.service-item-left-margin {
+  margin-left: 15%;
+}
+
+.serv-item-logo-1 {
+  background-image: url("../images/picto-fondation.svg");
+}
+
+.serv-item-logo-2 {
+  background-image: url("../images/picto-sol.svg");
+}
+
+.serv-item-logo-3 {
+  background-image: url("../images/picto-charpente.svg");
+}
+
+.serv-item-logo-4 {
+  background-image: url("../images/picto-terrasse.svg");
+}
+
+.serv-item-logo-5 {
+  background-image: url("../images/picto-excavation.svg");
+}
+
+.serv-item-logo-6 {
+  background-image: url("../images/picto-isolation.svg");
+}
+
+.service-item-paragraphe {
+  margin-left: 8%;
+}
+
+.service-title {
+  margin-bottom: 25px;
 }
