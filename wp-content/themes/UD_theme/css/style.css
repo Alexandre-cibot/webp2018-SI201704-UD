@@ -160,11 +160,22 @@ table {
   line-height: 27px;
 }
 
+.partenaire-paragraphe {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+  width: 50vw;
+}
+
 .title {
   font-family: "Roboto", sans-serif;
   color: #3E3E3E;
   font-size: 37px;
   line-height: 48px;
+}
+
+.title-partenaire {
+  margin-bottom: 20px;
 }
 
 .flex-container {
@@ -178,7 +189,11 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin: 12px 20px;
+  margin: 12px 28px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .partenaire-1 {
