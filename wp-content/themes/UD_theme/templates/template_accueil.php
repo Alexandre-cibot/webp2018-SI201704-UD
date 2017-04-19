@@ -13,7 +13,7 @@ get_header();
         <div class="flex-container-left-column">
             <h2 class="title text-white accueil-title">U&D est là pour tout vos travaux de gros oeuvres et d’isolation en Ile-de-France. Au service des entreprises et
                 des particuliers.</h2>
-            <button class="accueil-button">Nous contacter</button>
+            <button class="btn-cta btn-accueil">Nous contacter</button>
         </div>
     </div>
 </div>

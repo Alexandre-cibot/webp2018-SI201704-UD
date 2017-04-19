@@ -137,6 +137,125 @@ table {
   border-spacing: 0;
 }
 
+/* Import style pages */
+
+.project-a-propos {
+  position: relative;
+  height: 1112px;
+  width: 45%;
+  /*width: 562px;*/
+  /* border:1px solid;*/
+  margin-top: 92px;
+}
+
+.project-img {
+  height: 814px;
+  background-image: url("../images/visuels/visu_a-propos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-description {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 298px;
+  background: #FFCB0D;
+}
+
+.a-propos-title {
+  margin-top: 80px;
+  margin-left: -141px;
+  margin-bottom: 82px;
+  width: 100%;
+}
+
+.content-a-propos {
+  position: relative;
+}
+
+.content-text {
+  width: 51%;
+  height: 1112px;
+  border: 1px solid;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-title {
+  color: white;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 38px;
+}
+
+.block-p {
+  /*  width: 41%;
+  float: right;
+  margin: 10px 10px 10px 10px ;
+  /*border: 1px solid black;*/
+  /*display: inline-flex;*/
+  margin: 0 20px 20px 0;
+}
+
+.wrapper-partenaire {
+  margin-top: 200px;
+}
+
+.statistiques {
+  width: 100%;
+  height: 300px;
+  border: 1px solid;
+  position: absolute;
+  bottom: 0;
+}
+
+.accueil-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.flex-container-accueil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container-accueil-left {
+  display: flex;
+}
+
+.flex-container-left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-accueil {
+  width: 130px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 12px 28px;
+}
+
+.accueil-title-left {
+  position: relative;
+}
+
+.accueil-title {
+  text-align: justify;
+  width: 32vw;
+  min-width: 490px;
+  margin-bottom: 40px;
+}
+
+.btn-accueil {
+  width: 225px;
+}
+
 .text-important {
   color: #FFCB0D;
 }
@@ -163,17 +282,41 @@ table {
   line-height: 27px;
 }
 
-.partenaire-paragraphe {
-  margin: 0 auto;
-  margin-bottom: 70px;
-  text-align: center;
-  width: 50vw;
+.small-title {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .title {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 40px;
+}
+
+/* Type de blocks */
+
+.centered-block {
+  margin: 0 60px;
+  /*border:1px solid;*/
+  height: auto;
+}
+
+.block-deco-grey {
+  background: #F0F0F0;
+  position: absolute;
+  width: 40%;
+  height: 984px;
+  top: 0;
+}
+
+.partenaire-paragraphe {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+  width: 50vw;
 }
 
 .title-partenaire {
@@ -230,46 +373,6 @@ table {
   background-image: url("../images/partenaires/logo-point-p.png");
 }
 
-.accueil-background {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-}
-
-.flex-container-accueil {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flex-container-accueil-left {
-  display: flex;
-}
-
-.flex-container-left-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-item-accueil {
-  width: 130px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin: 12px 28px;
-}
-
-.accueil-title-left {
-  position: relative;
-}
-
-.accueil-title {
-  text-align: justify;
-  width: 32vw;
-  min-width: 490px;
-}
-
 .left-line2-container {
   width: 20vw;
 }
@@ -281,4 +384,18 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.separator-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  text-decoration: none;
+  border: 2px solid white;
+  background: none;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
