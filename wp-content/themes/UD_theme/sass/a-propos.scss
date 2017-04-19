@@ -34,7 +34,7 @@
 .content-text {
   width:51%;
   height: 1112px;
-  border:1px solid;
+ /* border:1px solid;*/
   position: absolute;
   right:0;
   top:0;
@@ -61,9 +61,48 @@
 }
 
 .statistiques {
+  display:flex;
   width:100%;
   height:300px;
-  border: 1px solid;
+  /*border: 1px solid;*/
   position: absolute;
   bottom: 0;
+  align-items: center
+}
+
+.stat-block {
+  /*border:1px solid red;*/
+  width: 100%;
+  display: flex;
+  margin: 70px;
+}
+
+.picto {
+ /* border:1px solid ;*/
+  width:35px;
+  height:35px;
+  background-image: url('../images/picto-france.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.stat-title {
+  font-size:11px;
+  color: $light-grey;
+  text-transform: uppercase;
+  font-family: $roboto;
+  margin-bottom:5px;
+}
+
+.stat-numbers {
+  font-family: $open-sans;
+  font-size: 18px;
+  color: $dark-grey;
+}
+.stat-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:5px;
 }

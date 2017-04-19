@@ -43,35 +43,42 @@ get_header();
             </div>
         </div>
 
-        <div class="statistiques">
-            <div>
-                <div>picto</div>
-                <div>
-                    <div>L’année de création</div>
-                    <div>2012</div>
+        <div class="statistiques flex-container">
+            <div class="stat-column">
+                <div class="stat-block">
+                    <div class="picto"></div>
+                    <div class="stat-text-wrapper">
+                        <div class="stat-title">L’année de création</div>
+                        <div class="stat-numbers">2012</div>
+                    </div>
+                </div>
+                <div class="stat-block">
+                    <div class="picto"></div>
+                    <div class="stat-text-wrapper">
+                        <div class="stat-title">Nos réalisations</div>
+                        <div class="stat-numbers">+ de 200 projets</div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>picto</div>
-                <div>
-                    <div>Nos réalisations</div>
-                    <div>+ de 200 projets</div>
+
+            <div class="stat-column">
+                <div class="stat-block">
+                    <div class="picto"></div>
+                    <div class="stat-text-wrapper">
+                        <div class="stat-title">Une équipe de professionnels</div>
+                        <div class="stat-numbers">6 employés</div>
+                    </div>
+                </div>
+                <div class="stat-block">
+                    <div class="picto"></div>
+                    <div class="stat-text-wrapper">
+                        <div class="stat-title">Notre secteur d’intervention</div>
+                        <div class="stat-numbers">5 départements</div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>picto</div>
-                <div>
-                    <div>Une équipe de professionnels</div>
-                    <div>6 employés</div>
-                </div>
-            </div>
-            <div>
-                <div>picto</div>
-                <div>
-                    <div>Notre secteur d’intervention</div>
-                    <div>5 départements</div>
-                </div>
-            </div>
+
+
         </div>
     </div>
 
