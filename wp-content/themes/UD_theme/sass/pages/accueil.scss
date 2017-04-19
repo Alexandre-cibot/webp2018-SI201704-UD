@@ -1,0 +1,45 @@
+.accueil-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.flex-container-accueil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container-accueil-left {
+  display: flex;
+}
+
+.flex-container-left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.flex-item-accueil {
+  width: 130px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 12px 28px;
+}
+
+.accueil-title-left {
+  position: relative;
+}
+
+.accueil-title {
+  text-align: justify;
+  width: 32vw;
+  min-width: 490px;
+  margin-bottom: 40px;
+}
+
+.btn-accueil {
+  width: 225px;
+}

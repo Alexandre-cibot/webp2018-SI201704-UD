@@ -3,7 +3,8 @@
 @import './fonts.scss';
 
 /* Import style pages */
-@import './a-propos.scss';
+@import 'pages/a-propos';
+@import 'pages/accueil';
 
 .text-important {
   color: $yellow;
@@ -18,12 +19,15 @@
 }
 
 .text-secondary {
-  color: $light-grey;
+   color: $light-grey;
+ }
+
+.text-white {
+  color: #FFFFFF;
 }
 
 .paragraphe {
   font-family: $open-sans;
-  color: $black;
   font-size: 16px;
   line-height: 27px;
 }
@@ -38,7 +42,6 @@
 
 .title {
   font-family: $roboto;
-  color: $dark-grey;
   font-size: 32px;
   line-height: 40px;
 }
@@ -112,6 +115,19 @@
   background-image: url("../images/partenaires/logo-point-p.png");
 }
 
+.left-line2-container {
+  width: 20vw;
+}
+
+.line2 {
+  margin-right: 25px;
+  height: 50px;
+  background-image: url("../images/line2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .separator-bottom-30 {
   margin-bottom: 30px;
 }
@@ -125,3 +141,4 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
+
