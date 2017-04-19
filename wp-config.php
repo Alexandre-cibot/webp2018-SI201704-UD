@@ -1,4 +1,6 @@
 <?php
+// For security purpose we don't share './config_database.php' on github.
+include('./config_database.php');
 /**
  * The base configuration for WordPress
  *
@@ -20,16 +22,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'UD_database');
+define('DB_NAME', $NAME_DB );
 
 /** MySQL database username */
-define('DB_USER', 'world');
+define('DB_USER', $USER_DB);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'pistachejulex');
+define('DB_PASSWORD', $MDP_DB);
 
 /** MySQL hostname */
-define('DB_HOST', '51.255.44.197');
+define('DB_HOST', $HOST_DB);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -63,7 +65,7 @@ define('NONCE_SALT',       '/>b~I$~>,G=RNbpEy2 V^cd:K]&(UPCCc*O_P4P{0&s:pH]<j.:c
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'pista_';
+$table_prefix  = $PREFIX_DB;
 
 /**
  * For developers: WordPress debugging mode.
