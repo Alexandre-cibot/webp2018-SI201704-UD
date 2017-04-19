@@ -8,11 +8,11 @@ gulp.task('sass', function () {
     return gulp.src('./sass/index.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concatCss('style.css'))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./css'));
 });
 
 gulp.task('sass:watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'sass:watch']);
