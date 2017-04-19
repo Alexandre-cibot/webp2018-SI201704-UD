@@ -137,6 +137,56 @@ table {
   border-spacing: 0;
 }
 
+/* Import style pages */
+
+.project-a-propos {
+  position: relative;
+  height: 1112px;
+  width: 45%;
+  /*width: 562px;*/
+  /* border:1px solid;*/
+  margin-top: 92px;
+}
+
+.project-img {
+  height: 814px;
+  background-image: url("../images/visuels/visu_a-propos.jpg");
+  background-repeat: no-repeat;
+}
+
+.project-description {
+  height: 298px;
+  background: #FFCB0D;
+}
+
+.a-propos-title {
+  margin-top: 80px;
+  margin-left: -141px;
+  margin-bottom: 82px;
+  width: 100%;
+}
+
+.content-a-propos {
+  position: relative;
+}
+
+.content-text {
+  width: 51%;
+  /*border:1px solid;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.block-p {
+  width: 41%;
+  float: right;
+  padding: 10px;
+  margin-bottom: 30px;
+  /*border: 1px solid black;*/
+  display: inline-flex;
+}
+
 .text-important {
   color: #FFCB0D;
 }
@@ -160,9 +210,31 @@ table {
   line-height: 27px;
 }
 
+.small-title {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 11px;
+}
+
 .title {
   font-family: "Roboto", sans-serif;
   color: #3E3E3E;
-  font-size: 37px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+/* Type de blocks */
+
+.centered-block {
+  margin: 0 60px;
+  /*border:1px solid;*/
+  height: auto;
+}
+
+.block-deco-grey {
+  background: #F0F0F0;
+  position: absolute;
+  width: 40%;
+  height: 984px;
+  top: 0;
 }

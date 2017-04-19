@@ -1,0 +1,45 @@
+.project-a-propos {
+  position: relative;
+  height:1112px;
+  width: 45%;
+  /*width: 562px;*/
+ /* border:1px solid;*/
+  margin-top:92px;
+}
+.project-img {
+  height: 814px;
+  background-image: url("../images/visuels/visu_a-propos.jpg");
+  background-repeat: no-repeat;
+}
+
+.project-description {
+  height:298px;
+  background:$yellow;
+}
+
+.a-propos-title {
+  margin-top:80px;
+  margin-left: -141px;
+  margin-bottom:82px;
+  width: 100%;
+}
+
+.content-a-propos {
+  position: relative;
+}
+.content-text {
+  width:51%;
+  /*border:1px solid;*/
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+.block-p {
+  width: 41%;
+  float: right;
+  padding: 10px;
+  margin-bottom: 30px;
+  /*border: 1px solid black;*/
+  display: inline-flex;
+}
