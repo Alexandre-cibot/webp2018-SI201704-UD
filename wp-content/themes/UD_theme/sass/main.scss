@@ -1,0 +1,16 @@
+/*
+Theme Name: UD theme
+Author: Les cinq noms.
+Author URI: https://wordpress.org/
+Description: Semaine intensive.
+License: GNU General Public License v2 or later
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+$bigBlue : blue;
+
+header {
+  background: $bigBlue;
+}
