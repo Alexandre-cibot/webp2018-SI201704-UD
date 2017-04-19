@@ -12,11 +12,11 @@ get_header();
         <div class="project-img">
 
         </div>
-        <div class="project-description">
-            <span class="small-title">Confiez-nous votre projet </span>
-            <p>Vous avez un projet de construction, de
+        <div class="project-description flex-container">
+            <span class="small-title separator-bottom-30">Confiez-nous votre projet </span>
+            <p class="project-title separator-bottom-30">Vous avez un projet de construction, de
                 rénovation ou d’aménagement ?</p>
-            <button>Nous contacter</button>
+            <button class="btn-cta">Nous contacter</button>
         </div>
     </div>
 
@@ -41,11 +41,41 @@ get_header();
                     <p class="paragraphe">Réaliser des travaux de rénovation dans une maison ou un appartement est une chose sérieuse. Les budgets engagés sont souvent importants et il est indispensable de travailler avec une entreprise de rénovation sérieuse qui présente <span class="text-important">toutes les garanties nécessaires.</span></p>
                 </div>
             </div>
+        </div>
 
-
-
+        <div class="statistiques">
+            <div>
+                <div>picto</div>
+                <div>
+                    <div>L’année de création</div>
+                    <div>2012</div>
+                </div>
+            </div>
+            <div>
+                <div>picto</div>
+                <div>
+                    <div>Nos réalisations</div>
+                    <div>+ de 200 projets</div>
+                </div>
+            </div>
+            <div>
+                <div>picto</div>
+                <div>
+                    <div>Une équipe de professionnels</div>
+                    <div>6 employés</div>
+                </div>
+            </div>
+            <div>
+                <div>picto</div>
+                <div>
+                    <div>Notre secteur d’intervention</div>
+                    <div>5 départements</div>
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 
 
@@ -54,7 +84,7 @@ get_header();
 
 
 
-<section>
+<section class="wrapper-partenaire">
     <h2 class="title text-center title-partenaire">Ils nous ont fait <span class="text-important">confiance</span></h2>
     <p class="paragraphe partenaire-paragraphe">Afin d’assurer un travail de qualité, notre société s’est allié des partenaires nationalement connus. Vous bénéficiez ainsi, en plus de la qualité de nos services et de nos prestations, de la qualité des produits de ces grandes marques.</p>
     <div class="flex-container">

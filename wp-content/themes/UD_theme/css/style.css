@@ -152,9 +152,13 @@ table {
   height: 814px;
   background-image: url("../images/visuels/visu_a-propos.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-description {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   height: 298px;
   background: #FFCB0D;
 }
@@ -172,10 +176,18 @@ table {
 
 .content-text {
   width: 51%;
-  /*border:1px solid;*/
+  height: 1112px;
+  border: 1px solid;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.project-title {
+  color: white;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 38px;
 }
 
 .block-p {
@@ -185,6 +197,18 @@ table {
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
   margin: 0 20px 20px 0;
+}
+
+.wrapper-partenaire {
+  margin-top: 200px;
+}
+
+.statistiques {
+  width: 100%;
+  height: 300px;
+  border: 1px solid;
+  position: absolute;
+  bottom: 0;
 }
 
 .text-important {
@@ -212,8 +236,10 @@ table {
 
 .small-title {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
   color: white;
-  font-size: 11px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .title {
@@ -298,4 +324,18 @@ table {
 
 .partenaire-8 {
   background-image: url("../images/partenaires/logo-point-p.png");
+}
+
+.separator-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  text-decoration: none;
+  border: 2px solid white;
+  background: none;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
