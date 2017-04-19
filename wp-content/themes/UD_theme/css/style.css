@@ -168,21 +168,47 @@ table {
 }
 
 .flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
-  -webkit-flex-flow: row wrap;
   justify-content: center;
 }
 
 .flex-item {
-  background: tomato;
-  padding: 5px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+  width: 130px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 12px 20px;
+}
+
+.partenaire-1 {
+  background-image: url("../images/partenaires/logo-lapeyre.png");
+}
+
+.partenaire-2 {
+  background-image: url("../images/partenaires/logo-legrand.png");
+}
+
+.partenaire-3 {
+  background-image: url("../images/partenaires/logo-leroymerlin.png");
+}
+
+.partenaire-4 {
+  background-image: url("../images/partenaires/logo-lapeyre.png");
+}
+
+.partenaire-5 {
+  background-image: url("../images/partenaires/logo-point-p.png");
+}
+
+.partenaire-6 {
+  background-image: url("../images/partenaires/logo-ariston.png");
+}
+
+.partenaire-7 {
+  background-image: url("../images/partenaires/logo-rexel.png");
+}
+
+.partenaire-8 {
+  background-image: url("../images/partenaires/logo-point-p.png");
 }
