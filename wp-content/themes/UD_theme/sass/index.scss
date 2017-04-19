@@ -3,8 +3,8 @@
 @import './fonts.scss';
 
 /* Import style pages */
-@import './a-propos.scss';
-@import './accueil.scss';
+@import 'pages/a-propos';
+@import 'pages/accueil';
 
 .text-important {
   color: $yellow;
