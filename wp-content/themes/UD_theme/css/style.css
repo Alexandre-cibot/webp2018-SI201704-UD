@@ -179,12 +179,12 @@ table {
 }
 
 .block-p {
-  width: 41%;
+  /*  width: 41%;
   float: right;
-  padding: 10px;
-  margin-bottom: 30px;
+  margin: 10px 10px 10px 10px ;
   /*border: 1px solid black;*/
-  display: inline-flex;
+  /*display: inline-flex;*/
+  margin: 0 20px 20px 0;
 }
 
 .text-important {
@@ -237,4 +237,65 @@ table {
   width: 40%;
   height: 984px;
   top: 0;
+}
+
+.partenaire-paragraphe {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+  width: 50vw;
+}
+
+.title-partenaire {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 130px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 12px 28px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.partenaire-1 {
+  background-image: url("../images/partenaires/logo-lapeyre.png");
+}
+
+.partenaire-2 {
+  background-image: url("../images/partenaires/logo-legrand.png");
+}
+
+.partenaire-3 {
+  background-image: url("../images/partenaires/logo-leroymerlin.png");
+}
+
+.partenaire-4 {
+  background-image: url("../images/partenaires/logo-lapeyre.png");
+}
+
+.partenaire-5 {
+  background-image: url("../images/partenaires/logo-point-p.png");
+}
+
+.partenaire-6 {
+  background-image: url("../images/partenaires/logo-ariston.png");
+}
+
+.partenaire-7 {
+  background-image: url("../images/partenaires/logo-rexel.png");
+}
+
+.partenaire-8 {
+  background-image: url("../images/partenaires/logo-point-p.png");
 }
