@@ -1,6 +1,24 @@
 @import './vendor/reset.scss';
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-html {
-  color : $mainColor;
+$open-sans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+.yellow {
+  color: $yellow;
+  font-family: $open-sans;
+}
+
+.black {
+  color: $black;
+}
+
+.dark-grey {
+  color: $dark-grey;
+}
+
+.light-grey {
+  color: $light-grey;
 }
