@@ -137,19 +137,32 @@ table {
   border-spacing: 0;
 }
 
-.yellow {
+.text-important {
   color: #FFCB0D;
-  font-family: "Open Sans", sans-serif;
 }
 
-.black {
-  color: #000000;
-}
-
-.dark-grey {
+.text-title {
   color: #3E3E3E;
 }
 
-.light-grey {
+.text-main {
+  color: #000000;
+}
+
+.text-secondary {
   color: #BFBFBF;
+}
+
+.paragraphe {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  color: #3E3E3E;
+  font-size: 37px;
+  line-height: 48px;
 }
