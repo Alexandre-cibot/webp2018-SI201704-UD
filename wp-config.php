@@ -1,6 +1,6 @@
 <?php
 // For security purpose we don't share './config_database.php' on github.
-include('./config_database.php');
+require(__DIR__.'/config_database.php');
 /**
  * The base configuration for WordPress
  *
