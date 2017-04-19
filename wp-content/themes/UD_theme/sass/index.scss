@@ -15,12 +15,15 @@
 }
 
 .text-secondary {
-  color: $light-grey;
+   color: $light-grey;
+ }
+
+.text-white {
+  color: #FFFFFF;
 }
 
 .paragraphe {
   font-family: $open-sans;
-  color: $black;
   font-size: 16px;
   line-height: 27px;
 }
@@ -34,8 +37,7 @@
 
 .title {
   font-family: $roboto;
-  color: $dark-grey;
-  font-size: 37px;
+  font-size: 32px;
   line-height: 48px;
 }
 
@@ -84,4 +86,58 @@
 }
 .partenaire-8 {
   background-image: url("../images/partenaires/logo-point-p.png");
+}
+
+.accueil-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.flex-container-accueil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container-accueil-left {
+  display: flex;
+}
+
+.flex-container-left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.flex-item-accueil {
+  width: 130px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 12px 28px;
+}
+
+.accueil-title-left {
+  position: relative;
+}
+
+.accueil-title {
+  text-align: justify;
+  width: 32vw;
+  min-width: 490px;
+}
+
+.left-line2-container {
+  width: 20vw;
+}
+
+.line2 {
+  margin-right: 25px;
+  height: 50px;
+  background-image: url("../images/line2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
