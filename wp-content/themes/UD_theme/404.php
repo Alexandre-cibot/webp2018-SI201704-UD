@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div class="err-404">
     <p>Oops, page introuvable.</p>
 </div><!-- .content-area -->
 

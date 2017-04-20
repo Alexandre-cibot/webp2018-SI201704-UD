@@ -1,7 +1,1 @@
-<?php
-get_header();
-?>
-
-<?php
-get_footer();
-?>
+<?php header('location:' . get_stylesheet_directory_uri() . '/accueil');

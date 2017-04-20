@@ -9,6 +9,7 @@
 @import 'pages/accueil';
 @import 'pages/devis';
 @import 'pages/mentions-legales.scss';
+@import 'pages/savoir-faire.scss';
 
 .text-important {
   color: $yellow;
@@ -33,7 +34,7 @@
 .paragraphe {
   font-family: $open-sans;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 32px;
 }
 
 .small-title {
@@ -75,6 +76,11 @@
   margin-bottom: 70px;
   text-align: center;
   width: 50vw;
+  @include only-phone {
+  width: 85%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .title-partenaire {
@@ -86,6 +92,19 @@
   justify-content: center;
 }
 
+.wrapper-partenaire .flex-container {
+  display: flex;
+  justify-content: center;
+  @include only-phone {
+    flex-wrap: wrap;
+  }
+}
+.wrapper-partenaire {
+    margin-top: 200px;
+  @include only-phone {
+  margin-top: 120px;
+}
+}
 .flex-item {
   width: 130px;
   height: 60px;
@@ -93,6 +112,9 @@
   background-position: center;
   background-size: contain;
   margin: 12px 28px;
+  @include only-phone {
+    width: 35%;
+  }
 }
 
 .text-center {
@@ -158,3 +180,9 @@
   transition:0.7s;
 }
 
+.err-404 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 50px;
+}
