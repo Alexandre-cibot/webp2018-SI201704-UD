@@ -15,6 +15,22 @@
     <title>Document</title>
 </head>
 <body>
+
+<!-- Toaster fix-->
+<div class="toaster toaster_yellow_down" id="toaster">
+   <div class="toaster_yellow">
+       <img class="phone" src=<?= get_stylesheet_directory_uri() . "/images/phone.svg" ?> alt="phone">
+       <span>Nous vous rappelons</span>
+       <img class="arrow" src=<?= get_stylesheet_directory_uri() . "/images/picto-arrow-up.svg" ?> alt="arrow">
+   </div>
+    <div class="toaster_content">
+        <p>Avez-vous besoin d’être rappelé ? Laissez-nous votre numéro et nous vous rappelons sous 24h.</p>
+        <input type="tel" placeholder="Ex : 0123456789" >
+        <button><img src=<?= get_stylesheet_directory_uri() . "/images/picto-arrow-right.svg" ?> alt="arrow"></button>
+        <div class="clear"></div>
+    </div>
+</div>
+
 <div class="menu">
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-cross.svg"?> alt="close">
     <nav>

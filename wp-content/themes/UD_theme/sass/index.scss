@@ -196,3 +196,39 @@ strong {
   font-size: 37px;
   line-height: 50px;
 }
+
+.hero-line {
+  position: absolute;
+  width: 15%;
+  left: 0;
+
+  @include only-phone {
+    display: none;
+  }
+}
+
+.hero-line.services {
+  width: 45%;
+  margin-top: 11px;
+}
+
+.hero-line.partners {
+  width: 20%;
+  margin-top: 12px;
+}
+
+.hero-line.footer-contact {
+  width: 10%;
+  margin-top: 18px;
+}
+
+.hero-line hr {
+  border-color: $line-grey;
+  border-top: none;
+}
+
+.hero-line img {
+  position: absolute;
+  right: -16px;
+  bottom: -2px;
+}
