@@ -67,7 +67,7 @@
        <p class="blockContact_block-titre">Besoin de plus d’informations ?</p><br>
        <p class="blockContact_block-txt">Envoyez nous un message pour plus d’informations ou pour un devis. Nos devis sont réalisés gratuitement par notre société. Un récapitulatif pièce par pièce et corps d’état par corps d’état vous est proposé en fin de devis.</p>
        <br>
-     <div class="blockContact_btn"><a href="">Nous contacter</a></div>
+     <div class="blockContact_btn"><a href=<?= get_site_url() . "/devis";?>>Nous contacter</a></div>
        <div class="clear"></div>
    </div>
      </div>
