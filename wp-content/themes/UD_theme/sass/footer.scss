@@ -36,13 +36,14 @@ footer {
   color: #ffffff;
   font-size: 11px;
   line-height: 21px;
+  font-weight: 600;
 }
 
 .bandeauReassurance_block p span{
   font-family: 'Roboto', sans-serif;
   align-items:center;
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 18px;
 }
 
@@ -134,6 +135,7 @@ footer {
   width: 180px;
   padding: 20px 10px;
   text-align: center;
+  transition:0.7s;
 }
 
 .blockContact_img {
