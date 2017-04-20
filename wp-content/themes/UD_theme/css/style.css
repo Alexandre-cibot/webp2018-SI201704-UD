@@ -952,7 +952,7 @@ header ul li.active {
   margin-bottom: 40px;
 }
 
-.devis .btn_form {
+.devis .btn_form.default {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
@@ -966,20 +966,26 @@ header ul li.active {
 }
 
 .devis .btn_form:hover {
-  background-color: #FFC619;
-  border: #FFC619 1px solid;
-}
-
-.devis .btn_form:hover {
-  background-color: #FFC619;
-  border: #FFC619 1px solid;
+  border: #FFC619 3px solid;
   -webkit-transition: background .5s;
   /* Safari */
   transition: background .5s;
 }
 
+.btn_form_active {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: #C8C8C8;
+  border: #FFC619 3px solid;
+  width: 190px;
+  height: 115px;
+  float: left;
+  margin: 16px;
+  cursor: pointer;
+}
+
 .devis .btn_form:hover .btn_form_span {
-  color: #fff;
   -webkit-transition: color .5s;
   /* Safari */
   transition: color .5s;
@@ -1209,6 +1215,42 @@ header ul li.active {
 
 .slider-img-2 {
   background-image: url("../images/slider-2.jpg");
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?d1gv6x");
+  src: url("fonts/icomoon.eot?d1gv6x#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?d1gv6x") format("truetype"), url("fonts/icomoon.woff?d1gv6x") format("woff"), url("fonts/icomoon.svg?d1gv6x#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
 }
 
 * {

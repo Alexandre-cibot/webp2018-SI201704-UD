@@ -12,26 +12,26 @@ $('.multiple-items').slick({
   slidesToScroll: 1
 });
 
+$( ".formulaire_02" ).hide();
+$( ".formulaire_03" ).hide();
+$( ".formulaire_04" ).hide();
 
-//$( ".formulaire_02" ).hide();
-//$( ".formulaire_03" ).hide();
-//$( ".formulaire_04" ).hide();
-//
-//$( "#ask-devis" ).click(function() {
-//  $( ".formulaire_01" ).hide();
-//  $( ".formulaire_02" ).show();
-//});
-//
-//$( ".select-type" ).click(function() {
-//  $( ".formulaire_02" ).hide();
-//  $( ".formulaire_03" ).show();
-//});
-//
-//$( "#finish-desc-project" ).click(function() {
-//  $( ".formulaire_03" ).hide();
-//  $( ".formulaire_04" ).show();
-//});
+$( "#ask-devis" ).click(function() {
+  $( ".formulaire_01" ).hide();
+  $( ".formulaire_02" ).show();
+});
+
+$( ".select-type" ).click(function() {
+  $( ".formulaire_02" ).hide();
+  $( ".formulaire_03" ).show();
+});
+
+$( "#finish-desc-project" ).click(function() {
+  $( ".formulaire_03" ).hide();
+  $( ".formulaire_04" ).show();
+});
 
 $( ".btn_form" ).click(function() {
+  $(this).toggleClass("default");
   $(this).toggleClass("btn_form_active");
 });
