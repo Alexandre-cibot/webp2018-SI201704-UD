@@ -1,3 +1,23 @@
+.devis-img {
+  height: 320px;
+  background-image: url("../images/visuels/contact_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.block-deco-grey.block-deco-grey-contact{
+	height: 480px;	
+}
+
+.project-a-propos-contact{
+	height: inherit;
+	margin-top: 0;
+}
+
+.devis{
+	margin-top: 260px;
+}
+
 .devis .steps{
 	margin: 100px auto 60px auto;
 	display: block;
@@ -88,7 +108,7 @@
     transition: background .5s;
 }
 
-.devis .btn_form:hover .btn_form_span{
+.devis .btn_form:hover .devis .btn_form_span{
     color: #fff;
     -webkit-transition: color .5s; /* Safari */
     transition: color .5s;
