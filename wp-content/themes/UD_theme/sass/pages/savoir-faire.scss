@@ -98,6 +98,9 @@ section.content {
   position: relative;
     width: 100%;
     clear: both;
+  @include only-phone {
+    padding-top: 30px;
+  }
 }
 
 .slick-arrow {
