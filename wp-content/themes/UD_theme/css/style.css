@@ -585,7 +585,8 @@ header ul li.active {
 
 @media screen and (max-width: 850px) {
   header {
-    background: #f0f0f0;
+    background: none;
+    position: absolute;
   }
 
   header img[alt*="white"] {
@@ -634,11 +635,24 @@ header ul li.active {
   margin-top: 35px;
 }
 
+@media (max-width: 767px) {
+  .project-a-propos {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
 .project-img {
   height: 810px;
   background-image: url("../images/visuels/visu_a-propos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .project-img {
+    height: 400px;
+  }
 }
 
 .project-description {
@@ -650,10 +664,34 @@ header ul li.active {
 }
 
 .a-propos-title {
-  margin-top: 80px;
-  margin-left: -141px;
-  margin-bottom: 60px;
-  width: 100%;
+  margin-left: 0px;
+  position: absolute;
+  top: -280px;
+  margin-top: 0px;
+  margin: 0 30px;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .a-propos-title {
+    margin-top: 80px;
+    top: 0px;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 82px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .a-propos-title {
+    position: relative;
+    margin-top: 80px;
+    margin-left: -141px;
+    margin-bottom: 60px;
+    width: 100%;
+    top: 0px;
+  }
 }
 
 .content-a-propos {
@@ -666,6 +704,13 @@ header ul li.active {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media (max-width: 767px) {
+  .content-text {
+    width: 100%;
+    position: relative;
+  }
 }
 
 .project-title {
@@ -684,6 +729,12 @@ header ul li.active {
   margin: 0 20px 20px 0;
 }
 
+@media (max-width: 767px) {
+  .block-p {
+    margin: 70px 30px 0px 30pX;
+  }
+}
+
 .wrapper-partenaire {
   margin-top: 200px;
 }
@@ -697,8 +748,14 @@ header ul li.active {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .statistiques {
+    height: 100%;
+  }
+}
+
 .content-a-propos .content-text .flex-container {
-  margin-bottom: 35px;
+  margin-bottom: 85px;
 }
 
 .stat-block {
@@ -706,6 +763,28 @@ header ul li.active {
   width: 100%;
   display: flex;
   margin: 70px;
+}
+
+@media (max-width: 767px) {
+  .stat-block {
+    margin-bottom: 5px;
+  }
+}
+
+.statistiques.flex-container {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .statistiques.flex-container {
+    flex-wrap: wrap;
+    justify-content: inherit;
+  }
+}
+
+.stat-column {
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .pictoa {
@@ -774,11 +853,11 @@ header ul li.active {
 }
 
 .paragraphe-column {
-  -webkit-column-count: 2;
+  -webkit-column-count: 1;
   /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
+  -moz-column-count: 1;
   /* Firefox */
-  column-count: 2;
+  column-count: 1;
   -webkit-column-gap: 40px;
   /* Chrome, Safari, Opera */
   -moz-column-gap: 40px;
@@ -788,6 +867,64 @@ header ul li.active {
   font-size: 16px;
   line-height: 32px;
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .paragraphe-column {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .paragraphe-column {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+}
+
+#displayn {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  #displayn {
+    display: none;
+  }
+}
+
+#displayo {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #displayo {
+    display: flex;
+  }
 }
 
 .accueil-background {
@@ -1579,12 +1716,24 @@ strong {
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .centered-block {
+    margin: 0;
+  }
+}
+
 .block-deco-grey {
   background: #F0F0F0;
   position: absolute;
   width: 40%;
   height: 984px;
   top: 0;
+}
+
+@media (max-width: 767px) {
+  .block-deco-grey {
+    display: none;
+  }
 }
 
 .partenaire-paragraphe {

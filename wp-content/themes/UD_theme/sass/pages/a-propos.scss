@@ -2,12 +2,19 @@
   position: relative;
   width: 45%;
   margin-top:35px;
+  @include only-phone {
+    width: 100%;
+    margin-top:0px;
+  }
 }
 .project-img {
   height: 810px;
   background-image: url("../images/visuels/visu_a-propos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include only-phone {
+    height: 400px;
+  }
 }
 
 .project-description {
@@ -19,10 +26,29 @@
 }
 
 .a-propos-title {
+   margin-left: 0px;
+    position: absolute;
+    top: -280px;
+    margin-top:0px;
+    margin: 0 30px;
+    width: 80%;
+  @include tablet {
   margin-top:80px;
+    top: 0px;
+    position: relative;
+  margin-left: 0px;
+  margin-bottom:82px;
+  width: 100%;
+    
+  @include desktop {
+    position: relative;
+    margin-top:80px;
   margin-left: -141px;
   margin-bottom:60px;
   width: 100%;
+    top: 0px;
+  }
+  }
 }
 
 .content-a-propos {
@@ -34,6 +60,10 @@
   position: absolute;
   right:0;
   top:0;
+  @include only-phone {
+    width: 100%;
+    position: relative;
+  }
 }
 
 .project-title {
@@ -50,6 +80,9 @@
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
   margin: 0 20px 20px 0;
+  @include only-phone {
+    margin: 70px 30px 0px 30pX;
+  }
 }
 
 .wrapper-partenaire {
@@ -62,11 +95,14 @@
   height:300px;
   border-top: 1px solid #F8F8F8;
   bottom: 0;
-  align-items: center
+  align-items: center;
+    @include only-phone {
+      height: 100%;
+      }
 }
 
-.content-a-propos  .content-text .flex-container {
-  margin-bottom: 35px;
+.content-a-propos .content-text .flex-container {
+  margin-bottom: 85px;
 }
 
 .stat-block {
@@ -74,6 +110,21 @@
   width: 100%;
   display: flex;
   margin: 70px;
+  @include only-phone {
+    margin-bottom: 5px;
+  }
+}
+.statistiques.flex-container {
+  display: flex;
+  @include only-phone {
+    flex-wrap: wrap;
+    justify-content: inherit;
+  }
+}
+
+.stat-column {
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .pictoa {
@@ -141,6 +192,28 @@
 }
 
 .paragraphe-column {
+ -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+      font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  @include tablet {
+     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+      font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  @include desktop {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -151,4 +224,22 @@
     font-size: 16px;
     line-height: 32px;
     font-weight: 300;
+    }
+  }
 }
+
+
+#displayn {
+  display: flex;
+   @include only-phone {
+ display: none;    
+}
+}
+
+#displayo {
+  display: none;
+  @include only-phone {
+  display: flex;    
+}
+}
+
