@@ -607,6 +607,28 @@ footer {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  #title_accueil {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .accueil-title {
+    min-width: auto;
+    width: auto;
+  }
+
+  .flex-container-accueil-left {
+    display: inherit;
+    width: 90%;
+  }
+
+  .left-line2-container {
+    width: auto !important;
+  }
+}
+
 /**** ML ****/
 
 .ml {
