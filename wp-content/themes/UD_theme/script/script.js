@@ -45,6 +45,16 @@ $( ".toaster_yellow" ).click(function() {
   $('.arrow').toggleClass('arrow_rotate');
 });
 
+$( "#contact_us" ).click(function() {
+  $('#ask_devis').removeClass('btn_form_active');
+    $('#ask_devis').addClass("default");
+});
+
+$( "#ask_devis" ).click(function() {
+  $("#contact_us").removeClass("btn_form_active");
+    $('#contact_us').addClass("default");
+});
+
 $( "#form_01" ).click(function() {
   $( ".formulaire_01" ).hide();
   $( ".formulaire_02" ).show();

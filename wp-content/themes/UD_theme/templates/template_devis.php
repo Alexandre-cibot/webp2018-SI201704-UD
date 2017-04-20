@@ -78,11 +78,13 @@ get_header();
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
 					<div class="btn_form default" id="contact_us">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/contact.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-contact.svg";?> alt="icon">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-contact-white.svg";?> alt="iconactive">
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
 					<div class="btn_form default" id="ask_devis">
-                        <img style="fill: white;" src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
+                        <img src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?> alt="icon">
+                        <img src=<?=get_stylesheet_directory_uri() . "/images/picto-devis-white.svg";?> alt="iconactive">
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
 				</div>
@@ -92,27 +94,33 @@ get_header();
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
 					<div class="btn_form default select-type" id="fondation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-fondation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Fondations</span>
 					</div>
 					<div class="btn_form default select-type" id="sol">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-sol-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Études de sols</span>
 					</div>
 					<div class="btn_form default select-type" id="charpente">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-charpente-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Charpente</span>
 					</div>
 					<div class="btn_form default select-type" id="terrasse">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-terrasse-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Terrasse</span>
 					</div>
 					<div class="btn_form default select-type" id="excavation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-excavation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Excavation</span>
 					</div>
 					<div class="btn_form default select-type" id="isolation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-isolation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Isolation</span>
 					</div>
 				</div>

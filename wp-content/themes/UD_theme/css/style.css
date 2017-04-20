@@ -140,9 +140,9 @@ table {
 
 footer {
   background-color: #282828;
-  height: 550px;
+  height: 490px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 .bandeauReassurance {
@@ -395,12 +395,13 @@ footer {
 
 header {
   font-family: 'Roboto', sans-serif;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 95px;
   padding: 0 60px;
   background: transparent;
   z-index: 1;
+  top: 0;
 }
 
 header img[alt*="logo U&D"],
@@ -430,13 +431,21 @@ header ul li {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   margin: 30px 60px 30px 0;
 }
 
 header ul li.active {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
+}
+
+header ul li:hover {
+  border-bottom: 2px solid black;
+}
+
+.bt-devis:hover {
+  border-bottom: none;
 }
 
 .bt-devis {
@@ -776,7 +785,7 @@ header ul li.active {
 }
 
 .content-a-propos .content-text .flex-container {
-  margin-bottom: 85px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 768px) {
@@ -787,7 +796,7 @@ header ul li.active {
 
 @media (min-width: 768px) and (min-width: 1024px) {
   .content-a-propos .content-text .flex-container {
-    margin-bottom: 85px;
+    margin-bottom: 35px;
   }
 }
 
@@ -983,6 +992,7 @@ header ul li.active {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 600px;
 }
 
 .flex-container-accueil-left {
@@ -1021,7 +1031,6 @@ header ul li.active {
 }
 
 .accueil-title {
-  text-align: justify;
   max-width: 490px;
   width: 100%;
   margin-bottom: 40px;
@@ -1061,7 +1070,7 @@ header ul li.active {
 }
 
 .service-item-right-ctn {
-  width: 50%;
+  width: 40%;
 }
 
 @media (max-width: 767px) {
@@ -1073,7 +1082,7 @@ header ul li.active {
 }
 
 .service-paragraphe {
-  width: 70%;
+  width: 90%;
 }
 
 @media (max-width: 767px) {
@@ -1094,6 +1103,7 @@ header ul li.active {
 
 .service-item-right-ctn-left {
   width: 50%;
+  margin-left: 10%;
 }
 
 @media (max-width: 767px) {
@@ -1460,11 +1470,14 @@ header ul li.active {
 }
 
 .devis .btn_form.default {
+  color: #C8C8C8;
+  border: #C8C8C8 1px solid;
+}
+
+.devis .btn_form {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #C8C8C8 1px solid;
   width: 190px;
   height: 115px;
   float: left;
@@ -1473,18 +1486,16 @@ header ul li.active {
 }
 
 .devis .btn_form:hover {
-  border: #FFC619 3px solid;
-  -webkit-transition: background .5s;
-  /* Safari */
-  transition: background .5s;
+  border: #FFC619 1px solid;
 }
 
 .btn_form_active {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #FFC619 3px solid;
+  color: #fff;
+  border: 1px solid #FFC619;
+  background: #FFC619;
   width: 190px;
   height: 115px;
   float: left;
@@ -1492,15 +1503,18 @@ header ul li.active {
   cursor: pointer;
 }
 
-.devis .btn_form:hover .btn_form_span {
-  -webkit-transition: color .5s;
-  /* Safari */
-  transition: color .5s;
+.devis .btn_form img {
+  margin: 32px auto 15px;
 }
 
-.devis .btn_form img {
-  margin: 32px auto 15px auto;
+.devis .btn_form.default img[alt="icon"],
+.btn_form_active img[alt="iconactive"] {
   display: block;
+}
+
+.devis .btn_form.default img[alt="iconactive"],
+.btn_form_active img[alt="icon"] {
+  display: none;
 }
 
 .devis .btn_form span {
@@ -1524,6 +1538,10 @@ header ul li.active {
   background-color: #ffffff;
   display: block;
   margin: 50px auto 0 auto;
+}
+
+.devis .formulaire_content button {
+  cursor: pointer;
 }
 
 .devis .formulaire_02 .btns {
@@ -1645,12 +1663,13 @@ header ul li.active {
   width: 100%;
   max-width: 1440px;
   display: flex;
+  margin-top: 200px;
 }
 
 .ml h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 28px;
   line-height: 50px;
   color: #3E3E3E;
   margin-bottom: 80px;
@@ -1658,10 +1677,11 @@ header ul li.active {
 
 .ml h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 50px;
   color: #FFC619;
+  text-transform: uppercase;
 }
 
 .ml p {
@@ -1874,6 +1894,7 @@ p.next.slick-arrow.slick-disabled {
 
 strong {
   color: #FFC619;
+  font-weight: 600;
 }
 
 .text-title {
@@ -1910,7 +1931,8 @@ strong {
 .title {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 46px;
+  font-weight: 300;
 }
 
 @media (max-width: 767px) {
@@ -1924,7 +1946,7 @@ strong {
 /* Type de blocks */
 
 .centered-block {
-  margin: 0 60px;
+  margin: 110px 60px 0 60px;
   /*border:1px solid;*/
   height: auto;
 }
@@ -1985,7 +2007,7 @@ strong {
 }
 
 .wrapper-partenaire {
-  margin: 20vh 0 25vh 0;
+  margin: 150px 0 50px 0;
 }
 
 @media (max-width: 767px) {

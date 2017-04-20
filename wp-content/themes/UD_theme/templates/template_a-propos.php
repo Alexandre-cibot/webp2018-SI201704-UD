@@ -82,7 +82,7 @@ get_header();
             <span class="small-title separator-bottom-30">Confiez-nous votre projet </span>
             <p class="project-title separator-bottom-30">Vous avez un projet de construction, de
                 rénovation ou d’aménagement ?</p>
-            <button class="btn-cta">Nous contacter</button>
+            <a href=<?= get_site_url() . "/devis";?>><button class="btn-cta">Nous contacter</button></a>
         </div>
     </div>
 
