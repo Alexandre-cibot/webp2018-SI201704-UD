@@ -6,9 +6,6 @@ $('img[alt="close"]').on("click", function(){
     $('.menu').toggleClass('active');
 });
 
-alert("c'est la polisse");
-
-
 $('.multiple-items').slick({
   infinite: false,
   slidesToShow: 3,
