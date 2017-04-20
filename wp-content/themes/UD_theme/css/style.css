@@ -1290,12 +1290,15 @@ header ul li:hover {
 }
 
 .res:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .res1 {
   background-image: url("../images/accueil/res1.jpg");
   height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -1374,10 +1377,26 @@ header ul li:hover {
 
 .resTxt {
   visibility: hidden;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   display: flex;
   z-index: 2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FFC619;
+  padding: 15px 35px;
+}
+
+.resTxt-title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  line-height: 38px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .res:hover .resTxt {
@@ -2136,13 +2155,13 @@ strong {
 
 .hero-line.a-propos-txt {
   width: 112%;
-  left: -100vh;
+  left: -54vw;
   margin-top: 7px;
 }
 
 .hero-line.devis {
   width: 119%;
-  left: -150vh;
+  left: -58vw;
   margin-top: 7px;
 }
 
