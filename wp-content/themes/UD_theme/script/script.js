@@ -12,6 +12,8 @@ $('.multiple-items').slick({
   slidesToScroll: 1
 });
 
+var polygonYellow = $("#polygon-yellow").attr('src');
+
 var formData = {
   contact_us: false,
   ask_devis: false,
@@ -54,35 +56,49 @@ $( "#ask_devis" ).click(function() {
 });
 
 $( "#form_01" ).click(function() {
-  $( ".formulaire_01" ).hide();
-  $( ".formulaire_02" ).show();
   formData.contact_us = !$('#contact_us').hasClass('default');
   formData.ask_devis = !$('#ask_devis').hasClass('default');
+  if(formData.contact_us || formData.ask_devis){
+    $( ".formulaire_01" ).hide();
+    $( ".formulaire_02" ).show();
+    $(".step_02").addClass("step_active");
+    $('.polygons-2').attr('src',polygonYellow);
+  }
 });
 
 $( "#form_02" ).click(function() {
-  $( ".formulaire_02" ).hide();
-  $( ".formulaire_03" ).show();
   formData.fondation = !$('#fondation').hasClass('default');
   formData.sol = !$('#sol').hasClass('default');
   formData.charpente = !$('#charpente').hasClass('default');
   formData.terrasse = !$('#terrasse').hasClass('default');
   formData.excavation = !$('#excavation').hasClass('default');
   formData.isolation = !$('#isolation').hasClass('default');
+  if(formData.fondation || formData.sol || formData.charpente || formData.terrasse || formData.excavation || formData.isolation){
+    $( ".formulaire_02" ).hide();
+    $( ".formulaire_03" ).show();
+    $(".step_03").addClass("step_active");
+    $('.polygons-3').attr('src',polygonYellow);
+  }
 });
 
 $( "#form_03" ).click(function() {
   $( ".formulaire_03" ).hide();
   $( ".formulaire_04" ).show();
   formData.description = $('#description').val();
+  $(".step_04").addClass("step_active");
+  $('.polygons-4').attr('src',polygonYellow);
 });
 
 $( "#form_04" ).click(function() {
-  $( ".formulaire_04" ).hide();
   formData.name = $('#name').val();
   formData.address = $('#address').val();
   formData.mail = $('#mail').val();
   formData.phone = $('#phone').val();
+  if(formData.name || formData.address || formData.mail || formData.phone){
+    $( ".formulaire_04" ).hide();
+    $(".step_04").addClass("step_active");
+    $('.polygons-4').attr('src', polygonYellow);
+  }
 
   $.ajax({
     url : 'http://localhost:8888/webp2018-SI201704-UD/formulaire',

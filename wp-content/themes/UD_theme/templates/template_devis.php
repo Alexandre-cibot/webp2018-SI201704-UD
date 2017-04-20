@@ -44,28 +44,28 @@ get_header();
 			<div class="step step_active step_01">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
+					<img class="polygons polygons-1" id="polygon-yellow" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
 				</div>
 				<span>1 - Votre demande</span>
 			</div>
 			<div class="step step_02">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-2" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>2 - La nature de vos travaux</span>
 			</div>
 			<div class="step step_03">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-3" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>3 - Votre projet</span>
 			</div>
 			<div class="step step_04">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-4" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 					<img class="polygon_last" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>4 - Vos coordonnées</span>
@@ -134,10 +134,10 @@ get_header();
 			<div class="formulaire_content formulaire_04">
 				<h5 class="titles">4 - Completez vos coordonnées</h5>
 				<div class="inputs">
-					<input id="name" placeholder="Nom*"></input>
-					<input id="address" placeholder="Adresse*"></input>
-					<input id="mail" placeholder="Mail*"></input>
-					<input id="phone" placeholder="Téléphone*"></input>
+					<input id="name" placeholder="Nom*">
+					<input id="address" placeholder="Adresse*">
+					<input id="mail" placeholder="Mail*">
+					<input id="phone" placeholder="Téléphone*">
 				</div>
 				<button id="form_04">Envoyer</button>
 			</div>
