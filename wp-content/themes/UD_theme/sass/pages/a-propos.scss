@@ -87,8 +87,15 @@
 }
 
 .wrapper-partenaire {
-   padding: 150px 0px;
+  padding: 150px 0px;
   clear: both;
+  @include only-phone {
+      padding: 0px 0px;
+      }
+}
+
+.partn .wrapper-partenaire {
+  padding: 0px 0px;
 }
 
 .statistiques {

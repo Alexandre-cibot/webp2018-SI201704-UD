@@ -771,6 +771,16 @@ header ul li:hover {
   clear: both;
 }
 
+@media (max-width: 767px) {
+  .wrapper-partenaire {
+    padding: 0px 0px;
+  }
+}
+
+.partn .wrapper-partenaire {
+  padding: 0px 0px;
+}
+
 .statistiques {
   display: flex;
   width: 100%;
@@ -1107,7 +1117,6 @@ header ul li:hover {
 
 .service-item-right-ctn-left {
   width: 50%;
-  margin-left: 10%;
 }
 
 @media (max-width: 767px) {
@@ -1424,13 +1433,14 @@ header ul li:hover {
 }
 
 .devis {
-  margin-top: 260px;
+  margin-top: 130px;
 }
 
 .devis .steps {
   margin: 100px auto 60px auto;
   display: block;
   width: 740px;
+  clear: both;
 }
 
 .devis .step {
@@ -1851,6 +1861,12 @@ section.content {
   position: relative;
   width: 100%;
   clear: both;
+}
+
+@media (max-width: 767px) {
+  .container-blocks {
+    padding-top: 30px;
+  }
 }
 
 .slick-arrow {
