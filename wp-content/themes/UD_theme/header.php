@@ -46,9 +46,11 @@
 </div>
 
 <header>
+    <a href=<?= get_site_url() . "/accueil";?>>
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-burger.svg" ?> alt="burger">
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_white.svg" ?> alt="logo U&D white">
+    </a>
     <nav>
         <ul>
             <a href=<?= get_site_url() . "/devis";?>><li class="bt-devis"><img src=<?= get_stylesheet_directory_uri() . "/images/picto-devis.svg" ?> alt=""> Devis</li></a>

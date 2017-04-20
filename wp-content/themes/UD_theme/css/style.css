@@ -671,7 +671,7 @@ header ul li.active {
 
 @media (max-width: 767px) {
   .project-img {
-    height: 400px;
+    height: 650px;
   }
 }
 
@@ -686,10 +686,10 @@ header ul li.active {
 .a-propos-title {
   margin-left: 0px;
   position: absolute;
-  top: -280px;
+  top: -400px;
   margin-top: 0px;
   margin: 0 30px;
-  width: 80%;
+  width: 350px;
 }
 
 @media (min-width: 768px) {
