@@ -530,6 +530,7 @@ footer {
 .service-container {
   display: flex;
   margin: 15vh 0;
+  width: 1200px;
   align-items: flex-end;
 }
 
@@ -556,7 +557,9 @@ footer {
 
 @media (max-width: 767px) {
   .service-item-right-ctn {
-    width: 100%;
+    display: inherit;
+    width: 70%;
+    margin-left: 30px;
   }
 }
 
@@ -594,6 +597,12 @@ footer {
   width: 50%;
 }
 
+@media (max-width: 767px) {
+  .service-item-right-ctn-right {
+    width: 100%;
+  }
+}
+
 .service-item-logo {
   width: 40px;
   height: 40px;
@@ -606,6 +615,13 @@ footer {
   display: flex;
   margin-top: 20px;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .service-item {
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 .service-item-left-margin {
@@ -670,6 +686,13 @@ footer {
   .left-line2-container {
     width: auto !important;
   }
+}
+
+.services {
+  position: relative;
+  width: 1200px;
+  left: 50%;
+  margin-left: -600px;
 }
 
 /**** ML ****/
@@ -764,7 +787,7 @@ footer {
 .paragraphe {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 32px;
 }
 
 .small-title {

@@ -19,7 +19,7 @@ get_header();
     </div>
 </div>
 
-<section>
+<section class="services">
     <div class="service-container">
         <div class="service-item-left">
             <div class="service-item-left-margin">
@@ -61,6 +61,8 @@ get_header();
         </div>
     </div>
 </section>
+
+<?php include_once('partenaires.php');?>
 
 <?php
 get_footer();
