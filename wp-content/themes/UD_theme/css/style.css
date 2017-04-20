@@ -652,7 +652,7 @@ header ul li.active {
 .a-propos-title {
   margin-top: 80px;
   margin-left: -141px;
-  margin-bottom: 82px;
+  margin-bottom: 60px;
   width: 100%;
 }
 
@@ -1754,6 +1754,12 @@ strong {
 .hero-line.a-propos-txt {
   width: 112%;
   left: -100vh;
+  margin-top: 7px;
+}
+
+.hero-line.devis {
+  width: 119%;
+  left: -150vh;
   margin-top: 7px;
 }
 
