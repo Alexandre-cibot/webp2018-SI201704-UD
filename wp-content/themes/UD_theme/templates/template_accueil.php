@@ -38,7 +38,7 @@ get_header();
                 </div>
                 <div class="service-item">
                     <div class="service-item-logo serv-item-logo-3"></div>
-                    <p class=" paragraphe service-item-paragraphe">Charpente et toiture</p>
+                    <p class=" paragraphe service-item-paragraphe">Toiture</p>
                 </div>
             </div>
             <div class="service-item-right-ctn-right">

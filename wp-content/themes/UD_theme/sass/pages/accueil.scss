@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 600px;
 }
 
 .flex-container-accueil-left {
@@ -43,7 +44,6 @@
 }
 
 .accueil-title {
-  text-align: justify;
   max-width: 490px;
   width: 100%;
   margin-bottom: 40px;
@@ -75,7 +75,7 @@
 }
 
 .service-item-right-ctn {
-  width:50%;
+  width:40%;
   @include only-phone {
     display: inherit;
     width: 70%;
@@ -84,7 +84,7 @@
 }
 
 .service-paragraphe {
-  width: 70%;
+  width: 90%;
   @include only-phone {
     width: 100%;
   }
@@ -99,6 +99,7 @@
 
 .service-item-right-ctn-left {
   width: 50%;
+  margin-left: 10%;
   @include only-phone {
     width: 100%;
   }
