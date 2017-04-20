@@ -6,16 +6,21 @@
 if (trim($_POST['phone']) === "" OR !is_numeric(trim($_POST['phone']))) {
     header('location:' . get_site_url());
 }
+else {
+    sendPhoneByEmail();
+}
+function sendPhoneByEmail() {
+    $phone_number = $_POST['phone'];
 
-$phone_number = $_POST['phone'];
+    // the message
+    $msg = "A potential client would like to be call for futher information. \nPhone : " . $phone_number . "\n Send by UDwebsite.com";
 
-// the message
-$msg = "A potential client would like to be call for futher information. \nPhone : " . $phone_number . "\n Send by UDwebsite.com";
+    // use wordwrap() if lines are longer than 70 characters
+    $msg = wordwrap($msg,70);
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+    // send email
+    mail("julien@citytaps.org","Recall potential client",$msg);
 
-// send email
-mail("julien@citytaps.org","Recall potential client",$msg);
+    header('location: ' . get_site_url());
 
-header('location: ' . get_site_url());
+}
