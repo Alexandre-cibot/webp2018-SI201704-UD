@@ -1,11 +1,14 @@
 @import './vendor/reset.scss';
 @import './variables.scss';
 @import './fonts.scss';
+@import './footer.scss';
+@import './mixin.scss';
 
 /* Import style pages */
 @import 'pages/a-propos';
 @import 'pages/accueil';
 @import 'pages/devis';
+@import 'pages/mentions-legales.scss';
 
 .text-important {
   color: $yellow;
@@ -45,6 +48,11 @@
   font-family: $roboto;
   font-size: 32px;
   line-height: 40px;
+  @include only-phone {
+    font-family: $roboto;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 /* Type de blocks */

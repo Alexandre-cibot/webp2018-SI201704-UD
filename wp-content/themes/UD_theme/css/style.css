@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@charset "UTF-8";
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +137,235 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+footer {
+  background-color: #282828;
+  height: 425px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.bandeauReassurance {
+  width: 90%;
+  max-width: 1440px;
+  background-color: #FFC619;
+  height: 100px;
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.bandeauReassurance_block {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 100px;
+  border-right: 1px solid #fff;
+}
+
+.last {
+  border-right: 0px solid #fff;
+}
+
+.bandeauReassurance_block p {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 21px;
+}
+
+.bandeauReassurance_block p span {
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/*.picto {
+  margin-left: 30px;
+} 
+
+.sentence {
+  margin-right: 30px;
+} */
+
+.blockContact_block p {
+  color: #ffffff;
+}
+
+.blockContact_block-titre {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 50px;
+}
+
+.blockContact_block-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.blockContact {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+  max-width: 1440px;
+  height: 260px;
+}
+
+.blockContact_block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.blockContact_block:first-child {
+  width: 40%;
+  margin-left: 100px;
+}
+
+.blockContact_block:last-child {
+  width: 50%;
+  margin-left: 0px;
+}
+
+.blockContact_btn {
+  font-family: 'Roboto', sans-serif;
+  color: #FFC619;
+  font-size: 16px;
+  border: 2px solid #FFC619;
+  width: 180px;
+  padding: 20px 10px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  margin-top: 15px;
+}
+
+.blockContact_btn a {
+  font-family: 'Roboto', sans-serif;
+  color: #FFC619;
+  font-size: 16px;
+  width: 180px;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.blockContact_btn:hover {
+  font-family: 'Roboto', sans-serif;
+  color: #FFC619;
+  background-color: #ffffff;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  width: 180px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.blockContact_img {
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+.blockk {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .bandeauReassurance {
+    width: 95%;
+  }
+
+  .bandeauReassurance_block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blockk {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: auto;
+  }
+
+  .bandeauReassurance {
+    width: 100%;
+    flex-direction: column;
+    height: 200px;
+    top: -25px;
+  }
+
+  .blockk {
+    display: auto;
+    align-items: auto;
+    width: 100%;
+  }
+
+  .bandeauReassurance_block {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .blockContact {
+    height: auto;
+    width: 100%;
+    flex: initial;
+  }
+
+  .blockContact_block,
+  .blockContact_block-titre {
+    margin-left: 0px !important;
+  }
+
+  .blockContact_block,
+  .blockContact {
+    display: inherit;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .blockContact_img {
+    display: none;
+  }
+
+  .blockContact_block:last-child {
+    width: 100%;
+  }
+
+  .blockContact_block-titre {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .blockContact_block:last-child {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .bandeauReassurance_block:last-child {
+    border: 0px;
+  }
 }
 
 /* Import style pages */
@@ -302,24 +533,61 @@ table {
   align-items: flex-end;
 }
 
+@media (max-width: 767px) {
+  .service-container {
+    display: inherit;
+    margin: 40px 0;
+  }
+}
+
 .service-item-left {
   width: 50%;
 }
 
+@media (max-width: 767px) {
+  .service-item-left {
+    width: 100%;
+  }
+}
+
 .service-item-right-ctn {
   width: 50%;
+}
+
+@media (max-width: 767px) {
+  .service-item-right-ctn {
+    width: 100%;
+  }
 }
 
 .service-paragraphe {
   width: 70%;
 }
 
+@media (max-width: 767px) {
+  .service-paragraphe {
+    width: 100%;
+  }
+}
+
 .service-item-right-ctn {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .service-item-right-ctn {
+    display: inherit;
+  }
+}
+
 .service-item-right-ctn-left {
   width: 50%;
+}
+
+@media (max-width: 767px) {
+  .service-item-right-ctn-left {
+    width: 100%;
+  }
 }
 
 .service-item-right-ctn-right {
@@ -342,6 +610,12 @@ table {
 
 .service-item-left-margin {
   margin-left: 15%;
+}
+
+@media (max-width: 767px) {
+  .service-item-left-margin {
+    margin: 0 30px;
+  }
 }
 
 .serv-item-logo-1 {
@@ -374,6 +648,28 @@ table {
 
 .service-title {
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  #title_accueil {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .accueil-title {
+    min-width: auto;
+    width: auto;
+  }
+
+  .flex-container-accueil-left {
+    display: inherit;
+    width: 90%;
+  }
+
+  .left-line2-container {
+    width: auto !important;
+  }
 }
 
 .devis .steps {
@@ -615,6 +911,75 @@ table {
   }
 }
 
+/**** ML ****/
+
+.ml {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+}
+
+.ml h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 50px;
+  color: #3E3E3E;
+  margin-bottom: 110px;
+}
+
+.ml h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFC619;
+}
+
+.ml p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.ml_blockBG {
+  background-color: #F0F0F0;
+  width: 35%;
+}
+
+.ml_blockTXT {
+  background-color: #ffffff;
+  width: 60%;
+  height: auto;
+  margin-left: 30px;
+}
+
+.ml_blockBG img {
+  margin-top: 172px;
+  position: relative;
+  left: -30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .ml_blockBG {
+    background-color: #F0F0F0;
+    width: 10%;
+  }
+
+  .ml_blockTXT {
+    background-color: #ffffff;
+    width: 85%;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .ml_blockBG img {
+    display: none;
+  }
+}
+
 .text-important {
   color: #FFCB0D;
 }
@@ -653,6 +1018,14 @@ table {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   line-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 /* Type de blocks */
