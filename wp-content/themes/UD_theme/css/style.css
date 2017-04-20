@@ -695,6 +695,15 @@ footer {
   margin-left: -600px;
 }
 
+@media (min-width: 768px) {
+  .services {
+    position: relative;
+    width: 760px;
+    left: 50%;
+    margin-left: -380px;
+  }
+}
+
 .devis .steps {
   margin: 100px auto 60px auto;
   display: block;
