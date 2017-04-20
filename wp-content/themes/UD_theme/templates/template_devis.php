@@ -4,16 +4,17 @@
 */
 get_header();
 ?>
-
+	<!-- decoration block on the background -->
+	<div class="block-deco-grey block-deco-grey-contact"></div>
 	<!-- Content centered with 60px margin left and right -->
 	<div class="centered-block content-a-propos">
-	    <div class="project-a-propos">
-	        <div class="project-img"></div>
+	    <div class="project-a-propos project-a-propos-contact">
+	        <div class="devis-img"></div>
 	    </div>
 
 	    <div class="content-text">
 	        <div class="title a-propos-title">
-	            <p>Vous avez une question ? Vous souhaitez nous soumettre votre projet ?<span class="text-important">Contactez-nous !</span></p>
+	            <p>Vous avez une question ? Vous souhaitez nous soumettre votre projet ?<br><span class="text-important">Contactez-nous !</span></p>
 	        </div>
 	        <div class="wrapper-block flex-container">
 	            <div>
@@ -33,35 +34,35 @@ get_header();
 	<section class="devis">
 		<div class="steps">
 			<div class="title_formulaire">
-				<img class="polygons" src="images/polygon_yellow.svg">
+				<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
 				<span>Prise de contact</span>
 			</div>
 			<div class="step step_active step_01">
 				<div class="line">
 					<hr>
-					<img class="polygons" src="images/polygon_yellow.svg">
+					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
 				</div>
 				<span>1 - Votre demande</span>
 			</div>
 			<div class="step step_02">
 				<div class="line">
 					<hr>
-					<img class="polygons" src="images/polygon_white.svg">
+					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>2 - La nature de vos travaux</span>
 			</div>
 			<div class="step step_03">
 				<div class="line">
 					<hr>
-					<img class="polygons" src="images/polygon_white.svg">
+					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>3 - Votre projet</span>
 			</div>
 			<div class="step step_04">
 				<div class="line">
 					<hr>
-					<img class="polygons" src="images/polygon_white.svg">
-					<img class="polygon_last" src="images/polygon_white.svg">
+					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygon_last" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>4 - Vos coordonnées</span>
 			</div>
@@ -73,11 +74,11 @@ get_header();
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
 					<div class="btn_form">
-						<img src="images/contact.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/contact.svg";?>>
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
 					<div class="btn_form" id="ask-devis">
-						<img src="images/devis.svg">
+                        <img src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
 				</div>
@@ -87,27 +88,27 @@ get_header();
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
 					<div class="btn_form select-type">
-						<img src="images/fondations.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?>>
 						<span class="btn_form_span">Fondations</span>
 					</div>
 					<div class="btn_form select-type">
-						<img src="images/sols.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?>>
 						<span class="btn_form_span">Études de sols</span>
 					</div>
 					<div class="btn_form select-type">
-						<img src="images/charpente.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?>>
 						<span class="btn_form_span">Charpente</span>
 					</div>
 					<div class="btn_form select-type">
-						<img src="images/terrasse.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?>>
 						<span class="btn_form_span">Terrasse</span>
 					</div>
 					<div class="btn_form select-type">
-						<img src="images/excavation.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?>>
 						<span class="btn_form_span">Excavation</span>
 					</div>
 					<div class="btn_form select-type">
-						<img src="images/isolation.svg">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?>>
 						<span class="btn_form_span">Isolation</span>
 					</div>
 				</div>

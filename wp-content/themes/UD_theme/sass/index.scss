@@ -76,6 +76,11 @@
   margin-bottom: 70px;
   text-align: center;
   width: 50vw;
+  @include only-phone {
+  width: 85%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .title-partenaire {
@@ -87,6 +92,19 @@
   justify-content: center;
 }
 
+.wrapper-partenaire .flex-container {
+  display: flex;
+  justify-content: center;
+  @include only-phone {
+    flex-wrap: wrap;
+  }
+}
+.wrapper-partenaire {
+    margin-top: 200px;
+  @include only-phone {
+  margin-top: 120px;
+}
+}
 .flex-item {
   width: 130px;
   height: 60px;
@@ -94,6 +112,9 @@
   background-position: center;
   background-size: contain;
   margin: 12px 28px;
+  @include only-phone {
+    width: 35%;
+  }
 }
 
 .text-center {

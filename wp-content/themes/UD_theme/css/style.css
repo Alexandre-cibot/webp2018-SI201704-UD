@@ -160,7 +160,6 @@ footer {
 
 .bandeauReassurance_block {
   display: flex;
-  justify-content: space-around;
   width: 100%;
   align-items: center;
   height: 100px;
@@ -530,14 +529,13 @@ footer {
 .service-container {
   display: flex;
   margin: 15vh 0;
-  width: 1200px;
   align-items: flex-end;
 }
 
 @media (max-width: 767px) {
   .service-container {
     display: inherit;
-    margin: 40px 0;
+    margin: 70px 0;
   }
 }
 
@@ -625,7 +623,7 @@ footer {
 }
 
 .service-item-left-margin {
-  margin-left: 15%;
+  margin-left: 0;
 }
 
 @media (max-width: 767px) {
@@ -690,9 +688,9 @@ footer {
 
 .services {
   position: relative;
-  width: 1200px;
-  left: 50%;
-  margin-left: -600px;
+  width: 100%;
+  left: inherit;
+  margin-left: 0px;
 }
 
 @media (min-width: 768px) {
@@ -702,6 +700,35 @@ footer {
     left: 50%;
     margin-left: -380px;
   }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .services {
+    position: relative;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+  }
+}
+
+.devis-img {
+  height: 320px;
+  background-image: url("../images/visuels/contact_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.block-deco-grey.block-deco-grey-contact {
+  height: 480px;
+}
+
+.project-a-propos-contact {
+  height: inherit;
+  margin-top: 0;
+}
+
+.devis {
+  margin-top: 260px;
 }
 
 .devis .steps {
@@ -1099,6 +1126,14 @@ footer {
   width: 50vw;
 }
 
+@media (max-width: 767px) {
+  .partenaire-paragraphe {
+    width: 85%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
 .title-partenaire {
   margin-bottom: 20px;
 }
@@ -1108,6 +1143,27 @@ footer {
   justify-content: center;
 }
 
+.wrapper-partenaire .flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .wrapper-partenaire .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+.wrapper-partenaire {
+  margin-top: 200px;
+}
+
+@media (max-width: 767px) {
+  .wrapper-partenaire {
+    margin-top: 120px;
+  }
+}
+
 .flex-item {
   width: 130px;
   height: 60px;
@@ -1115,6 +1171,12 @@ footer {
   background-position: center;
   background-size: contain;
   margin: 12px 28px;
+}
+
+@media (max-width: 767px) {
+  .flex-item {
+    width: 35%;
+  }
 }
 
 .text-center {
