@@ -163,7 +163,7 @@ footer {
   align-items: center;
   height: 100px;
   border-right: 1px solid #fff;
-  padding: 0 0 0 24px;
+  padding: 0 0 0 12px;
 }
 
 .last {
@@ -174,7 +174,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 9px;
   line-height: 21px;
   font-weight: 600;
 }
@@ -184,7 +184,7 @@ footer {
   align-items: center;
   color: #ffffff;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .picto {
@@ -206,7 +206,7 @@ footer {
 .blockContact_block-titre {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 50px;
 }
 
@@ -231,6 +231,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin-left: 170px;
+  vertical-align: text-top;
 }
 
 .blockContact_block:first-child {
@@ -239,8 +240,12 @@ footer {
 }
 
 .blockContact_block:last-child {
-  width: 50%;
+  width: 60%;
   margin-left: 180px;
+}
+
+#blockContact_block_contact {
+  width: 210px;
 }
 
 .blockContact_btn {
@@ -297,12 +302,25 @@ footer {
   .bandeauReassurance_block {
     flex-direction: column;
     text-align: center;
+    padding-top: 12px;
   }
 
   .blockk {
     width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  .blockContact_block-titre {
+    font-size: 20px;
+  }
+
+  .blockContact_block:last-child {
+    margin-left: 70px;
+  }
+
+  .blockContact_block {
+    margin-left: 110px;
   }
 }
 
@@ -328,6 +346,7 @@ footer {
     flex-direction: column;
     text-align: center;
     margin-left: 0px;
+    padding-top: 12px;
   }
 
   .blockContact {
@@ -457,6 +476,7 @@ header ul li.active {
 
 .toaster_yellow_down {
   bottom: -140px;
+  transition: .2s;
 }
 
 .toaster_content {
