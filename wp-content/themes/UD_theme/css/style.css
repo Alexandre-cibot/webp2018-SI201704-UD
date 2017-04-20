@@ -727,7 +727,7 @@ header ul li.active {
   margin: 10px 10px 10px 10px ;
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
-  margin: 0 20px 20px 0;
+  margin: 0 70px 20px 0;
 }
 
 @media (max-width: 767px) {
@@ -772,10 +772,9 @@ header ul li.active {
 }
 
 .stat-block {
-  /*border:1px solid red;*/
   width: 100%;
   display: flex;
-  margin: 70px;
+  margin: 40px;
 }
 
 @media (max-width: 767px) {
@@ -1216,6 +1215,7 @@ header ul li.active {
 
 .refBlock-1 {
   width: 25%;
+  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1228,6 +1228,7 @@ header ul li.active {
 
 .refBlock-2 {
   width: 50%;
+  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1240,6 +1241,7 @@ header ul li.active {
 
 .refBlock-3 {
   width: 25%;
+  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1253,6 +1255,12 @@ header ul li.active {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.res:hover {
+  opacity: 0.5;
 }
 
 .res1 {
@@ -1332,6 +1340,18 @@ header ul li.active {
   .res6 {
     height: 300px;
   }
+}
+
+.resTxt {
+  visibility: hidden;
+  color: #fff;
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.res:hover .resTxt {
+  visibility: visible;
 }
 
 .devis-img {
@@ -1676,6 +1696,32 @@ header ul li.active {
 
 .slider-img-2 {
   background-image: url("../images/slider-2.jpg");
+}
+
+section.blockFondation {
+  width: 75%;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  section.blockFondation {
+    width: 100%;
+  }
+}
+
+.blockSlide {
+  position: relative;
+  clear: both;
+}
+
+.paragraphe-column ul li {
+  color: #FFC61A;
+}
+
+.paragraphe-column ul li::before {
+  content: "________ ";
+  color: #7D7D7D;
+  margin-right: 10px;
 }
 
 * {
