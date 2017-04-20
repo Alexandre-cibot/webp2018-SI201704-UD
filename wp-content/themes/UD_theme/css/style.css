@@ -1524,6 +1524,8 @@ header ul li:hover {
 
 .devis .btn_form img {
   margin: 32px auto 15px;
+  height: 28px;
+  width: 32px;
 }
 
 .devis .btn_form.default img[alt="icon"],
@@ -1549,18 +1551,19 @@ header ul li:hover {
 
 .devis .formulaire_content button {
   font-family: "Roboto";
-  font-weight: 600;
   font-size: 16px;
-  color: #FFC61A;
-  border: #FFC61A 2px solid;
+  color: #FFC619;
+  border: #FFC619 1px solid;
   padding: 20px 60px;
   background-color: #ffffff;
   display: block;
   margin: 50px auto 0 auto;
 }
 
-.devis .formulaire_content button {
+.devis .formulaire_content button:hover {
   cursor: pointer;
+  color: #fff;
+  background: #FFC619;
 }
 
 .devis .formulaire_02 .btns {
@@ -1575,6 +1578,7 @@ header ul li:hover {
   display: block;
   border-color: #E5E5E5;
   background-color: #FBFBFB;
+  padding: 15px;
 }
 
 .devis .formulaire_03 textarea::-webkit-input-placeholder,
@@ -1586,14 +1590,6 @@ header ul li:hover {
   line-height: 20px;
 }
 
-.devis .formulaire_03 textarea::-webkit-input-placeholder {
-  padding: 15px 0 0 15px;
-}
-
-.devis .formulaire_04 input::-webkit-input-placeholder {
-  padding-left: 10px;
-}
-
 .devis .formulaire_04 input {
   width: 286px;
   height: 47px;
@@ -1602,6 +1598,11 @@ header ul li:hover {
   border: none;
   background-color: #FBFBFB;
   float: left;
+  padding: 15px;
+}
+
+.devis .formulaire_04 input.double {
+  width: 604px;
 }
 
 .devis .inputs {
@@ -2111,13 +2112,11 @@ strong {
   color: white;
   font-size: 16px;
   letter-spacing: 1px;
-  transition: 0.7s;
 }
 
 .btn-cta:hover {
   color: #FFC619;
   background: white;
-  transition: 0.7s;
 }
 
 .err-404 p {
@@ -2156,13 +2155,13 @@ strong {
 
 .hero-line.a-propos-txt {
   width: 112%;
-  left: -100vh;
+  left: -54vw;
   margin-top: 7px;
 }
 
 .hero-line.devis {
   width: 119%;
-  left: -150vh;
+  left: -58vw;
   margin-top: 7px;
 }
 
