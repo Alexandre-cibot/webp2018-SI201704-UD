@@ -66,7 +66,7 @@ get_header();
 				<div class="line">
 					<hr>
 					<img class="polygons polygons-4" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
-					<img class="polygon_last" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygon_last polygons-5" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>4 - Vos coordonnées</span>
 			</div>
@@ -134,11 +134,11 @@ get_header();
 			<div class="formulaire_content formulaire_04">
 				<h5 class="titles">4 - Completez vos coordonnées</h5>
 				<div class="inputs">
-					<input id="name" placeholder="Nom*">
-					<input id="address" placeholder="Adresse*">
-					<input id="mail" placeholder="Mail*">
-					<input id="phone" placeholder="Téléphone*">
-                    <input id="delay" class="double" placeholder="Délai avant début des travaux*">
+					<input id="name" type="text" placeholder="Nom*">
+					<input id="address" type="text" placeholder="Adresse*">
+					<input id="mail" type="email" placeholder="Mail*">
+					<input id="phone" type="tel" placeholder="Téléphone*">
+                    <input id="delay" type="text" class="double" placeholder="Délai avant début des travaux*">
 				</div>
 				<button id="form_04">Envoyer</button>
 			</div>
