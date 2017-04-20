@@ -28,33 +28,27 @@ get_header();
         <div class="wrapper-block flex-container">
             <div>
                 <div class="block-p">
-                    <p class="paragraphe"><?php the_field('paragraphe_1');?></p>
+                    <p class="paragraphe-column">Spécialisée dans la rénovation complète ou partielle d’appartement et de maison, notre équipe d’ouvriers professionnels du bâtiment intervient pour tous les travaux nécessaires à l’intérieur de votre habitat.<br><br>
+Notre entreprise est à votre écoute 
+Afin de discuter de votre projet de travaux. Nos devis sont en fourniture et pose (sauf demande contraire de votre part). Ainsi U&amp;D gére l’intégralité de vos travaux, approvisionne et livre tous les matériels sur le chantier.
+En début de chantier vous complétez un document dans lequel vous indiquez vos choix de matériel (carrelages, sanitaires, robinetteries, parquet etc..).<br><br>
+Réaliser des travaux de rénovation dans une maison ou un appartement est une chose sérieuse. Les budgets engagés sont souvent importants et il est indispensable de travailler avec une entreprise de rénovation sérieuse qui présente toutes les garanties nécessaires.</p>
                 </div>
-                <div class="block-p">
-                    <p class="paragraphe"><?php the_field('paragraphe_2');?></p>
-                </div>
-            </div>
-            <div>
-                <div class="block-p">
-                    <p class="paragraphe"><?php the_field('paragraphe_3');?></p>
-                </div>
-                <div class="block-p">
-                    <p class="paragraphe"><?php the_field('paragraphe_4');?></p>
-                </div>
+                
             </div>
         </div>
 
         <div class="statistiques flex-container">
             <div class="stat-column">
                 <div class="stat-block">
-                    <div class="picto"></div>
+                    <div class="pictoa"></div>
                     <div class="stat-text-wrapper">
                         <div class="stat-title">L’année de création</div>
                         <div class="stat-numbers">2012</div>
                     </div>
                 </div>
                 <div class="stat-block">
-                    <div class="picto"></div>
+                    <div class="pictob"></div>
                     <div class="stat-text-wrapper">
                         <div class="stat-title">Nos réalisations</div>
                         <div class="stat-numbers"><?php the_field('nombre_projets');?></div>
@@ -64,14 +58,14 @@ get_header();
 
             <div class="stat-column">
                 <div class="stat-block">
-                    <div class="picto"></div>
+                    <div class="pictoc"></div>
                     <div class="stat-text-wrapper">
                         <div class="stat-title">Une équipe de professionnels</div>
                         <div class="stat-numbers"><?php the_field('nombre_employes');?></div>
                     </div>
                 </div>
                 <div class="stat-block">
-                    <div class="picto"></div>
+                    <div class="pictod"></div>
                     <div class="stat-text-wrapper">
                         <div class="stat-title">Notre secteur d’intervention</div>
                         <div class="stat-numbers"><?php the_field('nombre_departements');?></div>

@@ -59,18 +59,22 @@ get_header();
 </section>
 
 <section class="ref">
+
  <div class="refBlock-1">
   <div class="res1 res"></div>
  </div>
+ 
  <div class="refBlock-2">
   <div class="res2 res"></div>
   <div class="res3 res"></div>
   <div class="res4 res"></div>
   <div class="res5 res"></div>
  </div>
+ 
  <div class="refBlock-3">
   <div class="res6 res"></div>
  </div>
+ 
 </section>
 
 <?php include_once('partenaires.php');?>
