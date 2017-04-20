@@ -14,7 +14,7 @@ get_header();
 
 	    <div class="content-text">
 	        <div class="title a-propos-title">
-	            <p>Vous avez une question ? Vous souhaitez nous soumettre votre projet ?<br><span class="text-important">Contactez-nous !</span></p>
+	            <p><?php the_field('titre');?></p>
 	        </div>
 	        <div class="wrapper-block flex-container">
 	            <div>
@@ -23,12 +23,12 @@ get_header();
                         <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
                     </div>
 	                <div class="block-p">
-	                    <p class="paragraphe">Nos devis sont réalisés gratuitement par notre société. Nous tenons à ce qu’ils soient précis et détaillés, pour que vous sachiez exactement le coût de chacune de nos prestations. </p>
-	                </div>
+	                    <p class="paragraphe"><?php the_field('champ_1');?></p>
+                </div>
 	            </div>
 	            <div>
 	                <div class="block-p">
-	                    <p class="paragraphe">Un récapitulatif pièce par pièce et corps d’état par corps d’état vous est proposé en fin de devis. Nous nous engageons sur les dates de démarrage.</p>
+                        <p class="paragraphe"><?php the_field('champ_2');?></p>
 	                </div>
 	            </div>
 	        </div>
@@ -44,28 +44,28 @@ get_header();
 			<div class="step step_active step_01">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
+					<img class="polygons polygons-1" id="polygon-yellow" src=<?=get_stylesheet_directory_uri() . "/images/polygon_yellow.svg";?>>
 				</div>
 				<span>1 - Votre demande</span>
 			</div>
 			<div class="step step_02">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-2" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>2 - La nature de vos travaux</span>
 			</div>
 			<div class="step step_03">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-3" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>3 - Votre projet</span>
 			</div>
 			<div class="step step_04">
 				<div class="line">
 					<hr>
-					<img class="polygons" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
+					<img class="polygons polygons-4" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 					<img class="polygon_last" src=<?=get_stylesheet_directory_uri() . "/images/polygon_white.svg";?>>
 				</div>
 				<span>4 - Vos coordonnées</span>
@@ -78,11 +78,13 @@ get_header();
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
 					<div class="btn_form default" id="contact_us">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/contact.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-contact.svg";?> alt="icon">
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-contact-white.svg";?> alt="iconactive">
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
 					<div class="btn_form default" id="ask_devis">
-                        <img style="fill: white;" src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
+                        <img src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?> alt="icon">
+                        <img src=<?=get_stylesheet_directory_uri() . "/images/picto-devis-white.svg";?> alt="iconactive">
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
 				</div>
@@ -92,27 +94,33 @@ get_header();
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
 					<div class="btn_form default select-type" id="fondation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-fondation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Fondations</span>
 					</div>
 					<div class="btn_form default select-type" id="sol">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-sol-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Études de sols</span>
 					</div>
 					<div class="btn_form default select-type" id="charpente">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-charpente-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Charpente</span>
 					</div>
 					<div class="btn_form default select-type" id="terrasse">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-terrasse-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Terrasse</span>
 					</div>
 					<div class="btn_form default select-type" id="excavation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-excavation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Excavation</span>
 					</div>
 					<div class="btn_form default select-type" id="isolation">
-						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?>>
+						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?> alt="icon" >
+						<img src=<?=get_stylesheet_directory_uri() . "/images/picto-isolation-white.svg";?> alt="iconactive" >
 						<span class="btn_form_span">Isolation</span>
 					</div>
 				</div>
@@ -126,10 +134,11 @@ get_header();
 			<div class="formulaire_content formulaire_04">
 				<h5 class="titles">4 - Completez vos coordonnées</h5>
 				<div class="inputs">
-					<input id="name" placeholder="Nom*"></input>
-					<input id="address" placeholder="Adresse*"></input>
-					<input id="mail" placeholder="Mail*"></input>
-					<input id="phone" placeholder="Téléphone*"></input>
+					<input id="name" placeholder="Nom*">
+					<input id="address" placeholder="Adresse*">
+					<input id="mail" placeholder="Mail*">
+					<input id="phone" placeholder="Téléphone*">
+                    <input id="delay" class="double" placeholder="Délai avant début des travaux*">
 				</div>
 				<button id="form_04">Envoyer</button>
 			</div>

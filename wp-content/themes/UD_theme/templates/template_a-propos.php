@@ -88,9 +88,9 @@ get_header();
 
 
 </div><!--End centered-block content-a-propos-->
-
+<div class="partn">
 <?php include_once('partenaires.php');?>
-
+</div>
 <?php
 get_footer();
 ?>

@@ -120,7 +120,6 @@ strong {
   }
 }
 .wrapper-partenaire {
-  margin:  150px 0 50px 0;
   @include only-phone {
    margin:  15vh 0 20vh 0;
 }
@@ -191,13 +190,11 @@ strong {
   color: white;
   font-size: 16px;
   letter-spacing: 1px;
-  transition:0.7s;
 }
 
 .btn-cta:hover {
   color: $yellow;
   background:white;
-  transition:0.7s;
 }
 
 .err-404 p {
@@ -234,13 +231,13 @@ strong {
 
 .hero-line.a-propos-txt {
   width: 112%;
-  left: -100vh;
+  left: -54vw;
   margin-top: 7px;
 }
 
 .hero-line.devis {
   width: 119%;
-  left: -150vh;
+  left: -58vw;
   margin-top: 7px;
 }
 

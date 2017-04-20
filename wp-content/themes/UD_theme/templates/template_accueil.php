@@ -9,7 +9,7 @@ get_header();
     <div class="accueil-title-left flex-container-accueil-left">
         <div class="flex-container-left-column">
             <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
-            <button class="btn-cta btn-accueil">Nous contacter</button>
+            <a href=<?= get_site_url() . "/devis";?> class="btn-cta btn-accueil">Nous contacter</a>
         </div>
     </div>
 </div>
@@ -63,10 +63,11 @@ get_header();
 
  <div class="refBlock-1">
   <div class="res1 res">
-  <p class="resTxt">Hello</p>
+  <!--<div class="resTxt">
+  <p class="resTxt-title">Rénovation<br><span>2012</span></p>
+</div>-->
   </div>
  </div>
- 
  <div class="refBlock-2">
   <div class="res2 res"></div>
   <div class="res3 res"></div>

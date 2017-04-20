@@ -662,6 +662,7 @@ header ul li:hover {
   position: relative;
   width: 45%;
   margin-top: 35px;
+  float: left;
 }
 
 @media (max-width: 767px) {
@@ -729,10 +730,10 @@ header ul li:hover {
 
 .content-text {
   width: 51%;
-  /* border:1px solid;*/
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
+  float: right;
 }
 
 @media (max-width: 767px) {
@@ -766,7 +767,18 @@ header ul li:hover {
 }
 
 .wrapper-partenaire {
-  margin-top: 200px;
+  padding: 150px 0px;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .wrapper-partenaire {
+    padding: 0px 0px;
+  }
+}
+
+.partn .wrapper-partenaire {
+  padding: 0px 0px;
 }
 
 .statistiques {
@@ -1046,6 +1058,8 @@ header ul li:hover {
 
 .btn-accueil {
   width: 225px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .service-container {
@@ -1105,7 +1119,6 @@ header ul li:hover {
 
 .service-item-right-ctn-left {
   width: 50%;
-  margin-left: 10%;
 }
 
 @media (max-width: 767px) {
@@ -1292,12 +1305,15 @@ header ul li:hover {
 }
 
 .res:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .res1 {
   background-image: url("../images/accueil/res1.jpg");
   height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -1376,10 +1392,26 @@ header ul li:hover {
 
 .resTxt {
   visibility: hidden;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   display: flex;
   z-index: 2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FFC619;
+  padding: 15px 35px;
+}
+
+.resTxt-title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  line-height: 38px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .res:hover .resTxt {
@@ -1403,13 +1435,14 @@ header ul li:hover {
 }
 
 .devis {
-  margin-top: 260px;
+  margin-top: 130px;
 }
 
 .devis .steps {
   margin: 100px auto 60px auto;
   display: block;
   width: 740px;
+  clear: both;
 }
 
 .devis .step {
@@ -1472,11 +1505,14 @@ header ul li:hover {
 }
 
 .devis .btn_form.default {
+  color: #C8C8C8;
+  border: #C8C8C8 1px solid;
+}
+
+.devis .btn_form {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #C8C8C8 1px solid;
   width: 190px;
   height: 115px;
   float: left;
@@ -1485,18 +1521,16 @@ header ul li:hover {
 }
 
 .devis .btn_form:hover {
-  border: #FFC619 3px solid;
-  -webkit-transition: background .5s;
-  /* Safari */
-  transition: background .5s;
+  border: #FFC619 1px solid;
 }
 
 .btn_form_active {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #FFC619 3px solid;
+  color: #fff;
+  border: 1px solid #FFC619;
+  background: #FFC619;
   width: 190px;
   height: 115px;
   float: left;
@@ -1504,15 +1538,20 @@ header ul li:hover {
   cursor: pointer;
 }
 
-.devis .btn_form:hover .btn_form_span {
-  -webkit-transition: color .5s;
-  /* Safari */
-  transition: color .5s;
+.devis .btn_form img {
+  margin: 32px auto 15px;
+  height: 28px;
+  width: 32px;
 }
 
-.devis .btn_form img {
-  margin: 32px auto 15px auto;
+.devis .btn_form.default img[alt="icon"],
+.btn_form_active img[alt="iconactive"] {
   display: block;
+}
+
+.devis .btn_form.default img[alt="iconactive"],
+.btn_form_active img[alt="icon"] {
+  display: none;
 }
 
 .devis .btn_form span {
@@ -1528,14 +1567,19 @@ header ul li:hover {
 
 .devis .formulaire_content button {
   font-family: "Roboto";
-  font-weight: 600;
   font-size: 16px;
-  color: #FFC61A;
-  border: #FFC61A 2px solid;
+  color: #FFC619;
+  border: #FFC619 1px solid;
   padding: 20px 60px;
   background-color: #ffffff;
   display: block;
   margin: 50px auto 0 auto;
+}
+
+.devis .formulaire_content button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #FFC619;
 }
 
 .devis .formulaire_02 .btns {
@@ -1550,6 +1594,7 @@ header ul li:hover {
   display: block;
   border-color: #E5E5E5;
   background-color: #FBFBFB;
+  padding: 15px;
 }
 
 .devis .formulaire_03 textarea::-webkit-input-placeholder,
@@ -1561,14 +1606,6 @@ header ul li:hover {
   line-height: 20px;
 }
 
-.devis .formulaire_03 textarea::-webkit-input-placeholder {
-  padding: 15px 0 0 15px;
-}
-
-.devis .formulaire_04 input::-webkit-input-placeholder {
-  padding-left: 10px;
-}
-
 .devis .formulaire_04 input {
   width: 286px;
   height: 47px;
@@ -1577,6 +1614,11 @@ header ul li:hover {
   border: none;
   background-color: #FBFBFB;
   float: left;
+  padding: 15px;
+}
+
+.devis .formulaire_04 input.double {
+  width: 604px;
 }
 
 .devis .inputs {
@@ -1775,6 +1817,13 @@ section.content {
   color: #C8C8C8;
 }
 
+@media (max-width: 767px) {
+  .block-list .block {
+    width: 35%;
+    margin-bottom: 15px;
+  }
+}
+
 .block-list .block:hover {
   border: 1px solid #FFC619;
 }
@@ -1807,6 +1856,41 @@ section.content {
 
 .content.active {
   display: block;
+}
+
+.container-blocks {
+  padding-top: 120px;
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .container-blocks {
+    padding-top: 30px;
+  }
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #FFC619;
+  border: 0px;
+  position: absolute;
+  right: 110px;
+  color: #ffffff;
+  padding: 17px;
+}
+
+.slick-prev {
+  right: 110px !important;
+  bottom: -50px;
+  float: left;
+}
+
+p.next.slick-arrow.slick-disabled {
+  bottom: -50px;
+  right: 40px !important;
 }
 
 @font-face {
@@ -1967,10 +2051,6 @@ strong {
   }
 }
 
-.wrapper-partenaire {
-  margin: 150px 0 50px 0;
-}
-
 @media (max-width: 767px) {
   .wrapper-partenaire {
     margin: 15vh 0 20vh 0;
@@ -2053,13 +2133,11 @@ strong {
   color: white;
   font-size: 16px;
   letter-spacing: 1px;
-  transition: 0.7s;
 }
 
 .btn-cta:hover {
   color: #FFC619;
   background: white;
-  transition: 0.7s;
 }
 
 .err-404 p {
@@ -2098,13 +2176,13 @@ strong {
 
 .hero-line.a-propos-txt {
   width: 112%;
-  left: -100vh;
+  left: -54vw;
   margin-top: 7px;
 }
 
 .hero-line.devis {
   width: 119%;
-  left: -150vh;
+  left: -58vw;
   margin-top: 7px;
 }
 

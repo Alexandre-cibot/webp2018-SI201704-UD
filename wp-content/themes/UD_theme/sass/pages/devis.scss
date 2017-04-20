@@ -15,13 +15,14 @@
 }
 
 .devis{
-	margin-top: 260px;
+	margin-top: 130px;
 }
 
 .devis .steps{
 	margin: 100px auto 60px auto;
 	display: block;
 	width: 740px;
+  clear: both;
 }
 
 .devis .step{
@@ -84,11 +85,14 @@
 }
 
 .devis .btn_form.default{
+	color: #C8C8C8;
+	border: #C8C8C8 1px solid;
+}
+
+.devis .btn_form{
 	font-family: "Open Sans";
 	font-weight: 500;
 	font-size: 16px;
-	color: #C8C8C8;
-	border: #C8C8C8 1px solid;
 	width: 190px;
 	height: 115px;
 	float: left;
@@ -97,17 +101,16 @@
 }
 
 .devis .btn_form:hover {
-	border: #FFC619 3px solid;
-	-webkit-transition: background .5s; /* Safari */
-	transition: background .5s;
+	border: #FFC619 1px solid;
 }
 
 .btn_form_active {
 	font-family: "Open Sans";
 	font-weight: 500;
 	font-size: 16px;
-	color: #C8C8C8;
-	border: #FFC619 3px solid;
+	color: #fff;
+	border: 1px solid $yellow;
+    background: $yellow;
 	width: 190px;
 	height: 115px;
 	float: left;
@@ -115,14 +118,18 @@
 	cursor: pointer;
 }
 
-.devis .btn_form:hover .btn_form_span{
-    -webkit-transition: color .5s; /* Safari */
-    transition: color .5s;
+.devis .btn_form img {
+  margin: 32px auto 15px;
+  height: 28px;
+  width: 32px;
 }
 
-.devis .btn_form img{
-	margin: 32px auto 15px auto;
+.devis .btn_form.default img[alt="icon"], .btn_form_active img[alt="iconactive"]{
 	display: block;
+}
+
+.devis .btn_form.default img[alt="iconactive"], .btn_form_active img[alt="icon"]{
+  display: none;
 }
 
 .devis .btn_form span{
@@ -137,14 +144,19 @@
 
 .devis .formulaire_content button{
 	font-family: "Roboto";
-	font-weight: 600;
 	font-size: 16px;
-	color: #FFC61A;
-	border: #FFC61A 2px solid;
+	color: $yellow;
+	border: $yellow 1px solid;
 	padding: 20px 60px;
 	background-color: #ffffff;
 	display: block;
 	margin: 50px auto 0 auto;
+}
+
+.devis .formulaire_content button:hover{
+  cursor: pointer;
+  color: #fff;
+  background: $yellow;
 }
 
 .devis .formulaire_02 .btns{
@@ -159,6 +171,7 @@
 	display: block;
 	border-color: #E5E5E5;
 	background-color: #FBFBFB;
+    padding: 15px;
 }
 
 .devis .formulaire_03 textarea::-webkit-input-placeholder,
@@ -170,14 +183,6 @@
 	line-height: 20px;
 }
 
-.devis .formulaire_03 textarea::-webkit-input-placeholder{
-	padding: 15px 0 0 15px;
-}
-
-.devis .formulaire_04 input::-webkit-input-placeholder{
-	padding-left: 10px;
-}
-
 .devis .formulaire_04 input{
 	width: 286px;
 	height: 47px;
@@ -186,6 +191,11 @@
 	border: none;
 	background-color: #FBFBFB;
 	float: left;
+    padding: 15px;
+}
+
+.devis .formulaire_04 input.double{
+  width: 604px;
 }
 
 .devis .inputs{
