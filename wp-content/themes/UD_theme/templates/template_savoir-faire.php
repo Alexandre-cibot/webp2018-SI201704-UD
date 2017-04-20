@@ -8,33 +8,33 @@ get_header();
 <div class="container-blocks">
     <div class="block-list">
         <div data-block="1" class="block active">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/fondations.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-fondation-white.svg";?> alt="iconactive">
             Fondations
         </div>
         <div data-block="2" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/sols.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-sol-white.svg";?> alt="iconactive">
             Etude des sols
         </div>
         <div data-block="3" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/charpente.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-charpente-white.svg";?> alt="iconactive">
             Charpente
         </div>
         <div data-block="4" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/terrasse.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-terrasse-white.svg";?> alt="iconactive">
             Terrasse
         </div>
         <div data-block="5" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/excavation.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-excavation-white.svg";?> alt="iconactive">
             Excavation
         </div>
         <div data-block="6" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/isolation.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-isolation-white.svg";?> alt="iconactive">
             Isolation
         </div>
     </div>
