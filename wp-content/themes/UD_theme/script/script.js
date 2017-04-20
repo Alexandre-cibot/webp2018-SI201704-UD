@@ -35,3 +35,10 @@ $( ".btn_form" ).click(function() {
   $(this).toggleClass("default");
   $(this).toggleClass("btn_form_active");
 });
+
+$( ".toaster_yellow" ).click(function() {
+  $('.toaster').toggleClass('toaster_yellow_up');
+  $('.toaster').toggleClass('toaster_yellow_down');
+  $('.arrow').toggleClass('arrow_rotate');
+});
+

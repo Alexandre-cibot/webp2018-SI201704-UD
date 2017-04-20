@@ -29,7 +29,7 @@ header ul li {
   float: right;
   color: #000;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -50,6 +50,99 @@ header ul li.active {
 
 .bt-devis img {
   margin-bottom: -2px;
+}
+
+/* TOASTER */
+
+.toaster{
+  position: fixed;
+  right: 60px;
+  width: 260px;
+  background-color: #fff;
+  z-index: 100;
+
+  @include only-phone {
+    display: none;
+  }
+}
+
+.toaster_yellow_up{
+  bottom: -1px;
+  transition: .2s;
+}
+
+.arrow_rotate{
+  transform: rotate(180deg);
+}
+
+.toaster_yellow_down{
+  bottom: -140px;
+  transition: .2s;
+}
+
+.toaster_content{
+  border: #EBEBEB solid 1px;
+  padding: 16px;
+}
+
+.toaster_content p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #757575;
+  line-height: 20px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.toaster_content input{
+  padding: 0 8px;
+  height: 30px;
+  border-radius: 2px;
+  border-top: #EAEAEA 1px solid;
+  border-right: none;
+  border-bottom: #EAEAEA 1px solid;
+  border-left: #EAEAEA 1px solid;
+  width: 85%;
+  float: left;
+}
+
+.toaster_content input::placeholder{
+  color: #CCC;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.toaster_content button{
+  background-color: #FFC619;
+  border: none;
+  height: 30px;
+  width: 15%;
+  float: left;
+  margin-left: -1px;
+  border-radius: 0 2px 2px 0;
+}
+
+.toaster .toaster_yellow{
+  background-color: #FFC619;
+  padding: 15px 24px;
+  cursor: pointer;
+}
+
+.toaster .toaster_yellow .phone{
+  margin-right: 8px;
+}
+
+.toaster .toaster_yellow .arrow{
+  width: 14px;
+  margin-left: 8px;
+}
+
+.toaster .toaster_yellow span{
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 /* MENU */
@@ -110,9 +203,10 @@ header ul li.active {
   height: 25px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   header {
-    background: #f0f0f0;
+    background: none;
+    position: absolute;
   }
 
   header img[alt*="white"] {

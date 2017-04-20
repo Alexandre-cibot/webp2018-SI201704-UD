@@ -22,7 +22,7 @@
   clear: both;
 }
 
-.text-important {
+strong {
   color: $yellow;
 }
 
@@ -46,6 +46,7 @@
   font-family: $open-sans;
   font-size: 16px;
   line-height: 32px;
+  font-weight:300; 
 }
 
 .small-title {
@@ -73,6 +74,9 @@
   margin: 0 60px;
   /*border:1px solid;*/
   height:auto;
+  @include only-phone {
+    margin: 0;
+  }
 }
 
 .block-deco-grey {
@@ -81,6 +85,9 @@
   width: 40%;
   height: 984px;
   top: 0;
+  @include only-phone {
+    display: none;
+  }
 }
 .partenaire-paragraphe {
   margin: 0 auto;
@@ -111,9 +118,9 @@
   }
 }
 .wrapper-partenaire {
-    margin-top: 200px;
+  margin:  20vh 0 25vh 0;
   @include only-phone {
-  margin-top: 120px;
+   margin:  15vh 0 20vh 0;
 }
 }
 .flex-item {
@@ -196,4 +203,52 @@
   font-weight: 300;
   font-size: 37px;
   line-height: 50px;
+}
+
+.hero-line {
+  position: absolute;
+  width: 15%;
+  left: 0;
+
+  @include only-phone {
+    display: none;
+  }
+}
+
+.hero-line.services {
+  width: 45%;
+  margin-top: 11px;
+}
+
+.hero-line.partners {
+  width: 20%;
+  margin-top: 12px;
+}
+
+.hero-line.footer-contact {
+  width: 10%;
+  margin-top: 18px;
+}
+
+.hero-line.a-propos-txt {
+  width: 112%;
+  left: -100vh;
+  margin-top: 7px;
+}
+
+.hero-line.devis {
+  width: 119%;
+  left: -150vh;
+  margin-top: 7px;
+}
+
+.hero-line hr {
+  border-color: $line-grey;
+  border-top: none;
+}
+
+.hero-line img {
+  position: absolute;
+  right: -16px;
+  bottom: -2px;
 }
