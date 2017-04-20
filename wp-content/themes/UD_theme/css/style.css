@@ -275,6 +275,7 @@ footer {
   width: 180px;
   padding: 20px 10px;
   text-align: center;
+  transition: 0.7s;
 }
 
 .blockContact_img {
@@ -434,11 +435,29 @@ header ul li.active {
 
 .toaster {
   position: fixed;
-  bottom: -140px;
   right: 60px;
   width: 260px;
   background-color: #fff;
   z-index: 100;
+}
+
+@media (max-width: 767px) {
+  .toaster {
+    display: none;
+  }
+}
+
+.toaster_yellow_up {
+  bottom: -1px;
+  transition: .2s;
+}
+
+.arrow_rotate {
+  transform: rotate(180deg);
+}
+
+.toaster_yellow_down {
+  bottom: -140px;
 }
 
 .toaster_content {
@@ -1503,7 +1522,7 @@ header ul li.active {
   clear: both;
 }
 
-.text-important {
+strong {
   color: #FFC619;
 }
 
