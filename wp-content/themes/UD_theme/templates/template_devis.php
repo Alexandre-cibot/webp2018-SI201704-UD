@@ -68,7 +68,7 @@ get_header();
 			<div class="clear"></div>
 		</div>
 		<!--  -->
-		<form action="action.php" method="post" class="formulaire">
+		<div>
 			<div class="formulaire_content formulaire_01">
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
@@ -76,7 +76,7 @@ get_header();
 						<img src="images/contact.svg">
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form" id="ask-devis">
 						<img src="images/devis.svg">
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
@@ -86,27 +86,27 @@ get_header();
 			<div class="formulaire_content formulaire_02">
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/fondations.svg">
 						<span class="btn_form_span">Fondations</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/sols.svg">
 						<span class="btn_form_span">Études de sols</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/charpente.svg">
 						<span class="btn_form_span">Charpente</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/terrasse.svg">
 						<span class="btn_form_span">Terrasse</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/excavation.svg">
 						<span class="btn_form_span">Excavation</span>
 					</div>
-					<div class="btn_form">
+					<div class="btn_form select-type">
 						<img src="images/isolation.svg">
 						<span class="btn_form_span">Isolation</span>
 					</div>
@@ -116,7 +116,7 @@ get_header();
 			<div class="formulaire_content formulaire_03">
 				<h4 class="titles">3 - Décrivez-nous votre projet</h4>
 				<textarea placeholder="Détaillez votre projet, par exemple : Je souhaite faire enlever 50 m² de carrelage avec plinthes en vue d'y poser un parquet déjà en ma possession "></textarea>
-				<button>Suivant</button>
+				<button id="finish-desc-project">Suivant</button>
 			</div>
 			<div class="formulaire_content formulaire_04">
 				<h5 class="titles">4 - Completez vos coordonnées</h5>
@@ -129,7 +129,7 @@ get_header();
 				<button>Envoyer</button>
 			</div>
 
-		</form>
+		</div>
 	</section>
 
 <?php
