@@ -108,7 +108,7 @@
     transition: background .5s;
 }
 
-.devis .btn_form:hover .btn_form_span{
+.devis .btn_form:hover .devis .btn_form_span{
     color: #fff;
     -webkit-transition: color .5s; /* Safari */
     transition: color .5s;

@@ -54,7 +54,7 @@
        <p class="blockContact_block-txt">Société U&amp;D<br>
 12 rue des petites écuries<br>
 75010 - PARIS</p><br>
-    <p class="blockContact_block-txt">contact@p&amp;d.com</p><br>
+    <p class="blockContact_block-txt">contact@u&amp;d.com</p><br>
     <p class="blockContact_block-txt">01.23.48.04.93</p>
     </div>
      </div>

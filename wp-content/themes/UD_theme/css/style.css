@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800|Roboto:100,200,300,400,500,600,700,900");
 @charset "UTF-8";
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -164,6 +163,7 @@ footer {
   align-items: center;
   height: 100px;
   border-right: 1px solid #fff;
+  padding: 0 0 0 24px;
 }
 
 .last {
@@ -186,6 +186,10 @@ footer {
   font-size: 18px;
 }
 
+.picto {
+  margin-right: 10px;
+}
+
 /*.picto {
   margin-left: 30px;
 } 
@@ -200,15 +204,16 @@ footer {
 
 .blockContact_block-titre {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 37px;
+  font-weight: 400;
+  font-size: 25px;
   line-height: 50px;
 }
 
 .blockContact_block-txt {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
 }
 
 .blockContact {
@@ -224,7 +229,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 170px;
 }
 
 .blockContact_block:first-child {
@@ -234,7 +239,7 @@ footer {
 
 .blockContact_block:last-child {
   width: 50%;
-  margin-left: 0px;
+  margin-left: 180px;
 }
 
 .blockContact_btn {
@@ -529,7 +534,6 @@ header ul li.active {
 
 .project-a-propos {
   position: relative;
-  height: 1112px;
   width: 45%;
   /*width: 562px;*/
   /* border:1px solid;*/
@@ -564,7 +568,6 @@ header ul li.active {
 
 .content-text {
   width: 51%;
-  height: 1112px;
   /* border:1px solid;*/
   position: absolute;
   right: 0;
@@ -980,7 +983,7 @@ header ul li.active {
   transition: background .5s;
 }
 
-.devis .btn_form:hover .btn_form_span {
+.devis .btn_form:hover .devis .btn_form_span {
   color: #fff;
   -webkit-transition: color .5s;
   /* Safari */
