@@ -1,0 +1,66 @@
+/**** ML ****/
+
+.ml {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+}
+
+.ml h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 50px;
+  color: #3E3E3E;
+  margin-bottom: 110px;
+}
+
+.ml h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFC619;
+}
+
+.ml p {
+  font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.ml_blockBG {
+  background-color: #F0F0F0;
+  width: 35%;
+}
+
+.ml_blockTXT {
+  background-color: #ffffff;
+  width: 60%;
+  height: auto;
+  margin-left: 30px;
+}
+
+.ml_blockBG img {
+    margin-top: 172px;
+    position: relative;
+    left: -30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .ml_blockBG {
+    background-color: #F0F0F0;
+    width: 10%;
+}
+  .ml_blockTXT {
+  background-color: #ffffff;
+  width: 85%;
+  height: auto;
+  margin-left: 10px;
+}
+  .ml_blockBG img {
+    display: none;
+  }
+}

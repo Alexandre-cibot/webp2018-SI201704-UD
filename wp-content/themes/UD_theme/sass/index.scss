@@ -1,10 +1,13 @@
 @import './vendor/reset.scss';
 @import './variables.scss';
 @import './fonts.scss';
+@import './footer.scss';
 
 /* Import style pages */
-@import 'pages/a-propos';
-@import 'pages/accueil';
+@import 'pages/a-propos.scss';
+@import 'pages/accueil.scss';
+@import 'pages/mentions-legales.scss';
+
 
 .text-important {
   color: $yellow;
