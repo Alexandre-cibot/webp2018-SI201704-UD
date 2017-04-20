@@ -9,12 +9,15 @@ $('img[alt="close"]').on("click", function(){
 $('.multiple-items').slick({
   infinite: false,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  nextArrow: '<p class="prev">←</p>',
+  prevArrow: '<p class="next">→</p>',
 });
 
 var polygonYellow = $("#polygon-yellow").attr('src');
 
 var formData = {
+  is_form: true,
   contact_us: false,
   ask_devis: false,
   fondation: false,
@@ -27,7 +30,8 @@ var formData = {
   name: false,
   address: false,
   mail: false,
-  phone: false
+  phone: false,
+  delay: false
 };
 
 $( ".formulaire_02" ).hide();
@@ -94,6 +98,7 @@ $( "#form_04" ).click(function() {
   formData.address = $('#address').val();
   formData.mail = $('#mail').val();
   formData.phone = $('#phone').val();
+  formData.delay = $('#delay').val();
   if(formData.name || formData.address || formData.mail || formData.phone){
     $( ".formulaire_04" ).hide();
     $(".step_04").addClass("step_active");

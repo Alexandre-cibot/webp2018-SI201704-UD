@@ -1290,12 +1290,15 @@ header ul li:hover {
 }
 
 .res:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .res1 {
   background-image: url("../images/accueil/res1.jpg");
   height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -1374,10 +1377,26 @@ header ul li:hover {
 
 .resTxt {
   visibility: hidden;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   display: flex;
   z-index: 2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FFC619;
+  padding: 15px 35px;
+}
+
+.resTxt-title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  line-height: 38px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .res:hover .resTxt {
@@ -1505,6 +1524,8 @@ header ul li:hover {
 
 .devis .btn_form img {
   margin: 32px auto 15px;
+  height: 28px;
+  width: 32px;
 }
 
 .devis .btn_form.default img[alt="icon"],
@@ -1530,18 +1551,19 @@ header ul li:hover {
 
 .devis .formulaire_content button {
   font-family: "Roboto";
-  font-weight: 600;
   font-size: 16px;
-  color: #FFC61A;
-  border: #FFC61A 2px solid;
+  color: #FFC619;
+  border: #FFC619 1px solid;
   padding: 20px 60px;
   background-color: #ffffff;
   display: block;
   margin: 50px auto 0 auto;
 }
 
-.devis .formulaire_content button {
+.devis .formulaire_content button:hover {
   cursor: pointer;
+  color: #fff;
+  background: #FFC619;
 }
 
 .devis .formulaire_02 .btns {
@@ -1556,6 +1578,7 @@ header ul li:hover {
   display: block;
   border-color: #E5E5E5;
   background-color: #FBFBFB;
+  padding: 15px;
 }
 
 .devis .formulaire_03 textarea::-webkit-input-placeholder,
@@ -1567,14 +1590,6 @@ header ul li:hover {
   line-height: 20px;
 }
 
-.devis .formulaire_03 textarea::-webkit-input-placeholder {
-  padding: 15px 0 0 15px;
-}
-
-.devis .formulaire_04 input::-webkit-input-placeholder {
-  padding-left: 10px;
-}
-
 .devis .formulaire_04 input {
   width: 286px;
   height: 47px;
@@ -1583,6 +1598,11 @@ header ul li:hover {
   border: none;
   background-color: #FBFBFB;
   float: left;
+  padding: 15px;
+}
+
+.devis .formulaire_04 input.double {
+  width: 604px;
 }
 
 .devis .inputs {
@@ -1781,6 +1801,13 @@ section.content {
   color: #C8C8C8;
 }
 
+@media (max-width: 767px) {
+  .block-list .block {
+    width: 35%;
+    margin-bottom: 15px;
+  }
+}
+
 .block-list .block:hover {
   border: 1px solid #FFC619;
 }
@@ -1813,6 +1840,32 @@ section.content {
 
 .content.active {
   display: block;
+}
+
+.container-blocks {
+  margin-top: 120px;
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #FFC619;
+  border: 0px;
+  position: absolute;
+  right: 110px;
+  color: #ffffff;
+  padding: 17px;
+}
+
+.slick-prev {
+  right: 110px !important;
+  bottom: -50px;
+  float: left;
+}
+
+p.next.slick-arrow.slick-disabled {
+  bottom: -50px;
+  right: 40px !important;
 }
 
 @font-face {
@@ -2059,13 +2112,11 @@ strong {
   color: white;
   font-size: 16px;
   letter-spacing: 1px;
-  transition: 0.7s;
 }
 
 .btn-cta:hover {
   color: #FFC619;
   background: white;
-  transition: 0.7s;
 }
 
 .err-404 p {
@@ -2104,13 +2155,13 @@ strong {
 
 .hero-line.a-propos-txt {
   width: 112%;
-  left: -100vh;
+  left: -54vw;
   margin-top: 7px;
 }
 
 .hero-line.devis {
   width: 119%;
-  left: -150vh;
+  left: -58vw;
   margin-top: 7px;
 }
 
