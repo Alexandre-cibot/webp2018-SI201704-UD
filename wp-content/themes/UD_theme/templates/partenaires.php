@@ -13,7 +13,6 @@
         <div class="flex-item partenaire-6"></div>
         <div class="flex-item partenaire-7"></div>
         <div class="flex-item partenaire-8"></div>
-
     </div>
 </section>
 
