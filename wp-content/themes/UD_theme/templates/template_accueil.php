@@ -11,9 +11,7 @@ get_header();
             <div class="line2"></div>
         </div>
         <div class="flex-container-left-column">
-            <h2 class="title text-white accueil-title">U&amp;D est là pour tout vos travaux de gros oeuvres et d’isolation
-                en Ile-de-France. Au service des entreprises et
-                des particuliers.</h2>
+            <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
             <button class="btn-cta btn-accueil">Nous contacter</button>
         </div>
     </div>
@@ -24,9 +22,7 @@ get_header();
         <div class="service-item-left">
             <div class="service-item-left-margin">
                 <h3 class="title text-main service-title">Nos services</h3>
-                <p class="paragraphe service-paragraphe">Forte de plus de 20 ans d’expérience, l’entreprise Bâtiment MDK est spécialisée dans les travaux de
-                    plomberie , maçonnerie , rénovation immobilière , couverture , ravalement de façades, chauffage ,
-                    électricité et peinture auprès des particuliers, des professionnels et des syndics de copropriété.</p>
+                <p class="paragraphe service-paragraphe"><?php the_field('nos_services');?></p>
             </div>
         </div>
         <div class="service-item-right-ctn">
