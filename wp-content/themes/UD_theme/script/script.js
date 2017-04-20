@@ -33,4 +33,11 @@ $( "#finish-desc-project" ).click(function() {
 });
 
 
+$( ".toaster_yellow" ).click(function() {
+  $('.toaster').toggleClass('toaster_yellow_up');
+  $('.toaster').toggleClass('toaster_yellow_down');
+  $('.arrow').toggleClass('arrow_rotate');
+});
+
+
 

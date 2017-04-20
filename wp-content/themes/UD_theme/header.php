@@ -17,7 +17,7 @@
 <body>
 
 <!-- Toaster fix-->
-<div class="toaster">
+<div class="toaster toaster_yellow_down" id="toaster">
    <div class="toaster_yellow">
        <img class="phone" src=<?= get_stylesheet_directory_uri() . "/images/phone.svg" ?> alt="phone">
        <span>Nous vous rappelons</span>
