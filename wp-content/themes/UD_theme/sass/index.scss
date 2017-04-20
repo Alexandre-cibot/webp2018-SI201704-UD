@@ -3,6 +3,7 @@
 @import './fonts.scss';
 @import './footer.scss';
 @import './mixin.scss';
+@import './header.scss';
 
 /* Import style pages */
 @import 'pages/a-propos';
@@ -10,6 +11,14 @@
 @import 'pages/devis';
 @import 'pages/mentions-legales.scss';
 @import 'pages/savoir-faire.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
 
 .text-important {
   color: $yellow;
