@@ -62,19 +62,19 @@
     <p class="blockContact_block-txt">01.23.48.04.93</p>
     </div>
      </div>
-     <div class="blockContact_block">
+     <div class="blockContact_block blockContact_block_infos">
       <div>
        <p class="blockContact_block-titre">Besoin de plus d’informations ?</p><br>
        <p class="blockContact_block-txt">Envoyez nous un message pour plus d’informations ou pour un devis. Nos devis sont réalisés gratuitement par notre société. Un récapitulatif pièce par pièce et corps d’état par corps d’état vous est proposé en fin de devis.</p>
        <br>
      <div class="blockContact_btn"><a href="">Nous contacter</a></div>
-     </div>
-     
-     </div>
+       <div class="clear"></div>
    </div>
-   
- </footer>
- 
+     </div>
+       </div>
+    <p class="mentions_legales">©Tous droits réservés. - <a class="mentions_legales_lien" href=<?= get_site_url() . "/mention-legales";?>>Mentions légales</a>
+
+</footer>
 
 </body>
 </html>
