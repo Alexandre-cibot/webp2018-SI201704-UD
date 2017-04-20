@@ -5,7 +5,13 @@
 get_header();
 ?>
 
-<p>Page Accueil</p>
+<section>
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+    </div>
+</section>
 
 <?php
 get_footer();
