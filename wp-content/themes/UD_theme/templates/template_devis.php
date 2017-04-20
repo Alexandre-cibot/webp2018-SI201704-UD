@@ -138,6 +138,7 @@ get_header();
 					<input id="address" placeholder="Adresse*"></input>
 					<input id="mail" placeholder="Mail*"></input>
 					<input id="phone" placeholder="Téléphone*"></input>
+					<input id="delay" class="double" placeholder="Délai avant début des travaux*"></input>
 				</div>
 				<button id="form_04">Envoyer</button>
 			</div>
