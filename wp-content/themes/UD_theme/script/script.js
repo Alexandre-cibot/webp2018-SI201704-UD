@@ -13,6 +13,7 @@ $('.multiple-items').slick({
 });
 
 var formData = {
+  is_form: true,
   contact_us: false,
   ask_devis: false,
   fondation: false,
