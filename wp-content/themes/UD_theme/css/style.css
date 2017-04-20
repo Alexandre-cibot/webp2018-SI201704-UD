@@ -672,6 +672,26 @@ footer {
   }
 }
 
+.devis-img {
+  height: 320px;
+  background-image: url("../images/visuels/contact_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.block-deco-grey.block-deco-grey-contact {
+  height: 480px;
+}
+
+.project-a-propos-contact {
+  height: inherit;
+  margin-top: 0;
+}
+
+.devis {
+  margin-top: 260px;
+}
+
 .devis .steps {
   margin: 100px auto 60px auto;
   display: block;
