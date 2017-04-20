@@ -73,7 +73,7 @@ function sendDevisByEmail($array) {
         else{
             $list .= " - " . $key . "\n";
         }
-        
+
     }
 
     foreach($infos as $key => $value) {
