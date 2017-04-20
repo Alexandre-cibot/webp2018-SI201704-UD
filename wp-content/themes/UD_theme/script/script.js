@@ -67,6 +67,12 @@ $( "#form_01" ).click(function() {
     $( ".formulaire_02" ).show();
     $(".step_02").addClass("step_active");
     $('.polygons-2').attr('src',polygonYellow);
+    if(formData.contact_us){
+      $(".step_03").addClass("step_active");
+      $('.polygons-3').attr('src',polygonYellow);
+      $( ".formulaire_02" ).hide();
+      $( ".formulaire_03" ).show();
+    }
   }
 });
 
