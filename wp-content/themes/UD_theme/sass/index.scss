@@ -3,12 +3,21 @@
 @import './fonts.scss';
 @import './footer.scss';
 @import './mixin.scss';
+@import './header.scss';
 
 /* Import style pages */
 @import 'pages/a-propos';
 @import 'pages/accueil';
 @import 'pages/devis';
 @import 'pages/mentions-legales.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
 
 .text-important {
   color: $yellow;
