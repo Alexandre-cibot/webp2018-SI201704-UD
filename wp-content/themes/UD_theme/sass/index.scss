@@ -44,6 +44,7 @@
   font-family: $open-sans;
   font-size: 16px;
   line-height: 32px;
+  font-weight:300; 
 }
 
 .small-title {
@@ -109,9 +110,9 @@
   }
 }
 .wrapper-partenaire {
-    margin-top: 200px;
+  margin:  20vh 0 25vh 0;
   @include only-phone {
-  margin-top: 120px;
+   margin:  15vh 0 20vh 0;
 }
 }
 .flex-item {
