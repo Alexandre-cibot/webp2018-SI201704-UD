@@ -140,7 +140,7 @@ table {
 
 footer {
   background-color: #282828;
-  height: 550px;
+  height: 490px;
   width: 100%;
   margin-top: 160px;
 }
@@ -431,17 +431,17 @@ header ul li {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   margin: 30px 60px 30px 0;
 }
 
 header ul li.active {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 header ul li:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 .bt-devis:hover {
@@ -785,7 +785,7 @@ header ul li:hover {
 }
 
 .content-a-propos .content-text .flex-container {
-  margin-bottom: 85px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 768px) {
@@ -796,7 +796,7 @@ header ul li:hover {
 
 @media (min-width: 768px) and (min-width: 1024px) {
   .content-a-propos .content-text .flex-container {
-    margin-bottom: 85px;
+    margin-bottom: 35px;
   }
 }
 
@@ -1655,12 +1655,13 @@ header ul li:hover {
   width: 100%;
   max-width: 1440px;
   display: flex;
+  margin-top: 200px;
 }
 
 .ml h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 28px;
   line-height: 50px;
   color: #3E3E3E;
   margin-bottom: 80px;
@@ -1668,10 +1669,11 @@ header ul li:hover {
 
 .ml h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 50px;
   color: #FFC619;
+  text-transform: uppercase;
 }
 
 .ml p {
@@ -1851,7 +1853,7 @@ section.content {
 
 strong {
   color: #FFC619;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .text-title {
@@ -1888,7 +1890,7 @@ strong {
 .title {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 46px;
   font-weight: 300;
 }
 
@@ -1964,7 +1966,7 @@ strong {
 }
 
 .wrapper-partenaire {
-  margin: 20vh 0 25vh 0;
+  margin: 150px 0 50px 0;
 }
 
 @media (max-width: 767px) {
