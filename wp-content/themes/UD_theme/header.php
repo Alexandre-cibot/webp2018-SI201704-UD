@@ -12,7 +12,7 @@
             crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script defer src=<?php echo get_stylesheet_directory_uri() . "/script/script.js";?>></script>
-    <title>Document</title>
+    <title>U&D - Entreprise de batiment</title>
 </head>
 <body>
 
@@ -46,9 +46,11 @@
 </div>
 
 <header>
+    <a href=<?= get_site_url() . "/accueil";?>>
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-burger.svg" ?> alt="burger">
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_white.svg" ?> alt="logo U&D white">
+    </a>
     <nav>
         <ul>
             <a href=<?= get_site_url() . "/devis";?>><li class="bt-devis"><img src=<?= get_stylesheet_directory_uri() . "/images/picto-devis.svg" ?> alt=""> Devis</li></a>

@@ -5,6 +5,44 @@
 get_header();
 ?>
 
+<div class="block-deco-grey"></div>
+<!-- Content centered with 60px margin left and right -->
+<div class="centered-block content-a-propos">
+    <div class="project-a-propos">
+        <div class="project-img">
+
+        </div>
+    </div>
+
+    <div class="content-text">
+
+        <div class="title a-propos-title">
+            <p>Etape fondamentale dans la construction d’un bâtiment ou d’une maison, le gros œuvre est la base de l’ossature et est donc garant de l’entière stabilité et de la solidité du bâti.</p>
+        </div>
+        <div class="wrapper-block flex-container">
+            <div>
+                <div class="block-p">
+                    <div class="hero-line a-propos-txt">
+                        <hr>
+                        <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
+                    </div>
+                    <div class="paragraphe-column">
+                    <p>Il englobe tous les travaux de maçonnerie et correspond aux parties qui vont soutenir le poids de la maison et qui vont lui permettre de lutter contre les intempéries :<br><br>  
+                    </p>
+                    
+                    <ul>
+                 <li>Fondations superficielles</li>
+                 <li>Fondations superficielles sur surface complète ou radier</li>
+                 <li>Fondations semi-profondes</li>
+                 <li>Fondations profondes</li>
+               </ul><br><br><br>
+               <p>Les murs porteurs, poteaux, poutres et planchers font également partie du gros œuvre. D’aucuns y englobent également la charpente, la couverture et les menuiseries extérieures.<br><br>Cette étape est achevée lorsque la construction est « hors d’eau » – c’est-à-dire lorsque la couverture a été posée – et « hors d’air » – lorsque les menuiseries ont été mises en place. Peuvent alors commencer les travaux de second œuvre et de finition : isolation, cloisons, revêtements, cheminées etc.
+</p>
+</div>
+                </div>
+                
+            </div>
+        </div>
 
 <section data-content="1" class="block">
         <div class="title a-propos-title">

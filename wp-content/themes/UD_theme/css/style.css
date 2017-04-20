@@ -140,7 +140,7 @@ table {
 
 footer {
   background-color: #282828;
-  height: 425px;
+  height: 550px;
   width: 100%;
   margin-top: 100px;
 }
@@ -218,34 +218,24 @@ footer {
 }
 
 .blockContact {
-  display: flex;
-  justify-content: space-around;
   width: 90%;
-  align-items: center;
   max-width: 1440px;
   height: 260px;
 }
 
 .blockContact_block {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 170px;
-  vertical-align: text-top;
-}
-
-.blockContact_block:first-child {
-  width: 40%;
-  margin-left: 100px;
-}
-
-.blockContact_block:last-child {
-  width: 60%;
-  margin-left: 180px;
+  float: left;
 }
 
 #blockContact_block_contact {
-  width: 210px;
+  width: 20%;
+  margin-left: 20%;
+}
+
+.blockContact_block_infos {
+  width: 60%;
+  padding-left: 10%;
+  margin-bottom: 60px;
 }
 
 .blockContact_btn {
@@ -269,6 +259,17 @@ footer {
   text-align: center;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+}
+
+.mentions_legales,
+.mentions_legales_lien {
+  color: #8F8F8F;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: center;
+  width: 450px;
+  margin: 0 auto;
 }
 
 .blockContact_btn:hover {
@@ -308,20 +309,10 @@ footer {
 
   .blockk {
     width: 100%;
-    display: flex;
-    align-items: center;
   }
 
   .blockContact_block-titre {
-    font-size: 20px;
-  }
-
-  .blockContact_block:last-child {
-    margin-left: 70px;
-  }
-
-  .blockContact_block {
-    margin-left: 110px;
+    font-size: 19px;
   }
 }
 
@@ -339,7 +330,6 @@ footer {
 
   .blockk {
     display: auto;
-    align-items: auto;
     width: 100%;
   }
 
@@ -353,7 +343,6 @@ footer {
   .blockContact {
     height: auto;
     width: 100%;
-    flex: initial;
   }
 
   .blockContact_block,
@@ -366,6 +355,7 @@ footer {
     display: inherit;
     width: 90%;
     margin: 0 auto;
+    padding-top: 30px;
   }
 
   .blockContact_img {
@@ -390,6 +380,16 @@ footer {
 
   .bandeauReassurance_block:last-child {
     border: 0px;
+  }
+
+  #blockContact_block_contact {
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .blockContact_block_infos {
+    padding-top: 70px;
+    padding-bottom: 110px;
   }
 }
 
@@ -671,7 +671,7 @@ header ul li.active {
 
 @media (max-width: 767px) {
   .project-img {
-    height: 400px;
+    height: 650px;
   }
 }
 
@@ -686,10 +686,10 @@ header ul li.active {
 .a-propos-title {
   margin-left: 0px;
   position: absolute;
-  top: -280px;
+  top: -400px;
   margin-top: 0px;
   margin: 0 30px;
-  width: 80%;
+  width: 350px;
 }
 
 @media (min-width: 768px) {
