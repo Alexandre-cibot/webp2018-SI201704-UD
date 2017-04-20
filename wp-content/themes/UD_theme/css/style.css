@@ -1717,6 +1717,11 @@ header ul li.active {
   }
 }
 
+.hero-line.services {
+  width: 45%;
+  margin-top: 11px;
+}
+
 .hero-line.partners {
   width: 20%;
   margin-top: 12px;
