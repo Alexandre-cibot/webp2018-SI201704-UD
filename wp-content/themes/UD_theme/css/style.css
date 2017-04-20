@@ -1483,18 +1483,16 @@ header ul li:hover {
 }
 
 .devis .btn_form:hover {
-  border: #FFC619 3px solid;
-  -webkit-transition: background .5s;
-  /* Safari */
-  transition: background .5s;
+  border: #FFC619 1px solid;
 }
 
 .btn_form_active {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #FFC619 3px solid;
+  color: #fff;
+  border: 1px solid #FFC619;
+  background: #FFC619;
   width: 190px;
   height: 115px;
   float: left;
@@ -1502,15 +1500,18 @@ header ul li:hover {
   cursor: pointer;
 }
 
-.devis .btn_form:hover .btn_form_span {
-  -webkit-transition: color .5s;
-  /* Safari */
-  transition: color .5s;
+.devis .btn_form img {
+  margin: 32px auto 15px;
 }
 
-.devis .btn_form img {
-  margin: 32px auto 15px auto;
+.devis .btn_form.default img[alt="icon"],
+.btn_form_active img[alt="iconactive"] {
   display: block;
+}
+
+.devis .btn_form.default img[alt="iconactive"],
+.btn_form_active img[alt="icon"] {
+  display: none;
 }
 
 .devis .btn_form span {
@@ -1534,6 +1535,10 @@ header ul li:hover {
   background-color: #ffffff;
   display: block;
   margin: 50px auto 0 auto;
+}
+
+.devis .formulaire_content button {
+  cursor: pointer;
 }
 
 .devis .formulaire_02 .btns {
