@@ -368,12 +368,13 @@ footer {
 }
 
 header {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   width: 100%;
   height: 95px;
   padding: 0 60px;
   background: transparent;
-  z-index: 2;
+  z-index: 1;
 }
 
 header img[alt*="logo U&D"],
@@ -427,12 +428,13 @@ header ul li.active {
 
 .menu,
 .menu.active {
+  font-family: 'Roboto', sans-serif;
   position: fixed;
   height: 100vh;
   width: 100%;
   left: 0;
   background: #FFC619;
-  z-index: 1;
+  z-index: 100;
   padding: 100px 10%;
   -webkit-transition: left .3s;
   -moz-transition: left .3s;
@@ -469,6 +471,7 @@ header ul li.active {
   text-align: center;
   text-transform: uppercase;
   margin: 10% auto;
+  letter-spacing: 2px;
 }
 
 .menu ul li:hover {
@@ -480,6 +483,10 @@ header ul li.active {
 }
 
 @media screen and (max-width: 850px) {
+  header {
+    background: #f0f0f0;
+  }
+
   header img[alt*="white"] {
     display: block;
     left: 50%;
