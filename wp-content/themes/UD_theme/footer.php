@@ -48,7 +48,7 @@
    
    <div class="blockContact">
     <div class="blockContact_img"><img src=<?=get_stylesheet_directory_uri() . "/images/footer/line.svg";?>></div>
-     <div class="blockContact_block">
+     <div class="blockContact_block" id="blockContact_block_contact">
       <div>
           <div class="hero-line footer-contact">
               <hr>
