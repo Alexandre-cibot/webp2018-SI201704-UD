@@ -5,36 +5,81 @@
 get_header();
 ?>
 
+
+<div class="block-deco-grey"></div>
+<!-- Content centered with 60px margin left and right -->
+<div class="centered-block content-a-propos">
+    <div class="project-a-propos">
+        <div class="project-img">
+
+        </div>
+    </div>
+
+    <div class="content-text">
+
+        <div class="title a-propos-title">
+            <p>Etape fondamentale dans la construction d’un bâtiment ou d’une maison, le gros œuvre est la base de l’ossature et est donc garant de l’entière stabilité et de la solidité du bâti.</p>
+        </div>
+        <div class="wrapper-block flex-container">
+            <div>
+                <div class="block-p">
+                    <div class="hero-line a-propos-txt">
+                        <hr>
+                        <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
+                    </div>
+                    <div class="paragraphe-column">
+                    <p>Il englobe tous les travaux de maçonnerie et correspond aux parties qui vont soutenir le poids de la maison et qui vont lui permettre de lutter contre les intempéries :</p><br><br>
+                    <ul><li>
+                      Fondations
+                    </li>
+                    <li>
+                      Etude des sols
+                    </li>
+                    <li>Toiture et Charpente</li>
+                    <li>Terrasse</li>
+                    <li>Excavation</li>
+                    <li>Isolation</li>
+                    </ul><br><br>
+                    <p>Les murs porteurs, poteaux, poutres et planchers font également partie du gros œuvre. D’aucuns y englobent également la charpente, la couverture et les menuiseries extérieures.
+<br><br>Cette étape est achevée lorsque la construction est « hors d’eau » – c’est-à-dire lorsque la couverture a été posée – et « hors d’air » – lorsque les menuiseries ont été mises en place. Peuvent alors commencer les travaux de second œuvre et de finition : isolation, cloisons, revêtements, cheminées etc.</p>
+</div>
+                </div>
+                
+            </div>
+        </div>
+
+  </div>
+</div>
 <div class="container-blocks">
     <div class="block-list">
         <div data-block="1" class="block active">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/fondations.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-fondation-white.svg";?> alt="iconactive">
             Fondations
         </div>
         <div data-block="2" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/sols.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-sol-white.svg";?> alt="iconactive">
             Etude des sols
         </div>
         <div data-block="3" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/charpente.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-charpente-white.svg";?> alt="iconactive">
             Charpente
         </div>
         <div data-block="4" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/terrasse.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-terrasse-white.svg";?> alt="iconactive">
             Terrasse
         </div>
         <div data-block="5" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/excavation.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-excavation-white.svg";?> alt="iconactive">
             Excavation
         </div>
         <div data-block="6" class="block">
-            <img src="icon_test_grey.png" alt="icon">
-            <img src="icon_test_white.png" alt="iconactive">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/isolation.svg";?> alt="icon">
+            <img src=<?= get_stylesheet_directory_uri() . "/images/picto-isolation-white.svg";?> alt="iconactive">
             Isolation
         </div>
     </div>
@@ -241,7 +286,7 @@ get_header();
 </section>
 
 
-
+<?php include_once('partenaires.php');?>
 
 <?php
 get_footer();

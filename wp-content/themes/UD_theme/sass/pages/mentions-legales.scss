@@ -4,12 +4,13 @@
   width: 100%;
   max-width: 1440px;
   display: flex;
+  margin-top: 200px;
 }
 
 .ml h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 28px;
   line-height: 50px;
   color: #3E3E3E;
   margin-bottom: 80px;
@@ -17,10 +18,11 @@
 
 .ml h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 50px;
   color: #FFC619;
+  text-transform: uppercase;
 }
 
 .ml p {
