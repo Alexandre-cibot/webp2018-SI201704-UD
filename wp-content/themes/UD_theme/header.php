@@ -34,7 +34,7 @@
 </div>
 
 <div class="menu">
-    <img src=<?= get_stylesheet_directory_uri() . "/images/picto-cross.svg"?> alt="close">
+    <a href=<?= get_site_url() . "/accueil";?>><img src=<?= get_stylesheet_directory_uri() . "/images/picto-cross.svg"?> alt="close"></a>
     <nav>
         <ul>
             <a href=<?= get_site_url() . "/accueil";?>><li class="active">accueil</li></a>
