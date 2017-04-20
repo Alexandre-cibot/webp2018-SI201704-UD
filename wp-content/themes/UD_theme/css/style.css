@@ -1460,11 +1460,14 @@ header ul li.active {
 }
 
 .devis .btn_form.default {
+  color: #C8C8C8;
+  border: #C8C8C8 1px solid;
+}
+
+.devis .btn_form {
   font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
-  color: #C8C8C8;
-  border: #C8C8C8 1px solid;
   width: 190px;
   height: 115px;
   float: left;
