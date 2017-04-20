@@ -94,7 +94,10 @@ section.content {
 }
 
 .container-blocks {
-  margin-top: 120px;
+  padding-top: 120px;
+  position: relative;
+    width: 100%;
+    clear: both;
 }
 
 .slick-arrow {
