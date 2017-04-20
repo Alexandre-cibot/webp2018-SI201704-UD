@@ -48,26 +48,45 @@
   display: flex;
   margin: 15vh 0;
   align-items: flex-end;
+  @include only-phone {
+    display: inherit;
+    margin: 40px 0;
+  }
 }
 
 .service-item-left {
   width:50%;
+  @include only-phone {
+    width: 100%;
+  }
 }
 
 .service-item-right-ctn {
   width:50%;
+  @include only-phone {
+    width: 100%;
+  }
 }
 
 .service-paragraphe {
   width: 70%;
+  @include only-phone {
+    width: 100%;
+  }
 }
 
 .service-item-right-ctn {
   display: flex;
+  @include only-phone {
+    display: inherit;
+  }
 }
 
 .service-item-right-ctn-left {
   width: 50%;
+  @include only-phone {
+    width: 100%;
+  }
 }
 
 .service-item-right-ctn-right {
@@ -86,10 +105,17 @@
   display: flex;
   margin-top: 20px;
   align-items: center;
+  @include only-phone {
+    
+  }
 }
 
 .service-item-left-margin {
   margin-left: 15%;
+  @include only-phone {
+    margin: 0 30px;
+  }
+  
 }
 
 .serv-item-logo-1 {
