@@ -1505,6 +1505,8 @@ header ul li:hover {
 
 .devis .btn_form img {
   margin: 32px auto 15px;
+  height: 28px;
+  width: 32px;
 }
 
 .devis .btn_form.default img[alt="icon"],
