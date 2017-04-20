@@ -14,7 +14,7 @@
   background-image: url("../images/slider-2.jpg");
 }
 
-section.blockFondation {
+section.block {
     width: 75%;
     float: right;
   @include only-phone {
@@ -29,10 +29,12 @@ section.blockFondation {
 
 .paragraphe-column ul li {
   color: #FFC61A;
+  font-weight: 700;
 }
 
 .paragraphe-column ul li::before { 
   content: "________ ";
   color: #7D7D7D;
   margin-right: 10px;
+  margin-top: -3px;
 }

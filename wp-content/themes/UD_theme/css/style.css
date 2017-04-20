@@ -1716,13 +1716,13 @@ header ul li.active {
   background-image: url("../images/slider-2.jpg");
 }
 
-section.blockFondation {
+section.block {
   width: 75%;
   float: right;
 }
 
 @media (max-width: 767px) {
-  section.blockFondation {
+  section.block {
     width: 100%;
   }
 }
@@ -1734,12 +1734,14 @@ section.blockFondation {
 
 .paragraphe-column ul li {
   color: #FFC61A;
+  font-weight: 700;
 }
 
 .paragraphe-column ul li::before {
   content: "________ ";
   color: #7D7D7D;
   margin-right: 10px;
+  margin-top: -3px;
 }
 
 @font-face {
@@ -2042,6 +2044,11 @@ strong {
 .hero-line.mentions {
   width: 32%;
   margin-top: 17px;
+}
+
+.hero-line.sf {
+  width: 20%;
+  margin-top: 7px;
 }
 
 .hero-line hr {
