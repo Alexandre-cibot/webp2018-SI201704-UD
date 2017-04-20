@@ -5,10 +5,10 @@
 @import './mixin.scss';
 
 /* Import style pages */
-@import 'pages/a-propos.scss';
-@import 'pages/accueil.scss';
+@import 'pages/a-propos';
+@import 'pages/accueil';
+@import 'pages/devis';
 @import 'pages/mentions-legales.scss';
-
 
 .text-important {
   color: $yellow;
