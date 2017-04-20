@@ -13,6 +13,15 @@
 
 .flex-container-accueil-left {
   display: flex;
+  margin-left: 20%;
+
+  @include only-phone {
+    margin-left: 10%;
+  }
+
+  @include small-phone {
+    margin-left: 5%;
+  }
 }
 
 .flex-container-left-column {
@@ -35,9 +44,13 @@
 
 .accueil-title {
   text-align: justify;
-  width: 32vw;
-  min-width: 490px;
+  max-width: 490px;
+  width: 100%;
   margin-bottom: 40px;
+
+  @include only-phone {
+    padding-right: 5%;
+  }
 }
 
 .btn-accueil {
@@ -161,10 +174,6 @@
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     line-height: 32px;
-  }
-  .accueil-title {
-    min-width: auto;
-    width: auto;
   }
   .flex-container-accueil-left {
     display: inherit;

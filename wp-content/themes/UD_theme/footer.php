@@ -50,6 +50,10 @@
     <div class="blockContact_img"><img src=<?=get_stylesheet_directory_uri() . "/images/footer/line.svg";?>></div>
      <div class="blockContact_block">
       <div>
+          <div class="hero-line footer-contact">
+              <hr>
+              <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
+          </div>
        <p class="blockContact_block-titre">Contactez-nous</p><br>
        <p class="blockContact_block-txt">Société U&amp;D<br>
 12 rue des petites écuries<br>

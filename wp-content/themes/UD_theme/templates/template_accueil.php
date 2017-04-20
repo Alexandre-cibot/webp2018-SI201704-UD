@@ -6,10 +6,13 @@ get_header();
 ?>
 
 <div class="accueil-background flex-container-accueil">
+
+    <div class="hero-line">
+        <hr>
+        <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
+    </div>
+
     <div class="accueil-title-left flex-container-accueil-left">
-        <div class="left-line2-container">
-            <div class="line2"></div>
-        </div>
         <div class="flex-container-left-column">
             <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
             <button class="btn-cta btn-accueil">Nous contacter</button>
