@@ -68,9 +68,10 @@
 
 .project-title {
   color:white;
-  font-size:28px;
+  font-size:22px;
   font-family: $open-sans;
   line-height: 38px;
+  width: 80%;
 }
 
 .block-p {
@@ -79,7 +80,7 @@
   margin: 10px 10px 10px 10px ;
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
-  margin: 0 20px 20px 0;
+  margin: 0 70px 20px 0;
   @include only-phone {
     margin: 70px 30px 0px 30pX;
   }
@@ -103,13 +104,19 @@
 
 .content-a-propos .content-text .flex-container {
   margin-bottom: 85px;
+    @include tablet {
+      margin-bottom: 5px;
+        @include desktop {
+          margin-bottom: 85px;
+  }
+  }
+  
 }
 
 .stat-block {
-  /*border:1px solid red;*/
   width: 100%;
   display: flex;
-  margin: 70px;
+  margin: 40px;
   @include only-phone {
     margin-bottom: 5px;
   }
@@ -230,11 +237,16 @@
 
 
 #displayn {
-  display: flex;
-   @include only-phone {
- display: none;    
-}
-}
+  display: none;
+    @include tablet {
+    display: flex;
+    height: 570px;
+      @include desktop {
+        display: flex;
+        height: 350px;
+   }
+  }
+ }
 
 #displayo {
   display: none;
@@ -242,4 +254,11 @@
   display: flex;    
 }
 }
+
+@media screen and (max-width: 767px) {
+  .a-propos-title {
+    color: #ffffff!important;
+  }
+}
+
 

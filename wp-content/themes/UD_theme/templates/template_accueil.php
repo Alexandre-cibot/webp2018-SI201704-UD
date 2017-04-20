@@ -62,7 +62,9 @@ get_header();
 <section class="ref">
 
  <div class="refBlock-1">
-  <div class="res1 res"></div>
+  <div class="res1 res">
+  <p class="resTxt">Hello</p>
+  </div>
  </div>
  
  <div class="refBlock-2">

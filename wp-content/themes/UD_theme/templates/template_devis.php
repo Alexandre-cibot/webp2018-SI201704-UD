@@ -77,12 +77,12 @@ get_header();
 			<div class="formulaire_content formulaire_01">
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
-					<div class="btn_form">
+					<div class="btn_form default">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/contact.svg";?>>
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
-					<div class="btn_form" id="ask-devis">
-                        <img src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
+					<div class="btn_form default" id="ask-devis">
+                        <img style="fill: white;" src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
 				</div>
@@ -91,27 +91,27 @@ get_header();
 			<div class="formulaire_content formulaire_02">
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?>>
 						<span class="btn_form_span">Fondations</span>
 					</div>
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?>>
 						<span class="btn_form_span">Études de sols</span>
 					</div>
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?>>
 						<span class="btn_form_span">Charpente</span>
 					</div>
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?>>
 						<span class="btn_form_span">Terrasse</span>
 					</div>
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?>>
 						<span class="btn_form_span">Excavation</span>
 					</div>
-					<div class="btn_form select-type">
+					<div class="btn_form default select-type">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?>>
 						<span class="btn_form_span">Isolation</span>
 					</div>
