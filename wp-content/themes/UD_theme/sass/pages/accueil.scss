@@ -47,11 +47,10 @@
 .service-container {
   display: flex;
   margin: 15vh 0;
-  width: 1200px;
   align-items: flex-end;
   @include only-phone {
     display: inherit;
-    margin: 40px 0;
+    margin: 70px 0;
   }
 }
 
@@ -118,7 +117,7 @@
 }
 
 .service-item-left-margin {
-  margin-left: 15%;
+  margin-left: 0;
   @include only-phone {
     margin: 0 30px;
   }
@@ -177,14 +176,20 @@
 }
 
 .services {
-    position: relative;
-    width: 1200px;
-    left: 50%;
-    margin-left: -600px;
+   position: relative;
+    width: 100%;
+    left: inherit;
+    margin-left: 0px;
   @include tablet {
     position: relative;
     width: 760px;
     left: 50%;
     margin-left: -380px;
+      @include desktop {
+      position: relative;
+      width: 1000px;
+      left: 50%;
+      margin-left: -500px;
+    }
   }
 }
