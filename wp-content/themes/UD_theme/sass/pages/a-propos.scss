@@ -102,11 +102,11 @@
 }
 
 .content-a-propos .content-text .flex-container {
-  margin-bottom: 85px;
+  margin-bottom: 45px;
     @include tablet {
       margin-bottom: 5px;
         @include desktop {
-          margin-bottom: 85px;
+          margin-bottom: 35px;
   }
   }
   

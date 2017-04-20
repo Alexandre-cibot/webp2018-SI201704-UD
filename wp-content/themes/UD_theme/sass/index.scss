@@ -24,7 +24,7 @@
 
 strong {
   color: $yellow;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .text-title {
@@ -61,7 +61,7 @@ strong {
 .title {
   font-family: $roboto;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 46px;
   font-weight: 300;
   @include only-phone {
     font-family: $roboto;
@@ -120,7 +120,7 @@ strong {
   }
 }
 .wrapper-partenaire {
-  margin:  20vh 0 25vh 0;
+  margin:  150px 0 50px 0;
   @include only-phone {
    margin:  15vh 0 20vh 0;
 }
