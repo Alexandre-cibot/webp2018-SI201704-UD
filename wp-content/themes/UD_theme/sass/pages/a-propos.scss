@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include only-phone {
-    height: 400px;
+    height: 650px;
   }
 }
 
@@ -28,10 +28,10 @@
 .a-propos-title {
    margin-left: 0px;
     position: absolute;
-    top: -280px;
+    top: -400px;;
     margin-top:0px;
     margin: 0 30px;
-    width: 80%;
+    width: 350px;
   @include tablet {
   margin-top:80px;
     top: 0px;
@@ -39,7 +39,6 @@
   margin-left: 0px;
   margin-bottom:82px;
   width: 100%;
-    
   @include desktop {
     position: relative;
     margin-top:80px;
@@ -80,7 +79,7 @@
   margin: 10px 10px 10px 10px ;
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
-  margin: 0 20px 20px 0;
+  margin: 0 70px 20px 0;
   @include only-phone {
     margin: 70px 30px 0px 30pX;
   }
@@ -114,10 +113,9 @@
 }
 
 .stat-block {
-  /*border:1px solid red;*/
   width: 100%;
   display: flex;
-  margin: 70px;
+  margin: 40px;
   @include only-phone {
     margin-bottom: 5px;
   }

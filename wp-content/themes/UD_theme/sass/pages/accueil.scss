@@ -216,6 +216,7 @@
 }
 .refBlock-1 {
   width: 25%;
+  background-color: #000000;
   @include only-phone {
     width: 50%;
     align-self: flex-end;
@@ -225,6 +226,7 @@
 
 .refBlock-2 {
   width: 50%;
+  background-color: #000000;
   @include only-phone {
     width: 100%;
     display: flex;
@@ -234,6 +236,7 @@
 
 .refBlock-3 {
   width: 25%;
+  background-color: #000000;
    @include only-phone {
      height: 50%;
      width: 50%
@@ -244,10 +247,16 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.res:hover{
+  opacity: 0.5;
 }
 
 .res1 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res1.jpg");
+  background-image: url("../images/accueil/res1.jpg");
   height: 650px;
    @include only-phone {
      height: 300px;
@@ -255,7 +264,7 @@
 }
 
 .res2 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res2.jpg");
+  background-image: url("../images/accueil/res2.jpg");
   height: 325px;
   width: 50%;
   float: left;
@@ -266,7 +275,7 @@
 }
 
 .res3 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res3.jpg");
+  background-image: url("../images/accueil/res3.jpg");
   height: 325px;
   width: 50%;
   float: left;
@@ -277,7 +286,7 @@
 }
 
 .res4 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res4.jpg");
+  background-image: url("../images/accueil/res4.jpg");
   height: 325px;
   width: 50%;
   float: left;
@@ -305,4 +314,16 @@
   @include only-phone {
      height: 300px;
   }
+}
+
+.resTxt {
+  visibility: hidden;
+  color: #fff;
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.res:hover .resTxt {
+  visibility: visible;
 }
