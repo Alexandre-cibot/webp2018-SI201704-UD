@@ -9,7 +9,9 @@ $('img[alt="close"]').on("click", function(){
 $('.multiple-items').slick({
   infinite: false,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  nextArrow: '<p class="prev">←</p>',
+  prevArrow: '<p class="next">→</p>',
 });
 
 var formData = {
