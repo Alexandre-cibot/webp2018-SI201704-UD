@@ -1732,6 +1732,12 @@ header ul li.active {
   margin-top: 18px;
 }
 
+.hero-line.a-propos-txt {
+  width: 112%;
+  left: -100vh;
+  margin-top: 7px;
+}
+
 .hero-line hr {
   border-color: #C8C8C8;
   border-top: none;
