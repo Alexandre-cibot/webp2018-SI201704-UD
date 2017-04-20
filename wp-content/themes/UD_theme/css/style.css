@@ -176,13 +176,14 @@ footer {
   color: #ffffff;
   font-size: 11px;
   line-height: 21px;
+  font-weight: 600;
 }
 
 .bandeauReassurance_block p span {
   font-family: 'Roboto', sans-serif;
   align-items: center;
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 18px;
 }
 
@@ -429,6 +430,82 @@ header ul li.active {
   margin-bottom: -2px;
 }
 
+/* TOASTER */
+
+.toaster {
+  position: fixed;
+  bottom: -140px;
+  right: 60px;
+  width: 260px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.toaster_content {
+  border: #EBEBEB solid 1px;
+  padding: 16px;
+}
+
+.toaster_content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #757575;
+  line-height: 20px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.toaster_content input {
+  padding: 0 8px;
+  height: 30px;
+  border-radius: 2px;
+  border-top: #EAEAEA 1px solid;
+  border-right: none;
+  border-bottom: #EAEAEA 1px solid;
+  border-left: #EAEAEA 1px solid;
+  width: 85%;
+  float: left;
+}
+
+.toaster_content input::placeholder {
+  color: #CCC;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.toaster_content button {
+  background-color: #FFC619;
+  border: none;
+  height: 30px;
+  width: 15%;
+  float: left;
+  margin-left: -1px;
+  border-radius: 0 2px 2px 0;
+}
+
+.toaster .toaster_yellow {
+  background-color: #FFC619;
+  padding: 15px 24px;
+  cursor: pointer;
+}
+
+.toaster .toaster_yellow .phone {
+  margin-right: 8px;
+}
+
+.toaster .toaster_yellow .arrow {
+  width: 14px;
+  margin-left: 8px;
+}
+
+.toaster .toaster_yellow span {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
 /* MENU */
 
 .menu,
@@ -535,13 +612,11 @@ header ul li.active {
 .project-a-propos {
   position: relative;
   width: 45%;
-  /*width: 562px;*/
-  /* border:1px solid;*/
-  margin-top: 92px;
+  margin-top: 35px;
 }
 
 .project-img {
-  height: 814px;
+  height: 810px;
   background-image: url("../images/visuels/visu_a-propos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -598,10 +673,13 @@ header ul li.active {
   display: flex;
   width: 100%;
   height: 300px;
-  /*border: 1px solid;*/
-  position: absolute;
+  border-top: 1px solid #F8F8F8;
   bottom: 0;
   align-items: center;
+}
+
+.content-a-propos .content-text .flex-container {
+  margin-bottom: 35px;
 }
 
 .stat-block {
@@ -611,14 +689,48 @@ header ul li.active {
   margin: 70px;
 }
 
-.picto {
+.pictoa {
   /* border:1px solid ;*/
   width: 35px;
   height: 35px;
-  background-image: url("../images/picto-france.svg");
+  background-image: url("../images/apropos/pictoa.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  margin-right: 10px;
+}
+
+.pictob {
+  /* border:1px solid ;*/
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/apropos/pictoc.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.pictoc {
+  /* border:1px solid ;*/
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/apropos/pictob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.pictod {
+  /* border:1px solid ;*/
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/apropos/pictod.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
 }
 
 .stat-title {
@@ -640,6 +752,23 @@ header ul li.active {
   flex-direction: column;
   justify-content: center;
   margin-left: 5px;
+}
+
+.paragraphe-column {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
 }
 
 .accueil-background {
@@ -708,7 +837,7 @@ header ul li.active {
 
 .service-container {
   display: flex;
-  margin: 15vh 0;
+  margin: 25vh 0 30vh 0;
   align-items: flex-end;
 }
 
@@ -890,7 +1019,7 @@ header ul li.active {
 
 .ref {
   width: 100%;
-  height: 500px;
+  height: 650px;
   display: flex;
   align-content: center;
 }
@@ -945,7 +1074,7 @@ header ul li.active {
 
 .res1 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res1.jpg");
-  height: 500px;
+  height: 650px;
 }
 
 @media (max-width: 767px) {
@@ -956,7 +1085,7 @@ header ul li.active {
 
 .res2 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res2.jpg");
-  height: 250px;
+  height: 325px;
   width: 50%;
   float: left;
 }
@@ -970,7 +1099,7 @@ header ul li.active {
 
 .res3 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res3.jpg");
-  height: 250px;
+  height: 325px;
   width: 50%;
   float: left;
 }
@@ -984,7 +1113,7 @@ header ul li.active {
 
 .res4 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res4.jpg");
-  height: 250px;
+  height: 325px;
   width: 50%;
   float: left;
   clear: both;
@@ -999,7 +1128,7 @@ header ul li.active {
 
 .res5 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res5.jpg");
-  height: 250px;
+  height: 325px;
   width: 50%;
   float: left;
 }
@@ -1013,7 +1142,7 @@ header ul li.active {
 
 .res6 {
   background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res6.jpg");
-  height: 500px;
+  height: 650px;
 }
 
 @media (max-width: 767px) {
@@ -1398,6 +1527,7 @@ header ul li.active {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 32px;
+  font-weight: 300;
 }
 
 .small-title {
@@ -1474,12 +1604,12 @@ header ul li.active {
 }
 
 .wrapper-partenaire {
-  margin-top: 200px;
+  margin: 20vh 0 25vh 0;
 }
 
 @media (max-width: 767px) {
   .wrapper-partenaire {
-    margin-top: 120px;
+    margin: 15vh 0 20vh 0;
   }
 }
 
