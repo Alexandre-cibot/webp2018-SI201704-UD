@@ -14,7 +14,7 @@
     <script defer src=<?php echo get_stylesheet_directory_uri() . "/script/script.js";?>></script>
     <title>U&D - Entreprise de batiment</title>
 </head>
-<body>
+<body <? if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) echo 'class="home"'; ?>>
 
 <!-- Toaster fix-->
 <div class="toaster toaster_yellow_down" id="toaster">
