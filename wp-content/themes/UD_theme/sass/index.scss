@@ -5,11 +5,11 @@
 @import './mixin.scss';
 
 /* Import style pages */
-@import 'pages/a-propos.scss';
-@import 'pages/accueil.scss';
+@import 'pages/a-propos';
+@import 'pages/accueil';
+@import 'pages/devis';
 @import 'pages/mentions-legales.scss';
 @import 'pages/savoir-faire.scss';
-
 
 .text-important {
   color: $yellow;
@@ -34,7 +34,7 @@
 .paragraphe {
   font-family: $open-sans;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 32px;
 }
 
 .small-title {
@@ -49,6 +49,11 @@
   font-family: $roboto;
   font-size: 32px;
   line-height: 40px;
+  @include only-phone {
+    font-family: $roboto;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 /* Type de blocks */
@@ -154,3 +159,9 @@
   transition:0.7s;
 }
 
+.err-404 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 50px;
+}
