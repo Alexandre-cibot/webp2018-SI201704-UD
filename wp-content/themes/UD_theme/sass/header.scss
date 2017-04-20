@@ -52,6 +52,18 @@ header ul li.active {
   margin-bottom: -2px;
 }
 
+/* TOASTER */
+
+.toaster .toaster_yellow{
+  background-color: #FFC619;
+}
+
+.toaster .toaster_yellow span{
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
 /* MENU */
 
 .menu, .menu.active {
