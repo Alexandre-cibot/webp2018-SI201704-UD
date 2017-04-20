@@ -14,7 +14,7 @@
   background-image: url("../images/slider-2.jpg");
 }
 
-section.block {
+section.content {
     width: 75%;
     float: right;
   @include only-phone {
@@ -37,4 +37,53 @@ section.block {
   color: #7D7D7D;
   margin-right: 10px;
   margin-top: -3px;
+}
+
+/* LIST */
+
+.block-list {
+  text-align: center;
+}
+
+.block-list .block {
+  cursor: pointer;
+  display: inline-block;
+  width: 14%;
+  margin: 0 1%;
+  border: 1px solid #C8C8C8;
+  min-height: 100px;
+  color: #C8C8C8;
+}
+
+.block-list .block:hover {
+  border: 1px solid #FFC619;
+}
+
+.block-list .block img {
+  display: block;
+  margin: 20px auto 10px;
+  height: 35px;
+}
+
+.block-list .block.active {
+  background: #FFC619;
+  border: 1px solid #FFC619;
+  color: white;
+}
+
+.block-list .block.active img[alt="icon"], .block-list .block img[alt="iconactive"] {
+  display: none;
+}
+
+.block-list .block.active img[alt="iconactive"] {
+  display: block;
+}
+
+.content {
+  margin-bottom: 50px;
+  display: none;
+}
+
+.content.active {
+  display: block;
 }

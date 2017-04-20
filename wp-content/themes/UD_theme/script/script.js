@@ -42,3 +42,12 @@ $( ".toaster_yellow" ).click(function() {
   $('.arrow').toggleClass('arrow_rotate');
 });
 
+$('.block-list .block').on( "click", function() {
+    $('.block.active').toggleClass('active');
+    $(this).toggleClass('active');
+
+    number= $(this).data("block");
+    $('.content.active').toggleClass('active');
+    $(".content[data-content="+number+"]").toggleClass('active');
+});
+
