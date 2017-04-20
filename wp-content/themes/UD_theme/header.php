@@ -34,7 +34,7 @@
 </div>
 
 <div class="menu">
-    <a href=<?= get_site_url() . "/accueil";?>><img src=<?= get_stylesheet_directory_uri() . "/images/picto-cross.svg"?> alt="close"></a>
+    <img src=<?= get_stylesheet_directory_uri() . "/images/picto-cross.svg"?> alt="close">
     <nav>
         <ul>
             <a href=<?= get_site_url() . "/accueil";?>><li class="active">accueil</li></a>
@@ -46,8 +46,8 @@
 </div>
 
 <header>
-    <a href=<?= get_site_url() . "/accueil";?>>
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-burger.svg" ?> alt="burger">
+    <a href=<?= get_site_url() . "/accueil";?>>
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_white.svg" ?> alt="logo U&D white">
     </a>

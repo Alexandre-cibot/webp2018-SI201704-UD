@@ -13,12 +13,7 @@
      }
  }
 
- /*else if (){
-
- }*/
-
 else {
-    var_dump($array);
     $data = json_decode(file_get_contents('php://input'), true);
     if ($data["is_form"]) {
         // on envoie le form
@@ -27,6 +22,7 @@ else {
     else{
         // On quitte.
         header('location:' . get_site_url());
+        exit();
     }
 
 }
@@ -46,6 +42,7 @@ function sendPhoneByEmail() {
     mail("julien@citytaps.org","Recall potential client",$msg);
 
     header('location: ' . get_site_url());
+    exit();
 
 }
 
@@ -63,7 +60,7 @@ function sendDevisByEmail($array) {
     }
 
     // the message
-    $intro = "Creation de devis par un client potentiel. Voici les sujets qui l'interesse :\n";
+    $intro = "Creation de devis par un client potentiel. \n\nVoici les sujets qui l'interesse :\n";
     $list = "";
     $description = "";
     foreach($demande as $key => $value) {
@@ -73,21 +70,21 @@ function sendDevisByEmail($array) {
         else{
             $list .= " - " . $key . "\n";
         }
-        
+
     }
 
     foreach($infos as $key => $value) {
         $description .= " - " . $key . " : " . $value . "\n";
     }
-    //var_dump($list, $description); die();
 
-    $msg = $intro . $list . "\nInformation de contact : \n\n" .  $description;
+    $msg = $intro . $list . "\nInformation de contact : \n" .  $description;
 
     // use wordwrap() if lines are longer than 70 characters
     $msg = wordwrap($msg,70);
 
     // send email
-    mail("julien@citytaps.org","Recall potential client",$msg);
+    /*mail("julien@citytaps.org","Recall potential client",$msg);*/
 
     header('location: ' . get_site_url());
+
 }

@@ -1,7 +1,8 @@
 .project-a-propos {
-  position: relative;
-  width: 45%;
-  margin-top:35px;
+    position: relative;
+    width: 45%;
+    margin-top: 35px;
+    float: left;
   @include only-phone {
     width: 100%;
     margin-top:0px;
@@ -55,10 +56,10 @@
 }
 .content-text {
   width:51%;
- /* border:1px solid;*/
-  position: absolute;
-  right:0;
-  top:0;
+     position: relative;
+    right: 0;
+    top: 0;
+    float: right;
   @include only-phone {
     width: 100%;
     position: relative;
@@ -86,7 +87,15 @@
 }
 
 .wrapper-partenaire {
-  margin-top: 200px;
+  padding: 150px 0px;
+  clear: both;
+  @include only-phone {
+      padding: 0px 0px;
+      }
+}
+
+.partn .wrapper-partenaire {
+  padding: 0px 0px;
 }
 
 .statistiques {

@@ -662,6 +662,7 @@ header ul li:hover {
   position: relative;
   width: 45%;
   margin-top: 35px;
+  float: left;
 }
 
 @media (max-width: 767px) {
@@ -729,10 +730,10 @@ header ul li:hover {
 
 .content-text {
   width: 51%;
-  /* border:1px solid;*/
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
+  float: right;
 }
 
 @media (max-width: 767px) {
@@ -766,7 +767,18 @@ header ul li:hover {
 }
 
 .wrapper-partenaire {
-  margin-top: 200px;
+  padding: 150px 0px;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .wrapper-partenaire {
+    padding: 0px 0px;
+  }
+}
+
+.partn .wrapper-partenaire {
+  padding: 0px 0px;
 }
 
 .statistiques {
@@ -985,7 +997,9 @@ header ul li:hover {
 .accueil-background {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-image: url("../images/visuels/bg_home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex-container-accueil {
@@ -1044,6 +1058,8 @@ header ul li:hover {
 
 .btn-accueil {
   width: 225px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .service-container {
@@ -1103,7 +1119,6 @@ header ul li:hover {
 
 .service-item-right-ctn-left {
   width: 50%;
-  margin-left: 10%;
 }
 
 @media (max-width: 767px) {
@@ -1351,7 +1366,7 @@ header ul li:hover {
 }
 
 .res5 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res5.jpg");
+  background-image: url("../images/accueil/res5.jpg");
   height: 325px;
   width: 50%;
   float: left;
@@ -1365,7 +1380,7 @@ header ul li:hover {
 }
 
 .res6 {
-  background-image: url("http://localhost:8888/webp2018-SI201704-UD/wp-content/themes/UD_theme/images/accueil/res6.jpg");
+  background-image: url("../images/accueil/res6.jpg");
   height: 650px;
 }
 
@@ -1420,13 +1435,14 @@ header ul li:hover {
 }
 
 .devis {
-  margin-top: 260px;
+  margin-top: 130px;
 }
 
 .devis .steps {
   margin: 100px auto 60px auto;
   display: block;
   width: 740px;
+  clear: both;
 }
 
 .devis .step {
@@ -1843,7 +1859,16 @@ section.content {
 }
 
 .container-blocks {
-  margin-top: 120px;
+  padding-top: 120px;
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .container-blocks {
+    padding-top: 30px;
+  }
 }
 
 .slick-arrow {
@@ -2024,10 +2049,6 @@ strong {
   .wrapper-partenaire .flex-container {
     flex-wrap: wrap;
   }
-}
-
-.wrapper-partenaire {
-  margin: 150px 0 50px 0;
 }
 
 @media (max-width: 767px) {

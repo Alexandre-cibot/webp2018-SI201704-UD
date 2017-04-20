@@ -14,7 +14,7 @@ get_header();
 
 	    <div class="content-text">
 	        <div class="title a-propos-title">
-	            <p>Vous avez une question ? Vous souhaitez nous soumettre votre projet ?<br><span class="text-important">Contactez-nous !</span></p>
+	            <p><?php the_field('titre');?></p>
 	        </div>
 	        <div class="wrapper-block flex-container">
 	            <div>
@@ -23,12 +23,12 @@ get_header();
                         <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
                     </div>
 	                <div class="block-p">
-	                    <p class="paragraphe">Nos devis sont réalisés gratuitement par notre société. Nous tenons à ce qu’ils soient précis et détaillés, pour que vous sachiez exactement le coût de chacune de nos prestations. </p>
-	                </div>
+	                    <p class="paragraphe"><?php the_field('champ_1');?></p>
+                </div>
 	            </div>
 	            <div>
 	                <div class="block-p">
-	                    <p class="paragraphe">Un récapitulatif pièce par pièce et corps d’état par corps d’état vous est proposé en fin de devis. Nous nous engageons sur les dates de démarrage.</p>
+                        <p class="paragraphe"><?php the_field('champ_2');?></p>
 	                </div>
 	            </div>
 	        </div>
