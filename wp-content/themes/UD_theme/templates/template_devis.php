@@ -14,7 +14,7 @@ get_header();
 
 	    <div class="content-text">
 	        <div class="title a-propos-title">
-	            <p>Vous avez une question ? Vous souhaitez nous soumettre votre projet ?<br><span class="text-important">Contactez-nous !</span></p>
+	            <p><?php the_field('titre');?></p>
 	        </div>
 	        <div class="wrapper-block flex-container">
 	            <div>
