@@ -29,7 +29,7 @@ header ul li {
   float: right;
   color: #000;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -202,7 +202,7 @@ header ul li.active {
   height: 25px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   header {
     background: none;
     position: absolute;

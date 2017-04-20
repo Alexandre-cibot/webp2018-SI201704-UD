@@ -408,7 +408,7 @@ header ul li {
   float: right;
   color: #000;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -583,7 +583,7 @@ header ul li.active {
   height: 25px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   header {
     background: none;
     position: absolute;
@@ -715,9 +715,10 @@ header ul li.active {
 
 .project-title {
   color: white;
-  font-size: 28px;
+  font-size: 22px;
   font-family: "Open Sans", sans-serif;
   line-height: 38px;
+  width: 80%;
 }
 
 .block-p {
@@ -756,6 +757,18 @@ header ul li.active {
 
 .content-a-propos .content-text .flex-container {
   margin-bottom: 85px;
+}
+
+@media (min-width: 768px) {
+  .content-a-propos .content-text .flex-container {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .content-a-propos .content-text .flex-container {
+    margin-bottom: 85px;
+  }
 }
 
 .stat-block {
@@ -908,12 +921,20 @@ header ul li.active {
 }
 
 #displayn {
-  display: flex;
+  display: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   #displayn {
-    display: none;
+    display: flex;
+    height: 570px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  #displayn {
+    display: flex;
+    height: 350px;
   }
 }
 
@@ -924,6 +945,12 @@ header ul li.active {
 @media (max-width: 767px) {
   #displayo {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .a-propos-title {
+    color: #ffffff !important;
   }
 }
 

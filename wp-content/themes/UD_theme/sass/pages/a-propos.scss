@@ -68,9 +68,10 @@
 
 .project-title {
   color:white;
-  font-size:28px;
+  font-size:22px;
   font-family: $open-sans;
   line-height: 38px;
+  width: 80%;
 }
 
 .block-p {
@@ -103,6 +104,13 @@
 
 .content-a-propos .content-text .flex-container {
   margin-bottom: 85px;
+    @include tablet {
+      margin-bottom: 5px;
+        @include desktop {
+          margin-bottom: 85px;
+  }
+  }
+  
 }
 
 .stat-block {
@@ -230,11 +238,16 @@
 
 
 #displayn {
-  display: flex;
-   @include only-phone {
- display: none;    
-}
-}
+  display: none;
+    @include tablet {
+    display: flex;
+    height: 570px;
+      @include desktop {
+        display: flex;
+        height: 350px;
+   }
+  }
+ }
 
 #displayo {
   display: none;
@@ -242,4 +255,11 @@
   display: flex;    
 }
 }
+
+@media screen and (max-width: 767px) {
+  .a-propos-title {
+    color: #ffffff!important;
+  }
+}
+
 
