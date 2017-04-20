@@ -72,6 +72,9 @@
   margin: 0 60px;
   /*border:1px solid;*/
   height:auto;
+  @include only-phone {
+    margin: 0;
+  }
 }
 
 .block-deco-grey {
@@ -80,6 +83,9 @@
   width: 40%;
   height: 984px;
   top: 0;
+  @include only-phone {
+    display: none;
+  }
 }
 .partenaire-paragraphe {
   margin: 0 auto;

@@ -112,7 +112,8 @@ header ul li.active {
 
 @media screen and (max-width: 850px) {
   header {
-    background: #f0f0f0;
+    background: none;
+    position: absolute;
   }
 
   header img[alt*="white"] {

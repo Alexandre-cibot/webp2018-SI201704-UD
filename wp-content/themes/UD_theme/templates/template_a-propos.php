@@ -12,7 +12,7 @@ get_header();
         <div class="project-img">
 
         </div>
-        <div class="project-description flex-container">
+        <div class="project-description flex-container" id="displayn">
             <span class="small-title separator-bottom-30">Confiez-nous votre projet </span>
             <p class="project-title separator-bottom-30">Vous avez un projet de construction, de
                 rénovation ou d’aménagement ?</p>
@@ -74,6 +74,12 @@ Réaliser des travaux de rénovation dans une maison ou un appartement est une c
             </div>
 
 
+        </div>
+        <div class="project-description flex-container" id="displayo">
+            <span class="small-title separator-bottom-30">Confiez-nous votre projet </span>
+            <p class="project-title separator-bottom-30">Vous avez un projet de construction, de
+                rénovation ou d’aménagement ?</p>
+            <button class="btn-cta">Nous contacter</button>
         </div>
     </div>
 
