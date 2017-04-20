@@ -181,4 +181,10 @@
     width: 1200px;
     left: 50%;
     margin-left: -600px;
+  @include tablet {
+    position: relative;
+    width: 760px;
+    left: 50%;
+    margin-left: -380px;
+  }
 }
