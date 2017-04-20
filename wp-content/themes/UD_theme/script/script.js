@@ -99,10 +99,11 @@ $( "#form_04" ).click(function() {
   formData.mail = $('#mail').val();
   formData.phone = $('#phone').val();
   formData.delay = $('#delay').val();
-  if(formData.name || formData.address || formData.mail || formData.phone){
+
+  if(formData.name && formData.address && isEmail(formData.mail) && formData.phone && formData.delay) {
     $( ".formulaire_04" ).hide();
-    $(".step_04").addClass("step_active");
-    $('.polygons-4').attr('src', polygonYellow);
+    $(".step_05").addClass("step_active");
+    $('.polygons-5').attr('src', polygonYellow);
   }
 
   $.ajax({
@@ -136,3 +137,9 @@ $('.block-list .block').on( "click", function() {
     $(".content[data-content="+number+"]").toggleClass('active');
 });
 
+function isEmail(email) {
+  console.log(email)
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  console.log(regex.test(email))
+  return regex.test(email);
+}
