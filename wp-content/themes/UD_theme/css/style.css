@@ -274,6 +274,7 @@ footer {
   width: 180px;
   padding: 20px 10px;
   text-align: center;
+  transition: 0.7s;
 }
 
 .blockContact_img {
@@ -1412,7 +1413,7 @@ header ul li.active {
   clear: both;
 }
 
-.text-important {
+strong {
   color: #FFCB0D;
 }
 
