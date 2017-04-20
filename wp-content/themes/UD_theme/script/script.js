@@ -12,7 +12,6 @@ $('.multiple-items').slick({
   slidesToScroll: 1
 });
 
-
 $( ".formulaire_02" ).hide();
 $( ".formulaire_03" ).hide();
 $( ".formulaire_04" ).hide();
@@ -32,12 +31,14 @@ $( "#finish-desc-project" ).click(function() {
   $( ".formulaire_04" ).show();
 });
 
+$( ".btn_form" ).click(function() {
+  $(this).toggleClass("default");
+  $(this).toggleClass("btn_form_active");
+});
 
 $( ".toaster_yellow" ).click(function() {
   $('.toaster').toggleClass('toaster_yellow_up');
   $('.toaster').toggleClass('toaster_yellow_down');
   $('.arrow').toggleClass('arrow_rotate');
 });
-
-
 
