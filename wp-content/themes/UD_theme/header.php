@@ -51,9 +51,9 @@
         <ul>
             <a href=<?= get_site_url() . "/devis";?>><li class="bt-devis"><img src=<?= get_stylesheet_directory_uri() . "/images/picto-devis.svg" ?> alt=""> Devis</li></a>
             <a href=<?= get_site_url() . "/devis";?>><li class="bt-devis mobile"><img src=<?= get_stylesheet_directory_uri() . "/images/picto-devis.svg" ?> alt=""></li></a>
-            <a href=<?= get_site_url() . "/a-propos";?>><li>à propos</li></a>
-            <a href=<?= get_site_url() . "/savoir-faire";?>><li>savoir-faire</li></a>
-            <a href=<?= get_site_url() . "/accueil";?>><li class="active">accueil</li></a>
+            <a href=<?= get_site_url() . "/a-propos";?>><li class="<?=is_active("a propos");?>">à propos</li></a>
+            <a href=<?= get_site_url() . "/savoir-faire";?>><li class="<?=is_active("savoir faire");?>">savoir-faire</li></a>
+            <a href=<?= get_site_url() . "/accueil";?>><li class="<?=is_active("accueil");?>">accueil</li></a>
         </ul>
     </nav>
 </header>
