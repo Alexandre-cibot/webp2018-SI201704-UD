@@ -99,13 +99,13 @@
 .devis .btn_form:hover{
 	background-color: #FFC619;
 	border: #FFC619 1px solid;
+	-webkit-transition: background .5s; /* Safari */
+	transition: background .5s;
 }
 
-.devis .btn_form:hover{
+.btn_form_active{
 	background-color: #FFC619;
 	border: #FFC619 1px solid;
-	-webkit-transition: background .5s; /* Safari */
-    transition: background .5s;
 }
 
 .devis .btn_form:hover .btn_form_span{
