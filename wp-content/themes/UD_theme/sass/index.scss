@@ -12,6 +12,8 @@
 @import 'pages/mentions-legales.scss';
 @import 'pages/savoir-faire.scss';
 
+@import 'icomoon/style';
+
 * {
   box-sizing: border-box;
 }
@@ -238,6 +240,11 @@ strong {
   width: 119%;
   left: -150vh;
   margin-top: 7px;
+}
+
+.hero-line.mentions {
+  width: 32%;
+  margin-top: 17px;
 }
 
 .hero-line hr {

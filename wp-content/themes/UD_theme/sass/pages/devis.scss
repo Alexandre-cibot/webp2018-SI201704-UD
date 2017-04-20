@@ -83,7 +83,7 @@
 	margin-bottom: 40px;
 }
 
-.devis .btn_form{
+.devis .btn_form.default{
 	font-family: "Open Sans";
 	font-weight: 500;
 	font-size: 16px;
@@ -96,20 +96,26 @@
 	cursor: pointer;
 }
 
-.devis .btn_form:hover{
-	background-color: #FFC619;
-	border: #FFC619 1px solid;
-}
-
-.devis .btn_form:hover{
-	background-color: #FFC619;
-	border: #FFC619 1px solid;
+.devis .btn_form:hover {
+	border: #FFC619 3px solid;
 	-webkit-transition: background .5s; /* Safari */
-    transition: background .5s;
+	transition: background .5s;
 }
 
-.devis .btn_form:hover .devis .btn_form_span{
-    color: #fff;
+.btn_form_active {
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 16px;
+	color: #C8C8C8;
+	border: #FFC619 3px solid;
+	width: 190px;
+	height: 115px;
+	float: left;
+	margin: 16px;
+	cursor: pointer;
+}
+
+.devis .btn_form:hover .btn_form_span{
     -webkit-transition: color .5s; /* Safari */
     transition: color .5s;
 }

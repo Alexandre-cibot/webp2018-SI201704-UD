@@ -13,3 +13,26 @@
 .slider-img-2 {
   background-image: url("../images/slider-2.jpg");
 }
+
+section.blockFondation {
+    width: 75%;
+    float: right;
+  @include only-phone {
+    width: 100%;
+  }
+}
+
+.blockSlide {
+  position: relative;
+  clear: both;
+}
+
+.paragraphe-column ul li {
+  color: #FFC61A;
+}
+
+.paragraphe-column ul li::before { 
+  content: "________ ";
+  color: #7D7D7D;
+  margin-right: 10px;
+}
