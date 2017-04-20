@@ -9,7 +9,7 @@ get_header();
     <div class="accueil-title-left flex-container-accueil-left">
         <div class="flex-container-left-column">
             <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
-            <button class="btn-cta btn-accueil">Nous contacter</button>
+            <a href=<?= get_site_url() . "/devis";?> class="btn-cta btn-accueil">Nous contacter</a>
         </div>
     </div>
 </div>
