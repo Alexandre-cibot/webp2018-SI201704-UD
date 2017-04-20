@@ -12,7 +12,7 @@
             crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script defer src=<?php echo get_stylesheet_directory_uri() . "/script/script.js";?>></script>
-    <title>Document</title>
+    <title>U&D - Entreprise de batiment</title>
 </head>
 <body>
 
