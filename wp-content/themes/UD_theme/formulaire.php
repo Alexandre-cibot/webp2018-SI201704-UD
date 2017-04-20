@@ -2,6 +2,7 @@
 /*
     Template Name: formulaire
 */
+var_dump($_POST);die();
 
 if (trim($_POST['phone']) === "" OR !is_numeric(trim($_POST['phone']))) {
     header('location:' . get_site_url());
