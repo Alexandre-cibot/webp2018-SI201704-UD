@@ -12,24 +12,25 @@ $('.multiple-items').slick({
   slidesToScroll: 1
 });
 
+var formData = {
+  contact_us: false,
+  ask_devis: false,
+  fondation: false,
+  sol: false,
+  charpente: false,
+  terrasse: false,
+  excavation: false,
+  isolation: false,
+  description: false,
+  name: false,
+  address: false,
+  mail: false,
+  phone: false
+};
+
 $( ".formulaire_02" ).hide();
 $( ".formulaire_03" ).hide();
 $( ".formulaire_04" ).hide();
-
-$( "#ask-devis" ).click(function() {
-  $( ".formulaire_01" ).hide();
-  $( ".formulaire_02" ).show();
-});
-
-$( ".select-type" ).click(function() {
-  $( ".formulaire_02" ).hide();
-  $( ".formulaire_03" ).show();
-});
-
-$( "#finish-desc-project" ).click(function() {
-  $( ".formulaire_03" ).hide();
-  $( ".formulaire_04" ).show();
-});
 
 $( ".btn_form" ).click(function() {
   $(this).toggleClass("default");
@@ -40,6 +41,59 @@ $( ".toaster_yellow" ).click(function() {
   $('.toaster').toggleClass('toaster_yellow_up');
   $('.toaster').toggleClass('toaster_yellow_down');
   $('.arrow').toggleClass('arrow_rotate');
+});
+
+$( "#form_01" ).click(function() {
+  $( ".formulaire_01" ).hide();
+  $( ".formulaire_02" ).show();
+  formData.contact_us = !$('#contact_us').hasClass('default');
+  formData.ask_devis = !$('#ask_devis').hasClass('default');
+});
+
+$( "#form_02" ).click(function() {
+  $( ".formulaire_02" ).hide();
+  $( ".formulaire_03" ).show();
+  formData.fondation = !$('#fondation').hasClass('default');
+  formData.sol = !$('#sol').hasClass('default');
+  formData.charpente = !$('#charpente').hasClass('default');
+  formData.terrasse = !$('#terrasse').hasClass('default');
+  formData.excavation = !$('#excavation').hasClass('default');
+  formData.isolation = !$('#isolation').hasClass('default');
+});
+
+$( "#form_03" ).click(function() {
+  $( ".formulaire_03" ).hide();
+  $( ".formulaire_04" ).show();
+  formData.description = $('#description').val();
+});
+
+$( "#form_04" ).click(function() {
+  $( ".formulaire_04" ).hide();
+  formData.name = $('#name').val();
+  formData.address = $('#address').val();
+  formData.mail = $('#mail').val();
+  formData.phone = $('#phone').val();
+
+  $.ajax({
+    url : 'http://localhost:8888/webp2018-SI201704-UD/formulaire',
+    type : 'POST',
+    data : JSON.stringify(formData),
+    dataType : 'json',
+    success: function(data) {
+      // The "data" parameter will be an object since JQuery will
+      // parse the response because of "dataType: 'json'".
+      console.log('Success');
+    },
+    complete: function() {
+      // Code to hide loading icon goes here.
+      console.log('Complete');
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      // Handle the error.
+      console.log('Erorr');
+      console.warn(jqXHR);console.warn(textStatus);console.warn(errorThrown);
+    }
+  });
 });
 
 $('.block-list .block').on( "click", function() {

@@ -77,61 +77,61 @@ get_header();
 			<div class="formulaire_content formulaire_01">
 				<h2 class="titles">1 - Selectionner votre demande</h2>
 				<div class="btns">
-					<div class="btn_form default">
+					<div class="btn_form default" id="contact_us">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/contact.svg";?>>
 						<span class="btn_form_span">Nous contacter</span>
 					</div>
-					<div class="btn_form default" id="ask-devis">
+					<div class="btn_form default" id="ask_devis">
                         <img style="fill: white;" src=<?=get_stylesheet_directory_uri() . "/images/devis.svg";?>>
 						<span class="btn_form_span">Demander un devis</span>
 					</div>
 				</div>
-				<button>Suivant</button>
+				<button id="form_01">Suivant</button>
 			</div>
 			<div class="formulaire_content formulaire_02">
 				<h3 class="titles">2 - Selectionnez la nature de vos travaux que vous souhaitez réaliser</h3>
 				<div class="btns">
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="fondation">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/fondations.svg";?>>
 						<span class="btn_form_span">Fondations</span>
 					</div>
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="sol">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/sols.svg";?>>
 						<span class="btn_form_span">Études de sols</span>
 					</div>
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="charpente">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/charpente.svg";?>>
 						<span class="btn_form_span">Charpente</span>
 					</div>
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="terrasse">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/terrasse.svg";?>>
 						<span class="btn_form_span">Terrasse</span>
 					</div>
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="excavation">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/excavation.svg";?>>
 						<span class="btn_form_span">Excavation</span>
 					</div>
-					<div class="btn_form default select-type">
+					<div class="btn_form default select-type" id="isolation">
 						<img src=<?=get_stylesheet_directory_uri() . "/images/isolation.svg";?>>
 						<span class="btn_form_span">Isolation</span>
 					</div>
 				</div>
-				<button>Suivant</button>
+				<button id="form_02">Suivant</button>
 			</div>
 			<div class="formulaire_content formulaire_03">
 				<h4 class="titles">3 - Décrivez-nous votre projet</h4>
-				<textarea placeholder="Détaillez votre projet, par exemple : Je souhaite faire enlever 50 m² de carrelage avec plinthes en vue d'y poser un parquet déjà en ma possession "></textarea>
-				<button id="finish-desc-project">Suivant</button>
+				<textarea id="description" placeholder="Détaillez votre projet, par exemple : Je souhaite faire enlever 50 m² de carrelage avec plinthes en vue d'y poser un parquet déjà en ma possession "></textarea>
+				<button id="form_03">Suivant</button>
 			</div>
 			<div class="formulaire_content formulaire_04">
 				<h5 class="titles">4 - Completez vos coordonnées</h5>
 				<div class="inputs">
-					<input placeholder="Nom*"></input>
-					<input placeholder="Adresse*"></input>
-					<input placeholder="Mail*"></input>
-					<input placeholder="Téléphone*"></input>
+					<input id="name" placeholder="Nom*"></input>
+					<input id="address" placeholder="Adresse*"></input>
+					<input id="mail" placeholder="Mail*"></input>
+					<input id="phone" placeholder="Téléphone*"></input>
 				</div>
-				<button>Envoyer</button>
+				<button id="form_04">Envoyer</button>
 			</div>
 
 		</div>
