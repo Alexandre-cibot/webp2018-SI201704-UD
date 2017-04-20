@@ -31,3 +31,4 @@ $( "#finish-desc-project" ).click(function() {
   $( ".formulaire_03" ).hide();
   $( ".formulaire_04" ).show();
 });
+
