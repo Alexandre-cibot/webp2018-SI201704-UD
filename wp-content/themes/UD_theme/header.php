@@ -48,8 +48,11 @@
 <header>
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-burger.svg" ?> alt="burger">
     <a href=<?= get_site_url() . "/accueil";?>>
-    <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
+    <? if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) : ?>
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_white.svg" ?> alt="logo U&D white">
+    <?php else : ?>
+    <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
+    <?php endif; ?>
     </a>
     <nav>
         <ul>
