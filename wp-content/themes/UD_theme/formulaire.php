@@ -39,7 +39,8 @@ function sendPhoneByEmail() {
     $msg = wordwrap($msg,70);
 
     // send email
-    mail("julien@citytaps.org","Recall potential client",$msg);
+    //mail("julien@citytaps.org","Recall potential client",$msg);
+    wp_mail("ameran78@gmail.com","Recall potential client",$msg);
 
     header('location: ' . get_site_url());
     exit();
