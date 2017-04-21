@@ -14,7 +14,7 @@
     <script defer src=<?php echo get_stylesheet_directory_uri() . "/script/script.js";?>></script>
     <title>U&D - Entreprise de batiment</title>
 </head>
-<body <? if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) echo 'class="home"'; ?>>
+<body <?php if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) echo 'class="home"'; ?>>
 
 <!-- Toaster fix-->
 <div class="toaster toaster_yellow_down" id="toaster">
@@ -48,11 +48,11 @@
 <header>
     <img src=<?= get_stylesheet_directory_uri() . "/images/picto-burger.svg" ?> alt="burger">
     <a href=<?= get_site_url() . "/accueil";?>>
-    <? if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) : ?>
+    <?php? if(get_site_url() . "/accueil" == home_url(add_query_arg(array(),$wp->request))) { ?>
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_white.svg" ?> alt="logo U&D white">
-    <?php else : ?>
+    <?php } else { ?>
     <img src=<?= get_stylesheet_directory_uri() . "/images/logo_black.svg" ?> alt="logo U&D black">
-    <?php endif; ?>
+    <?php } ?>
     </a>
     <nav>
         <ul>
