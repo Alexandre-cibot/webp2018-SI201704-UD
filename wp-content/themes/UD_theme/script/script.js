@@ -106,7 +106,7 @@ $( "#form_04" ).click(function() {
   }
 
   $.ajax({
-    url : 'http://localhost:8888/webp2018-SI201704-UD/formulaire',
+    url : 'http://www.alexandrecibot.com/projets/webp2018-SI201704-UD/formulaire',
     type : 'POST',
     data : JSON.stringify(formData),
     dataType : 'json',

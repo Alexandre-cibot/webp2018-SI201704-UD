@@ -70,7 +70,7 @@ class PHPMailer
      * The From email address for the message.
      * @var string
      */
-    public $From = 'root@localhost';
+    public $From = 'alexandrecibot@gmail.com';
 
     /**
      * The From name of the message.
@@ -226,14 +226,14 @@ class PHPMailer
      * Hosts will be tried in order.
      * @var string
      */
-    public $Host = 'localhost';
+    public $Host = 'smtp.gmail.com';
 
     /**
      * The default SMTP server port.
      * @var integer
      * @TODO Why is this needed when the SMTP class takes care of it?
      */
-    public $Port = 25;
+    public $Port = 465;
 
     /**
      * The SMTP HELO of the message.
@@ -257,7 +257,7 @@ class PHPMailer
      * Be aware that in PHP >= 5.6 this requires that the server's certificates are valid.
      * @var boolean
      */
-    public $SMTPAutoTLS = true;
+    public $SMTPAutoTLS = false;
 
     /**
      * Whether to use SMTP authentication.
