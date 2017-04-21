@@ -30,6 +30,7 @@
 .flex-container-left-column {
   display: flex;
   flex-direction: column;
+  width: 440px;
 }
 
 .flex-item-accueil {
@@ -49,6 +50,10 @@
   max-width: 490px;
   width: 100%;
   margin-bottom: 40px;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  line-height: 36px !important;
+  letter-spacing: 1px;
 
   @include only-phone {
     padding-right: 5%;
@@ -210,7 +215,7 @@
 /** REFS **/
 .ref{
   width: 100%;
-  height: 650px;
+  height: 480px;
   display: flex;
   align-content: center;
   @include only-phone {
@@ -220,7 +225,7 @@
 }
 .refBlock-1 {
   width: 25%;
-  background-color: #000000;
+  //background-color: #000000;
   @include only-phone {
     width: 50%;
     align-self: flex-end;
@@ -230,7 +235,7 @@
 
 .refBlock-2 {
   width: 50%;
-  background-color: #000000;
+  //background-color: #000000;
   @include only-phone {
     width: 100%;
     display: flex;
@@ -240,7 +245,7 @@
 
 .refBlock-3 {
   width: 25%;
-  background-color: #000000;
+  //background-color: #000000;
    @include only-phone {
      height: 50%;
      width: 50%
@@ -261,7 +266,7 @@
 
 .res1 {
   background-image: url("../images/accueil/res1.jpg");
-  height: 650px;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +277,7 @@
 
 .res2 {
   background-image: url("../images/accueil/res2.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
   @include only-phone {
@@ -283,7 +288,7 @@
 
 .res3 {
   background-image: url("../images/accueil/res3.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
    @include only-phone {
@@ -294,7 +299,7 @@
 
 .res4 {
   background-image: url("../images/accueil/res4.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
   clear: both;
@@ -306,7 +311,7 @@
 
 .res5 {
   background-image: url("../images/accueil/res5.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
    @include only-phone {
@@ -317,7 +322,7 @@
 
 .res6 {
   background-image: url("../images/accueil/res6.jpg");
-  height: 650px;
+  height: 480px;
   @include only-phone {
      height: 300px;
   }

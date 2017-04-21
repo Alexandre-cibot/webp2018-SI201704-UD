@@ -144,14 +144,18 @@ footer {
 
 .blockContact_btn:hover {
   font-family: 'Roboto', sans-serif;
-  color: #FFC619;
-  background-color: #ffffff;
+  color: #ffffff ;
+  background-color: #FFC619;
   font-size: 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFC619;
   width: 180px;
   padding: 20px 10px;
   text-align: center;
   transition:0.7s;
+}
+
+.blockContact_btn:hover a {
+  color: #ffffff ;
 }
 
 .blockContact_img {

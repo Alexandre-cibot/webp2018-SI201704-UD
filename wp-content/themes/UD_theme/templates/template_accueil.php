@@ -8,6 +8,10 @@ get_header();
 <div class="accueil-background flex-container-accueil">
     <div class="accueil-title-left flex-container-accueil-left">
         <div class="flex-container-left-column">
+            <div class="hero-line services">
+                <hr>
+                <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
+            </div>
             <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
             <a href=<?= get_site_url() . "/devis";?> class="btn-cta btn-accueil">Nous contacter</a>
         </div>
@@ -18,10 +22,6 @@ get_header();
     <div class="service-container">
         <div class="service-item-left">
             <div class="service-item-left-margin">
-                <div class="hero-line services">
-                    <hr>
-                    <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
-                </div>
                 <h3 class="title text-main service-title">Nos services</h3>
                 <p class="paragraphe service-paragraphe"><?php the_field('nos_services');?></p>
             </div>

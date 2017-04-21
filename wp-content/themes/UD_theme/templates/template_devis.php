@@ -18,10 +18,6 @@ get_header();
 	        </div>
 	        <div class="wrapper-block flex-container">
 	            <div>
-                    <div class="hero-line devis">
-                        <hr>
-                        <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
-                    </div>
 	                <div class="block-p">
 	                    <p class="paragraphe"><?php the_field('champ_1');?></p>
                 </div>

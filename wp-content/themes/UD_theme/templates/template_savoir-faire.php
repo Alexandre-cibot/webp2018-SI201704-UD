@@ -10,7 +10,7 @@ get_header();
 <!-- Content centered with 60px margin left and right -->
 <div class="centered-block content-a-propos">
     <div class="project-a-propos">
-        <div class="project-img">
+        <div class="project-img project-img-propos">
 
         </div>
     </div>
@@ -243,6 +243,9 @@ get_header();
 <section class="blockSlide">
     <div class="multiple-items">
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-1.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-2.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-3.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-4.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-2.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-3.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-4.jpg";?>>

@@ -274,14 +274,18 @@ footer {
 
 .blockContact_btn:hover {
   font-family: 'Roboto', sans-serif;
-  color: #FFC619;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #FFC619;
   font-size: 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFC619;
   width: 180px;
   padding: 20px 10px;
   text-align: center;
   transition: 0.7s;
+}
+
+.blockContact_btn:hover a {
+  color: #ffffff;
 }
 
 .blockContact_img {
@@ -717,7 +721,7 @@ header ul li:hover {
   .a-propos-title {
     position: relative;
     margin-top: 80px;
-    margin-left: -141px;
+    margin-left: -90px;
     margin-bottom: 60px;
     width: 100%;
     top: 0px;
@@ -757,7 +761,7 @@ header ul li:hover {
   margin: 10px 10px 10px 10px ;
   /*border: 1px solid black;*/
   /*display: inline-flex;*/
-  margin: 0 70px 20px 0;
+  margin: 0 0px 20px 0;
 }
 
 @media (max-width: 767px) {
@@ -1029,6 +1033,7 @@ header ul li:hover {
 .flex-container-left-column {
   display: flex;
   flex-direction: column;
+  width: 440px;
 }
 
 .flex-item-accueil {
@@ -1048,6 +1053,10 @@ header ul li:hover {
   max-width: 490px;
   width: 100%;
   margin-bottom: 40px;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  line-height: 36px !important;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 767px) {
@@ -1246,7 +1255,7 @@ header ul li:hover {
 
 .ref {
   width: 100%;
-  height: 650px;
+  height: 480px;
   display: flex;
   align-content: center;
 }
@@ -1260,7 +1269,6 @@ header ul li:hover {
 
 .refBlock-1 {
   width: 25%;
-  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1273,7 +1281,6 @@ header ul li:hover {
 
 .refBlock-2 {
   width: 50%;
-  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1286,7 +1293,6 @@ header ul li:hover {
 
 .refBlock-3 {
   width: 25%;
-  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -1310,7 +1316,7 @@ header ul li:hover {
 
 .res1 {
   background-image: url("../images/accueil/res1.jpg");
-  height: 650px;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1324,7 +1330,7 @@ header ul li:hover {
 
 .res2 {
   background-image: url("../images/accueil/res2.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
 }
@@ -1338,7 +1344,7 @@ header ul li:hover {
 
 .res3 {
   background-image: url("../images/accueil/res3.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
 }
@@ -1352,7 +1358,7 @@ header ul li:hover {
 
 .res4 {
   background-image: url("../images/accueil/res4.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
   clear: both;
@@ -1367,7 +1373,7 @@ header ul li:hover {
 
 .res5 {
   background-image: url("../images/accueil/res5.jpg");
-  height: 325px;
+  height: 240px;
   width: 50%;
   float: left;
 }
@@ -1381,7 +1387,7 @@ header ul li:hover {
 
 .res6 {
   background-image: url("../images/accueil/res6.jpg");
-  height: 650px;
+  height: 480px;
 }
 
 @media (max-width: 767px) {
@@ -1775,6 +1781,7 @@ header ul li:hover {
 section.content {
   width: 75%;
   float: right;
+  margin-right: 8%;
 }
 
 @media (max-width: 767px) {
@@ -1795,7 +1802,7 @@ section.content {
 
 .paragraphe-column ul li::before {
   content: "________ ";
-  color: #7D7D7D;
+  color: #E0E0E0;
   margin-right: 10px;
   margin-top: -3px;
 }
@@ -1871,6 +1878,13 @@ section.content {
   }
 }
 
+.project-img-propos {
+  height: 810px;
+  background-image: url("../images/visuels/visu-savoir.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slick-arrow {
   width: 50px;
   height: 50px;
@@ -1880,6 +1894,7 @@ section.content {
   right: 110px;
   color: #ffffff;
   padding: 17px;
+  cursor: pointer;
 }
 
 .slick-prev {
@@ -2136,8 +2151,9 @@ strong {
 }
 
 .btn-cta:hover {
-  color: #FFC619;
-  background: white;
+  background: #FFC619;
+  color: white;
+  border: #FFC619 2px solid;
 }
 
 .err-404 p {
@@ -2160,7 +2176,7 @@ strong {
 }
 
 .hero-line.services {
-  width: 45%;
+  width: 40%;
   margin-top: 11px;
 }
 
@@ -2194,6 +2210,7 @@ strong {
 .hero-line.sf {
   width: 20%;
   margin-top: 7px;
+  left: -10%;
 }
 
 .hero-line hr {
