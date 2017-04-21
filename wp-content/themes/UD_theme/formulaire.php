@@ -38,8 +38,8 @@ function sendPhoneByEmail() {
     // use wordwrap() if lines are longer than 70 characters
     $msg = wordwrap($msg,70);
     // send email
-   // mail("julien@citytaps.org","Recall potential client",$msg);
-   wp_mail( "julien@citytaps.org", "Recall potential client", $msg);
+    wp_mail( "julien@citytaps.org", "Recall potential client", $msg);
+
     header('location: ' . get_site_url());
     exit();
 
