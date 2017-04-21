@@ -132,7 +132,7 @@ strong {
   background-size: contain;
   margin: 12px 28px;
   @include only-phone {
-    width: 35%;
+    width: 18%; //avant 35%
   }
 }
 
@@ -193,8 +193,10 @@ strong {
 }
 
 .btn-cta:hover {
-  color: $yellow;
-  background:white;
+  background: $yellow;
+  color:white;
+  border: $yellow 2px solid;
+  transition:0.7s;
 }
 
 .err-404 p {
@@ -215,7 +217,7 @@ strong {
 }
 
 .hero-line.services {
-  width: 45%;
+  width: 40%;
   margin-top: 11px;
 }
 
@@ -242,13 +244,14 @@ strong {
 }
 
 .hero-line.mentions {
-  width: 32%;
+  width: 27%;
   margin-top: 17px;
 }
 
 .hero-line.sf {
   width: 20%;
   margin-top: 7px;
+  left: -10%;
 }
 
 .hero-line hr {

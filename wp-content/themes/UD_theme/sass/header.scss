@@ -16,7 +16,7 @@ header img[alt*="logo U&D"], header img[alt="burger"] {
   margin-top: -18px;
 }
 
-header img[alt*="white"], img[alt="burger"], .bt-devis.mobile {
+img[alt="burger"], .bt-devis.mobile {
   display: none;
 }
 
@@ -24,6 +24,10 @@ header ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.home header ul li:hover{
+  border-bottom: 2px solid white;
 }
 
 header ul li {
@@ -38,8 +42,16 @@ header ul li {
   margin: 30px 60px 30px 0;
 }
 
+.home header ul li{
+  color: #fff;
+}
+
 header ul li.active{
   border-bottom: 2px solid black;
+}
+
+.home header ul li.active{
+  border-bottom: 2px solid white;
 }
 
 header ul li:hover{

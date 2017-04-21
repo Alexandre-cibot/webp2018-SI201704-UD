@@ -17,6 +17,7 @@
 section.content {
     width: 75%;
     float: right;
+    margin-right: 8%;
   @include only-phone {
     width: 100%;
   }
@@ -34,7 +35,7 @@ section.content {
 
 .paragraphe-column ul li::before { 
   content: "________ ";
-  color: #7D7D7D;
+  color: #E0E0E0;
   margin-right: 10px;
   margin-top: -3px;
 }
@@ -58,6 +59,11 @@ section.content {
     width: 35%;
     margin-bottom: 15px;
   }
+}
+
+.content-b{
+  width: 100%;
+  margin: 40px 0 !important;
 }
 
 .block-list .block:hover {
@@ -103,6 +109,13 @@ section.content {
   }
 }
 
+.project-img-propos{
+  height: 810px;
+  background-image: url(../images/visuels/visu-savoir.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slick-arrow {
     width: 50px;
     height: 50px;
@@ -112,6 +125,7 @@ section.content {
     right: 110px;
     color: #ffffff;
     padding: 17px;
+  cursor: pointer;
 }
 
 .slick-prev {

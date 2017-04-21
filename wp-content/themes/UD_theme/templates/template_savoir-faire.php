@@ -10,7 +10,7 @@ get_header();
 <!-- Content centered with 60px margin left and right -->
 <div class="centered-block content-a-propos">
     <div class="project-a-propos">
-        <div class="project-img">
+        <div class="project-img project-img-propos">
 
         </div>
     </div>
@@ -22,7 +22,7 @@ get_header();
         </div>
         <div class="wrapper-block flex-container">
             <div>
-                <div class="block-p">
+                <div class="block-p block-p-b">
                     <div class="hero-line a-propos-txt">
                         <hr>
                         <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
@@ -84,7 +84,7 @@ get_header();
     </div>
 </div>
 
-<section data-content="1" class="content active">
+<section data-content="1" class="content active content-b">
         <div class="title a-propos-title">
             <p>
               Les fondations
@@ -110,7 +110,7 @@ get_header();
         </div>
 </section>
 
-<section data-content="2" class="content">
+<section data-content="2" class="content content-b">
     <div class="title a-propos-title">
         <p>
             Etude des sols
@@ -133,7 +133,7 @@ get_header();
     </div>
 </section>
 
-<section data-content="3" class="content">
+<section data-content="3" class="content content-b">
     <div class="title a-propos-title">
         <p>
             Toiture et Charpente
@@ -160,7 +160,7 @@ get_header();
     </div>
 </section>
 
-<section data-content="4" class="content">
+<section data-content="4" class="content content-b">
     <div class="title a-propos-title">
         <p>
             Terrasse
@@ -184,7 +184,7 @@ get_header();
     </div>
 </section>
 
-<section data-content="5" class="content">
+<section data-content="5" class="content content-b">
     <div class="title a-propos-title">
         <p>
             Excavation
@@ -211,7 +211,7 @@ get_header();
     </div>
 </section>
 
-<section data-content="6" class="content">
+<section data-content="6" class="content content-b">
     <div class="title a-propos-title">
         <p>
             Isolation
@@ -243,6 +243,9 @@ get_header();
 <section class="blockSlide">
     <div class="multiple-items">
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-1.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-2.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-3.jpg";?>>
+        <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-4.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-2.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-3.jpg";?>>
         <img class="slider-img" src=<?=get_stylesheet_directory_uri() . "/images/slider-4.jpg";?>>
