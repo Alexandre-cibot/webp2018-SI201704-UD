@@ -8,10 +8,7 @@ get_header();
 <div class="accueil-background flex-container-accueil">
     <div class="accueil-title-left flex-container-accueil-left">
         <div class="flex-container-left-column">
-            <div class="hero-line services">
-                <hr>
-                <img src=<?= get_stylesheet_directory_uri() . "/images/polygon_yellow_border.svg";?> alt="">
-            </div>
+
             <h2 class="title text-white accueil-title"><?php the_field('titre');?></h2>
             <a href=<?= get_site_url() . "/devis";?> class="btn-cta btn-accueil">Nous contacter</a>
         </div>

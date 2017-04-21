@@ -26,6 +26,10 @@ header ul {
   list-style-type: none;
 }
 
+.home header ul li:hover{
+  border-bottom: 2px solid white;
+}
+
 header ul li {
   float: right;
   color: #000;
