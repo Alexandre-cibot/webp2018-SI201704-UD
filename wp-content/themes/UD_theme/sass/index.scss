@@ -132,7 +132,7 @@ strong {
   background-size: contain;
   margin: 12px 28px;
   @include only-phone {
-    width: 35%;
+    width: 12%; //avant 35%
   }
 }
 
